@@ -1,0 +1,268 @@
+\documentclass{tuna-report}
+\usepackage{codespace}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage[super]{nth}
+\usepackage{longtable}
+\usepackage{listings} % For code snippets 
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage[inkscapearea=page]{svg}	% import svg images
+% \usepackage[colorlinks]{hyperref}
+%\usepackage[printonlyused,withpage]{acronym} %abbreviations
+\usepackage{acro}
+% Sub-preambles
+% https://github.com/MartinScharrer/standalone
+
+% Encodings
+\usepackage{gensymb,textcomp}
+
+% Better tables
+% Wide tables go to https://tex.stackexchange.com/q/332902
+\usepackage{array,multicol,multirow,siunitx,tabularx}
+
+% Better enum
+\usepackage{enumitem}
+
+% Graphics
+\usepackage{caption,float}
+
+% Allow setting >max< width of figure
+% 'export' allows adjustbox keys in \includegraphics
+% For demonstration purposes, remove in production
+\usepackage[export]{adjustbox}
+
+% For demonstration purposes, remove in production
+\usepackage{mwe}
+
+
+% Configurations
+\newcounter{memberrowno}
+\setcounter{memberrowno}{0}
+\setcounter{tocdepth}{5}
+\reportlayout%
+
+% Override (some) default values
+\ocoursename{Practical Training Report}
+\title{Practical Training Report}
+% \oadvisor{Prof. Christina Andersson, Prof. Dr. Tine Köhler, Prof. Dr. Sebhatleab Tewolde Kelat}
+
+% ================== Custom commands
+\newcommand*\mean[1]{\bar{#1}}
+
+% Set up the command for a blank page
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \
+    \vfil
+    \hfil (Intentionally left blank) \hfil
+    \vfil
+    \thispagestyle{empty}%
+    % \addtocounter{page}{-1}%
+    \newpage}
+    
+   
+% ========================================
+
+\graphicspath{ {graphics/} }
+
+% Disable hypcap for specific captions
+\captionsetup[figure]{hypcap=false}
+
+% =================DECLARE ACRONYMS=======================
+
+\input{acronyms.tex}
+
+% ================ STYLE FOR JS PROGRAMMING LANGUAGE ===============
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{magenta}{rgb}{1,0,1} % Magenta for JavaScript keywords
+
+
+% Define JavaScript as a language in listings
+\lstdefinelanguage{JavaScript}{
+	keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, function, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, let, const, while, with, yield, async, await, of},
+	keywordstyle=\color{magenta}\bfseries, % Magenta for keywords
+	ndkeywords={class, export, boolean, throw, implements, import, this},
+	ndkeywordstyle=\color{magenta}, % Magenta for additional keywords
+	identifierstyle=\color{black},  % Default color for variables
+	sensitive=true,                 % Case-sensitive
+	comment=[l]{//},                % Single-line comments
+	morecomment=[s]{/*}{*/},        % Multi-line comments
+	commentstyle=\color{codegreen}\ttfamily, % Comments in green
+	stringstyle=\color{codepurple},          % Strings in purple
+	morestring=[b]',                % Single quotes for strings
+	morestring=[b]"                 % Double quotes for strings
+}
+
+
+\lstset{
+	language=JavaScript,               % Set JavaScript as the language
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2,
+	frame=single
+}
+
+\renewcommand{\lstlistingname}{Code snippet}	% For lisitngs caption name
+\renewcommand{\lstlistlistingname}{List of Code Snippets}	% For codes listing table title
+
+% ========================= BEGIN DOCUMENT =======================
+\begin{document}
+	
+	
+\begin{titlepage}
+	\begin{tikzpicture}[remember picture,overlay,inner sep=0,outer sep=0]
+		\draw[black!70!black,line width=4pt] ([xshift=-1.5cm,yshift=-2cm]current page.north east) coordinate (A)--([xshift=1.5cm,yshift=-2cm]current page.north west) coordinate(B)--([xshift=1.5cm,yshift=2cm]current page.south west) coordinate (C)--([xshift=-1.5cm,yshift=2cm]current page.south east) coordinate(D)--cycle;
+		
+		\draw ([yshift=0.5cm,xshift=-0.5cm]A)-- ([yshift=0.5cm,xshift=0.5cm]B)--
+		([yshift=-0.5cm,xshift=0.5cm]B) --([yshift=-0.5cm,xshift=-0.5cm]B)--([yshift=0.5cm,xshift=-0.5cm]C)--([yshift=0.5cm,xshift=0.5cm]C)--([yshift=-0.5cm,xshift=0.5cm]C)-- ([yshift=-0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=-0.5cm]D)--([yshift=0.5cm,xshift=0.5cm]D)--([yshift=-0.5cm,xshift=0.5cm]A)--([yshift=-0.5cm,xshift=-0.5cm]A)--([yshift=0.5cm,xshift=-0.5cm]A);
+		
+		
+		\draw ([yshift=-0.3cm,xshift=0.3cm]A)-- ([yshift=-0.3cm,xshift=-0.3cm]B)--
+		([yshift=0.3cm,xshift=-0.3cm]B) --([yshift=0.3cm,xshift=0.3cm]B)--([yshift=-0.3cm,xshift=0.3cm]C)--([yshift=-0.3cm,xshift=-0.3cm]C)--([yshift=0.3cm,xshift=-0.3cm]C)-- ([yshift=0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=0.3cm]D)--([yshift=-0.3cm,xshift=-0.3cm]D)--([yshift=0.3cm,xshift=-0.3cm]A)--([yshift=0.3cm,xshift=0.3cm]A)--([yshift=-0.3cm,xshift=0.3cm]A);
+		
+	\end{tikzpicture}
+	\begin{center}
+%	\vspace*{1\baselineskip}
+	\includegraphics[scale=0.25]{graphics/frauaslogo.png}
+	\hspace{15mm}
+	\includegraphics[scale=0.4]{graphics/vguLogo2Center.png}
+	\vspace*{2\baselineskip}
+	
+	\textbf{FRANKFURT UNIVERSITY OF APPLIED SCIENCES}
+	
+	\textbf{VIETNAMESE-GERMAN UNIVERSITY}
+	
+	\vspace*{2\baselineskip}
+	
+	\textbf{Frankfurt University of Applied Sciences}
+	
+	\textbf{Faculty 2: Computer Science and Engineering}
+	
+	\vspace*{2\baselineskip}
+	
+	\textbf{STUDYING WEB FULL-STACK TECHNOLOGIES AND APPLYING IN STUDENT LIFE SUPPORT SERVICE WEB APPLICATION DEVELOPMENT }
+	
+	\vspace*{3\baselineskip}
+	
+	Full name: Vu Hoang Tuan Anh
+	
+	Matriculation number: 1403143
+	
+	First supervisor: Dr. Tran Hong Ngoc
+	
+	Second supervisor: Dr. Truong Dinh Huy
+	
+	\vspace*{3\baselineskip}
+	
+	\textbf{BACHELOR THESIS}
+	
+	Submitted in partial fulfillment of the requirements for the degree of Bachelor Engineering in study program Computer Science, Vietnamese - German University, 2024
+	
+	\vspace*{2\baselineskip}
+	
+	Binh Duong, Viet Nam
+	
+	
+	
+	
+%	{\Huge Title}\vspace{\fill}
+%	
+%	{\Large Author name}\vspace{\fill}
+%	
+%	\today
+		\vspace{\fill}
+	\end{center}
+\end{titlepage}
+%\coverpage
+%\clearpage
+%\afterpage{\blankpage}
+\include{chapters/declarations}
+\include{chapters/acknowledgments}
+\include{chapters/abstract}
+
+
+\tableofcontents
+	\newpage
+\printacronyms
+	\newpage
+\listoffigures
+	\newpage
+\listoftables
+	\newpage
+\lstlistoflistings
+	\newpage
+
+
+
+\include{chapters/1_introduction}
+\include{chapters/2_literature_review}
+
+
+% ========================================= SAMPLE ===================================
+
+%\include{chapters/example/tuna_codesample}
+%\include{chapters/example/tuna_imageSample}
+
+%\acuseall
+
+
+
+%\ac{usa}, \ac{usa}
+%
+%\ac{eu}, \ac{eu}
+%
+%\ac{ussr}, \ac{ussr}
+
+
+% \newpage
+
+
+
+
+%\include{chapters/main/1_company_overview}
+%\include{chapters/main/2_internship_description}
+%\include{chapters/main/3_internship_phases}
+%\include{chapters/main/3.5_internship_project_phase}
+%\include{chapters/main/4_internship_output}
+%\include{chapters/main/5_conclusion}
+%\include{chapters/main/6_appendix}
+
+% \include{chapters/2_introduction.tex}
+% \include{chapters/3_language.tex}
+% \include{chapters/4_integrationwolang.tex}
+% \include{chapters/5_life.tex}
+% \include{chapters/6_conclusion.tex}
+
+% citation - references
+% \printbibliography
+% \bibliographystyle{plainurl-custom}
+% \bibliography{refs.bib}
+% \nocite{*}
+
+
+\end{document}

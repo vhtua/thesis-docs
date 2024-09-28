@@ -1,0 +1,80 @@
+\section{Introduction}
+
+\subsection{Project Background}
+
+The Student Life Support Service is a web-based platform designed to enhance the efficiency and accessibility of student support services at the Vietnamese-German University (VGU). Universities typically handle a large volume of student inquiries and requests, ranging from dormitory issues to general student affairs, but the traditional systems in place often fall short of meeting modern student expectations. The current support mechanisms at many educational institutions are not streamlined, leading to delays in issue resolution, inefficient communication between students and staff, and lack of transparency in the handling of support tickets. Students frequently experience difficulty in tracking the progress of their requests, and support staff often lack the tools needed to manage tickets effectively. \\ \\
+This project aims to address these challenges by introducing an integrated system that automates the submission, handling, and resolution of student support tickets. In addition to providing students with a clear communication channel with the relevant university staff, the system also includes features such as real-time messaging, ticket status updates, and feedback mechanisms. The system will allow administrators to manage user roles, view comprehensive reports on ticket status, and optimize resource allocation. \\
+
+Additionally, at VGU, students living in dormitories or dealing with other administrative issues often face challenges in receiving timely support. Current methods of submitting issues through email or in-person communication are prone to delays and mismanagement, leading to student dissatisfaction. This is exacerbated by the lack of real-time updates and the absence of a centralized platform where students can view the status of their requests. Similarly, staff members experience difficulty in managing the volume of requests, tracking the status of tickets, and effectively communicating with students. \\ \\
+The proposed Student Life Support Service will streamline these processes by creating a user-friendly, centralized system that not only tracks and manages support tickets but also fosters better communication between students and staff.
+
+
+\subsection{Problem Statement}
+The lack of a streamlined, accessible system for managing student support services at VGU has led to inefficiencies in communication and delayed resolution of student requests. Students often face prolonged waiting times, uncertainty about the status of their tickets, and difficulty in communicating with the responsible staff. On the other hand, staff members face challenges in managing multiple requests efficiently, tracking their progress, and prioritizing tasks. \\ \\
+The specific problem addressed by this project is the absence of an integrated platform that facilitates smooth communication, real-time ticket management, and timely issue resolution between students and university staff. The current system is fragmented, lacking automation, and fails to provide transparency in the support process.
+
+
+
+\subsection{Objectives of the Project}
+The primary objective of this project is to develop a web-based Student Life Support Service that enables students to submit, track, and manage their support requests efficiently. The system will provide several key features, including:
+	% Left-aligned and wrap text at the same time ;)
+	\begin{longtable}{{|>{\raggedright\arraybackslash}m{4.8cm}|>{\raggedright\arraybackslash}m{11.5cm}|}} 
+		\hline
+		\textbf{Key features} & \textbf{Description}\\ \hline
+		Ticket Management & Allow students to submit support tickets related to dormitory issues or other university services. Students can track the progress of their tickets in real time.
+		\\ \hline
+		Real-time Communication & Enable direct communication between students and staff handling the tickets using a real-time messaging system.
+		\\ \hline
+		Role Management & Provide administrators with tools to manage user roles, such as students, dormitory staff, and student affairs personnel.
+		\\ \hline
+		Feedback Mechanism & Allow students to give feedback on the support provided and rate the resolution of their tickets.
+		\\ \hline
+		Notifications and Announcements & Provide students and staff with timely notifications and announcements related to their tickets or university activities.
+		\\ \hline
+		Responsive Design & Ensure the system is fully compatible with devices of all sizes, including desktops, laptops, tablets, and smartphones.
+		\\ \hline
+		
+		
+		\caption{System key features} % needs to go inside longtable environment
+		\label{tab:sys-key-features}
+	\end{longtable}
+	
+\noindent The focus of the system is to create an efficient, user-friendly, and responsive platform that can be accessed by students and staff across various devices, ensuring convenience and accessibility.
+
+\subsection{Scope of the Project}
+The Student Life Support Service project includes the development of a full-stack web application with several key components:
+
+	\begin{longtable}{{|>{\raggedright\arraybackslash}m{4.8cm}|>{\raggedright\arraybackslash}m{11.5cm}|}} 
+		\hline
+		\textbf{Key components} & \textbf{Description}\\ \hline
+		Frontend & Built with ReactJS, Material UI, and Vite, the frontend will focus on providing a responsive, interactive interface that can be accessed from any device. Users will be able to submit support tickets, communicate with staff, and view ticket updates.
+		\\ \hline
+		Backend & Using NodeJS, ExpressJS, and SocketIO, the backend will handle ticket processing, real-time communication, and manage user roles. JWT-based authentication will be used to secure the platform, with refresh tokens stored in Redis for session management.
+		\\ \hline
+		Database & A PostgreSQL database will store user data, tickets, and related information. This will allow efficient querying and management of all system data.
+		\\ \hline
+		
+		
+		\caption{System key components} % needs to go inside longtable environment
+		\label{tab:sys-key-components}
+	\end{longtable}
+\noindent The system does not cover advanced analytics or \acs{ai}-driven decision-making, as it is focused on the core functionality of ticket management and communication. Additionally, the scope does not include integration with third-party tools for external service management, though future expansions could allow for such features.
+
+\subsection{Thesis Structure}
+The thesis is organized into several sections, each addressing different aspects of the project:
+	\begin{itemize}
+		\item \textbf{Section 1: Introduction} – Provides an overview of the project background, objectives, problem statement, scope, and thesis structure.
+		
+		\item \textbf{Section 2: Literature Review} – Reviews existing solutions and technologies related to student support services, analyzing gaps in current systems that the Student Life Support Service aims to address.
+		
+		\item \textbf{Section 3: System Design} – Discusses the system's functional and non-functional requirements, architecture, database design, and API structure. It also covers the UI/UX design approach and how the responsive feature is implemented.
+		
+		\item \textbf{Section 4: System Implementation} – Details the step-by-step implementation of the frontend, backend, database, and security mechanisms. It includes code snippets, system flows, and real-time messaging features.
+		
+%		\item \textbf{Section 5: System Testing and Evaluation} – Explores the system's testing strategy, including unit, integration, and user acceptance testing. It presents the performance and security testing results.
+		
+		\item \textbf{Section 5: Results and Discussion} – Analyzes the results of the project, discussing whether the initial objectives were met.
+		
+		\item \textbf{Section 6: Conclusion and Future Work} – Concludes the thesis by summarizing the project outcomes and discussing possible future enhancements, such as extending the system to other universities or integrating advanced analytics features.
+	\end{itemize}
+

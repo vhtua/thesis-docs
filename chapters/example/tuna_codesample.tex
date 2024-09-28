@@ -1,0 +1,33 @@
+\section{Tuna Code Sample}
+
+% Example R code block
+\begin{lstlisting}[language=R, caption=Example R Code to Calculate Distance]
+	# Calculate the points distance
+	point_dist <- dist(df_dummy, method = "canberra")      # Using Canberra distance
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Javascript, caption=Example JS Code]
+	function addNumbers(a, b) {
+		if (typeof a !== 'number' || typeof b !== 'number') {
+			console.error('Both arguments must be numbers');
+			return null;
+		}
+		const sum = a + b;
+		return sum;
+	}
+	// Handle const
+	
+	async function fetchData(url) {
+		try {
+			const response = await fetch(url);
+			const data = await response.json();
+			return data;
+		} catch (error) {
+			console.error('Error fetching data:', error);
+		}
+	}
+	
+	console.log(addNumbers(5, 10));
+	fetchData('https://api.example.com/data');
+\end{lstlisting}
