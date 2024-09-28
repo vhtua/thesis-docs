@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 03:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 04:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1546,6 +1546,7 @@ Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
 \c@g@acro@rest@int=\count453
 \c@g@acro@ai@int=\count454
 \c@g@acro@sql@int=\count455
+\c@g@acro@rdbms@int=\count456
 )
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > re
 port.aex <nul: /p x=^%~$PATH:i>> report.aex)...executed.
@@ -1615,16 +1616,16 @@ LaTeX Font Info:    ... okay on input line 134.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count456
+\scratchcounter=\count457
 \scratchdimen=\dimen357
 \scratchbox=\box157
-\nofMPsegments=\count457
-\nofMParguments=\count458
+\nofMPsegments=\count458
+\nofMParguments=\count459
 \everyMPshowfont=\toks54
-\MPscratchCnt=\count459
+\MPscratchCnt=\count460
 \MPscratchDim=\dimen358
-\MPnumerator=\count460
-\makeMPintoPDFobject=\count461
+\MPnumerator=\count461
+\makeMPintoPDFobject=\count462
 \everyMPtoPDFconversion=\toks55
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -1650,7 +1651,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count462
+\c@lstlisting=\count463
 
 (c:/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionar
 y-english.trsl
@@ -1670,12 +1671,12 @@ erthousand on input line 134.
 LaTeX Info: Redefining \ohm on input line 134.
 Package gensymb Info: Using \textohm for \ohm on input line 134.
 Package gensymb Info: Using \textmu for \micro on input line 134.
-<graphics/frauaslogo.png, id=67, 546.04pt x 228.855pt>
+<graphics/frauaslogo.png, id=103, 546.04pt x 228.855pt>
 File: graphics/frauaslogo.png Graphic file (type png)
 <use graphics/frauaslogo.png>
 Package pdftex.def Info: graphics/frauaslogo.png  used on input line 151.
 (pdftex.def)             Requested size: 136.50966pt x 57.21361pt.
-<graphics/vguLogo2Center.png, id=68, 376.40625pt x 132.495pt>
+<graphics/vguLogo2Center.png, id=104, 376.40625pt x 132.495pt>
 File: graphics/vguLogo2Center.png Graphic file (type png)
 <use graphics/vguLogo2Center.png>
 Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 153.
@@ -1879,7 +1880,7 @@ Overfull \hbox (33.02196pt too wide) in alignment at lines 25--45
 
 
 ]
-<graphics/React_Logo_SVG.png, id=194, 16.5605pt x 15.26878pt>
+<graphics/React_Logo_SVG.png, id=243, 16.5605pt x 15.26878pt>
 File: graphics/React_Logo_SVG.png Graphic file (type png)
 <use graphics/React_Logo_SVG.png>
 Package pdftex.def Info: graphics/React_Logo_SVG.png  used on input line 70.
@@ -1892,28 +1893,28 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 67--79
 [14]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 82.
-<graphics/material-ui-480.png, id=202, 481.8pt x 481.8pt>
+<graphics/material-ui-480.png, id=251, 481.8pt x 481.8pt>
 File: graphics/material-ui-480.png Graphic file (type png)
 <use graphics/material-ui-480.png>
 Package pdftex.def Info: graphics/material-ui-480.png  used on input line 113.
-(pdftex.def)             Requested size: 72.55525pt x 72.55359pt.
+(pdftex.def)             Requested size: 60.4621pt x 60.4601pt.
 
 Overfull \hbox (5.43848pt too wide) in paragraph at lines 106--119
 [][] 
  []
 
-<graphics/vite.png, id=203, 3011.25pt x 3023.295pt>
+<graphics/vite.png, id=252, 3011.25pt x 3023.295pt>
 File: graphics/vite.png Graphic file (type png)
 <use graphics/vite.png>
 Package pdftex.def Info: graphics/vite.png  used on input line 125.
-(pdftex.def)             Requested size: 60.4621pt x 60.6632pt.
+(pdftex.def)             Requested size: 54.41551pt x 54.61993pt.
 
 Overfull \hbox (5.43848pt too wide) in paragraph at lines 122--135
 [][]
  []
 
 [15 <./graphics/React_Logo_SVG.png>]
-<graphics/nodejs.png, id=236, 411.136pt x 411.136pt>
+<graphics/nodejs.png, id=285, 411.136pt x 411.136pt>
 File: graphics/nodejs.png Graphic file (type png)
 <use graphics/nodejs.png>
 Package pdftex.def Info: graphics/nodejs.png  used on input line 143.
@@ -1923,7 +1924,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 140--152
 [][] 
  []
 
-<graphics/expressjs.png, id=237, 466.74374pt x 141.52875pt>
+<graphics/expressjs.png, id=286, 466.74374pt x 141.52875pt>
 File: graphics/expressjs.png Graphic file (type png)
 <use graphics/expressjs.png>
 Package pdftex.def Info: graphics/expressjs.png  used on input line 162.
@@ -1938,12 +1939,12 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 155--168
 [][] 
  []
 
-<graphics/socket-io.512x512.png, id=238, 513.92pt x 513.92pt>
+<graphics/socket-io.512x512.png, id=287, 513.92pt x 513.92pt>
 File: graphics/socket-io.512x512.png Graphic file (type png)
 <use graphics/socket-io.512x512.png>
 Package pdftex.def Info: graphics/socket-io.512x512.png  used on input line 173
 .
-(pdftex.def)             Requested size: 60.4621pt x 60.4601pt.
+(pdftex.def)             Requested size: 54.41551pt x 54.4141pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 174--174
 []\T5/cmr/m/n/12 Figure 6: |[]SocketIO
@@ -1954,7 +1955,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 170--182
 [][] 
  []
 
-<graphics/jwt-logo.png, id=240, 300.12125pt x 301.125pt>
+<graphics/jwt-logo.png, id=289, 300.12125pt x 301.125pt>
 File: graphics/jwt-logo.png Graphic file (type png)
 <use graphics/jwt-logo.png>
 Package pdftex.def Info: graphics/jwt-logo.png  used on input line 189.
@@ -1969,7 +1970,7 @@ ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
 
 pdfTeX warning: pdflatex.exe (file ./graphics/jwt-explained.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/jwt-explained.pdf, id=254, 442.53331pt x 209.8239pt>
+<graphics/jwt-explained.pdf, id=304, 442.53331pt x 209.8239pt>
 File: graphics/jwt-explained.pdf Graphic file (type pdf)
 <use graphics/jwt-explained.pdf>
 Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 200.
@@ -1979,11 +1980,27 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 200--201
  [] 
  []
 
-) [17 <./graphics/jwt-logo.png> <./graphics/jwt-explained.pdf>] (./report.bbl)
-[18
+<graphics/redis.png, id=305, 598.235pt x 513.92pt>
+File: graphics/redis.png Graphic file (type png)
+<use graphics/redis.png>
+Package pdftex.def Info: graphics/redis.png  used on input line 208.
+(pdftex.def)             Requested size: 60.4621pt x 51.93608pt.
+
+Overfull \hbox (5.43848pt too wide) in paragraph at lines 205--217
+[][] 
+ []
+
+<graphics/postgresql.png, id=306, 852.18375pt x 832.10875pt>
+File: graphics/postgresql.png Graphic file (type png)
+<use graphics/postgresql.png>
+Package pdftex.def Info: graphics/postgresql.png  used on input line 224.
+(pdftex.def)             Requested size: 85.22336pt x 83.21574pt.
+[17 <./graphics/jwt-logo.png> <./graphics/jwt-explained.pdf> <./graphics/redis.
+png>] [18 <./graphics/postgresql.png>] [19]) [20] (./report.bbl) [21
 
 
-] 
+]
+
 enddocument/afterlastpage: lastpage setting LastPage.
 (./report.aux (./chapters/declarations.aux) (./chapters/acknowledgments.aux)
 (./chapters/abstract.aux) (./chapters/1_introduction.aux)
@@ -1993,16 +2010,16 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 1AA7E9DAF33513D7B1B3706D6AE4B333;3030.
+(rerunfilecheck)             Checksum: B33181CB676ED442FF64194C4AEF8ACE;5220.
  ) 
 Here is how much of TeX's memory you used:
- 43959 strings out of 474116
- 906975 string characters out of 5747717
+ 44094 strings out of 474116
+ 911761 string characters out of 5747717
  2058190 words of memory out of 5000000
- 65514 multiletter control sequences out of 15000+600000
- 578113 words of font info for 80 fonts, out of 8000000 for 9000
+ 65635 multiletter control sequences out of 15000+600000
+ 578417 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,19n,107p,886b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,19n,107p,1288b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
 ive/2024/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb><c:/texlive/2024/texmf-dis
 t/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex
@@ -2010,10 +2027,10 @@ t/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex
 xlive/2024/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/vntex/vnr/vntt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vn
 tex/vnr/vntt8.pfb>
-Output written on report.pdf (19 pages, 508408 bytes).
+Output written on report.pdf (22 pages, 693038 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 411 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
