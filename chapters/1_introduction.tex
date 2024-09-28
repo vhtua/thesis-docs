@@ -10,8 +10,8 @@ The proposed Student Life Support Service will streamline these processes by cre
 
 
 \subsection{Problem Statement}
-The lack of a streamlined, accessible system for managing student support services at VGU has led to inefficiencies in communication and delayed resolution of student requests. Students often face prolonged waiting times, uncertainty about the status of their tickets, and difficulty in communicating with the responsible staff. On the other hand, staff members face challenges in managing multiple requests efficiently, tracking their progress, and prioritizing tasks. \\ \\
-The specific problem addressed by this project is the absence of an integrated platform that facilitates smooth communication, real-time ticket management, and timely issue resolution between students and university staff. The current system is fragmented, lacking automation, and fails to provide transparency in the support process.
+The lack of a streamlined, accessible system for managing student support services at VGU has led to inefficiencies in communication and delayed resolution of student requests. Students often face prolonged waiting times, uncertainty about the status of their tickets, and difficulty in communicating with the responsible staff. On the other hand, staff members face challenges in managing multiple requests efficiently, tracking their progress, and prioritizing tasks. \\
+\noindent The specific problem addressed by this project is the absence of an integrated platform that facilitates smooth communication, real-time ticket management, and timely issue resolution between students and university staff. The current system is fragmented, lacking automation, and fails to provide transparency in the support process.
 
 
 
@@ -38,7 +38,6 @@ The primary objective of this project is to develop a web-based Student Life Sup
 		\caption{System key features} % needs to go inside longtable environment
 		\label{tab:sys-key-features}
 	\end{longtable}
-	
 \noindent The focus of the system is to create an efficient, user-friendly, and responsive platform that can be accessed by students and staff across various devices, ensuring convenience and accessibility.
 
 \subsection{Scope of the Project}
@@ -51,7 +50,7 @@ The Student Life Support Service project includes the development of a full-stac
 		\\ \hline
 		Backend & Using NodeJS, ExpressJS, and SocketIO, the backend will handle ticket processing, real-time communication, and manage user roles. JWT-based authentication will be used to secure the platform, with refresh tokens stored in Redis for session management.
 		\\ \hline
-		Database & A PostgreSQL database will store user data, tickets, and related information. This will allow efficient querying and management of all system data.
+		Database & A Postgre\acs{sql} database will store user data, tickets, and related information. This will allow efficient querying and management of all system data.
 		\\ \hline
 		
 		
@@ -59,6 +58,8 @@ The Student Life Support Service project includes the development of a full-stac
 		\label{tab:sys-key-components}
 	\end{longtable}
 \noindent The system does not cover advanced analytics or \acs{ai}-driven decision-making, as it is focused on the core functionality of ticket management and communication. Additionally, the scope does not include integration with third-party tools for external service management, though future expansions could allow for such features.
+
+\newpage
 
 \subsection{Thesis Structure}
 The thesis is organized into several sections, each addressing different aspects of the project:

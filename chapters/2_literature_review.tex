@@ -19,15 +19,25 @@
 		\subsubsection{Existing University Ticketing Systems}
 		Several universities have adopted formal ticket management systems for handling student support services. These systems are often integrated into larger university management platforms or custom-built web applications. Common examples include:
 		
-		
-		\begin{longtable}{{|m{4cm}|m{6cm}|m{6cm}|}} 
+		\begin{longtable}{{|l|m{6cm}|m{6cm}|}} 
 			\hline
 			\textbf{Systems} & \textbf{Features} &\textbf{Limitations}\\ \hline
-			JIRA Service Management & JIRA offers a robust ticket management system with features like customizable workflows, automated prioritization, and detailed tracking. Users can submit issues, track their status, and communicate with responsible parties. & JIRA is highly complex, designed primarily for enterprise IT systems, making it overkill for universities that require simpler workflows. It may also be costly and difficult to adapt to student needs without significant customization.
+			\endhead
+			JIRA Service Management 
+			& Offers customizable workflows, automated prioritization, and detailed issue tracking.
+			& Too complex for university needs, expensive, and difficult to adapt without major customization.
 			\\ \hline
-			Zendesk &  A widely-used customer support platform, Zendesk provides email, live chat, and ticketing systems. It also offers automation and analytics. & Zendesk’s focus is on customer service for businesses, so its workflows may not directly match the needs of a university setting, where student requests can be highly varied and require more personalized handling. It also lacks real-time communication features tailored for quick staff-student interactions.
+			Freshdesk 
+			& Supports ticket management, multi-channel communication, and agent collaboration. 
+			& Feature-heavy and expensive for universities; lacks educational-specific tools.
 			\\ \hline
-			Freshdesk & Freshdesk includes support ticket management, knowledge base integration, and multi-channel communication (email, chat, etc.). It also supports collaboration between support agents. &  While Freshdesk is more user-friendly, it may still be too feature-heavy and expensive for small to medium-sized universities. Its primary market is businesses, so it lacks some specific educational features such as dormitory management or academic support.
+			Zendesk 
+			&  Provides email, live chat, and ticketing, with automation and analytics. 
+			& Geared towards businesses; lacks flexibility for diverse student needs and real-time communication.
+			\\ \hline
+			OSTicket
+			& Open-source, customizable, with email-based ticketing and status tracking.
+			& Requires customization for universities, not intuitive for non-technical users, lacks real-time communication.
 			\\ \hline
 			
 			\caption{Existing University Ticketing Systems} % needs to go inside longtable environment
@@ -44,6 +54,153 @@
 		\end{itemize}
 
 \subsection{Technology Review}
-	\subsection{This is subsection}
+
+	\subsubsection{Frontend: ReactJS, Material UI, Vite}
+	
+	
+%	\begin{wrapfigure}{l}{0.25\textwidth}
+%		\includegraphics[width=0.5\linewidth]{graphics/React_Logo_SVG.png} 
+%		\caption{React}
+%		\label{fig:react}
+%	\end{wrapfigure}
+	
+	  \begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.6\linewidth]{graphics/React_Logo_SVG.png}
+			\captionof{figure}{React Logo}
+			\label{fig:react}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\textbf{React} is a popular JavaScript library for building user interfaces, which provides a fast, scalable, and modular way to develop the frontend of web applications \cite{react}. Its component-based architecture allows for reusability and efficient state management using hooks like \textbf{\texttt{useState()}} and \textbf{\texttt{useEffect()}}. This enables a responsive and dynamic user experience, ideal for handling real-time ticket updates.
+		\end{minipage}
+	\end{tabular}
+	
+	\vspace*{1cm}
+	
+	\begin{lstlisting}[language=Javascript, caption=Example of a React component]
+		const Profile = () => {
+			
+			return (
+				<MainCard title="Personal Information">
+					<Grid container spacing={gridSpacing}>
+				
+						<Grid item xs={12} sm={6}>
+							<ProfileCard />
+						</Grid>
+					
+						<Grid item xs={12} sm={6}>
+							<SchoolDetailsCard/>
+						</Grid>
+				
+					</Grid>
+				</MainCard>
+			);
+		}
 		
+		export default Profile;
+	\end{lstlisting}
+	
+	
+	 \begin{tabular}{ @{} m{0.7\textwidth} m{0.25\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\textbf{Material UI} is a React-based UI component library that implements Google’s Material Design principles. Material UI ensures that the frontend is both visually appealing and functionally intuitive. Pre-built components like buttons, forms, and dialogs accelerate development while maintaining consistency in design. \cite{material-ui}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+				\centering
+			\includegraphics[width=0.6\linewidth]{graphics/material-ui-480.png}
+			\captionof{figure}{Material UI Logo}
+			\label{fig:material-ui}
+
+		\end{minipage}
+	\end{tabular}
+	
+	\vspace*{0.5 cm}
+	
+	\begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphics/vite.png}
+			\captionof{figure}{Vite Logo}
+			\label{fig:vite}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\textbf{Vite}, a modern frontend build tool that offers faster development speed compared to older tools like Webpack. Vite optimizes the build process for React applications by providing instant hot module replacement (HMR), which is useful for a smooth developer experience during iterative development cycles. \cite{vite}
+		\end{minipage}
+	\end{tabular}
+	\vspace*{0.5 cm}
+	
+	
+	\subsubsection{Backend: NodeJS, ExpressJS, SocketIO}
+	
+	\vspace*{0.5 cm}
+	\begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphics/nodejs.png}
+			\captionof{figure}{NodeJS Logo}
+			\label{fig:nodejs}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\textbf{NodeJS} is a runtime that enables JavaScript to be used for server-side scripting, making it possible to use a single language (JavaScript) throughout the stack. NodeJS is non-blocking and event-driven, making it ideal for handling I/O-heavy tasks like managing support ticket requests in real time.
+		\end{minipage}
+	\end{tabular}
+	
+	\vspace*{0.5cm}
+	
+	\begin{tabular}{ @{} m{0.7\textwidth} m{0.25\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\textbf{ExpressJS} is a minimalist web framework for NodeJS, Express simplifies routing, middleware management, and API handling. It serves as the backbone of the server, processing requests from the frontend, interacting with the database, and managing the business logic.
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.8\linewidth]{graphics/expressjs.png}
+			\captionof{figure}{Expressjs Logo}
+			\label{fig:expressjs}
+			
+		\end{minipage}
+	\end{tabular}
+	
+	\vspace*{0.5cm}
+	\begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphics/socket-io.512x512.png}
+			\captionof{figure}{SocketIO Logo}
+			\label{fig:socketio}
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			\textbf{SocketIO} is a JavaScript library that enables real-time, bidirectional communication between clients and servers. SocketIO is used to implement features such as real-time messaging between students and staff, making the system more interactive and responsive. \cite{socketio}
+		\end{minipage}
+	\end{tabular}
+	
+	
+	\subsubsection{Authentication: JWT, Redis}
+	\vspace*{0.5cm}
+	\begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
+		\begin{minipage}{\linewidth}
+			\centering
+			\includegraphics[width=0.5\linewidth]{graphics/jwt-logo.png}
+			\captionof{figure}{JWT Logo}
+			\label{fig:jwt }
+		\end{minipage}
+		&
+		\begin{minipage}{\linewidth}
+			JWT (JSON Web Tokens)is a token-based authentication system that provides secure stateless authentication for users. JWT is ideal for modern web applications because tokens can be stored on the client-side (in local storage or cookies) and are transmitted with each request, allowing for scalability.
+		\end{minipage}
+	\end{tabular}
+	
+	\begin{center}
+		\includegraphics[width=1.1\columnwidth]{graphics/jwt-explained.pdf}
+	\end{center}
+	
+	
+	
+	
 			
