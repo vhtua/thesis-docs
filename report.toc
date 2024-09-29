@@ -24,3 +24,9 @@
 \contentsline {subsection}{\numberline {2.4}Gap Analysis}{19}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}What is Missing from Existing Solutions}{19}{subsubsection.2.4.1}%
 \contentsline {subsubsection}{\numberline {2.4.2}How the Student Life Support Service Fills These Gaps}{20}{subsubsection.2.4.2}%
+\contentsline {section}{\numberline {3}System Design}{21}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Functional Requirements}{21}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{24}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Use Case Diagrams}{26}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}System Architecture}{27}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Frontend Design}{27}{subsection.3.5}%

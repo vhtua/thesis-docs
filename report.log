@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 04:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 16:34
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1556,29 +1556,29 @@ runsystem(del report.aex)...executed.
 
 (./report.aux (./chapters/declarations.aux) (./chapters/acknowledgments.aux)
 (./chapters/abstract.aux) (./chapters/1_introduction.aux)
-(./chapters/2_literature_review.aux))
+(./chapters/2_literature_review.aux) (./chapters/3_system_design.aux))
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 134.
-LaTeX Font Info:    ... okay on input line 134.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1636,7 +1636,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 134.
+Package hyperref Info: Link coloring ON on input line 140.
 
 (./report.out) (./report.out)
 \@outlinefile=\write6
@@ -1659,27 +1659,27 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 134.
+or `english'. on input line 140.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 134.
-Package gensymb Info: Math companion symbols declared on input line 134.
-LaTeX Info: Redefining \degree on input line 134.
-LaTeX Info: Redefining \celsius on input line 134.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
+Package gensymb Info: Math companion symbols declared on input line 140.
+LaTeX Info: Redefining \degree on input line 140.
+LaTeX Info: Redefining \celsius on input line 140.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 134.
-LaTeX Info: Redefining \ohm on input line 134.
-Package gensymb Info: Using \textohm for \ohm on input line 134.
-Package gensymb Info: Using \textmu for \micro on input line 134.
-<graphics/frauaslogo.png, id=103, 546.04pt x 228.855pt>
+erthousand on input line 140.
+LaTeX Info: Redefining \ohm on input line 140.
+Package gensymb Info: Using \textohm for \ohm on input line 140.
+Package gensymb Info: Using \textmu for \micro on input line 140.
+<graphics/frauaslogo.png, id=127, 546.04pt x 228.855pt>
 File: graphics/frauaslogo.png Graphic file (type png)
 <use graphics/frauaslogo.png>
-Package pdftex.def Info: graphics/frauaslogo.png  used on input line 151.
+Package pdftex.def Info: graphics/frauaslogo.png  used on input line 157.
 (pdftex.def)             Requested size: 136.50966pt x 57.21361pt.
-<graphics/vguLogo2Center.png, id=104, 376.40625pt x 132.495pt>
+<graphics/vguLogo2Center.png, id=128, 376.40625pt x 132.495pt>
 File: graphics/vguLogo2Center.png Graphic file (type png)
 <use graphics/vguLogo2Center.png>
-Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 153.
+Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 159.
 (pdftex.def)             Requested size: 150.55983pt x 52.99706pt.
  [1
 
@@ -1706,43 +1706,43 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 2
-04.
+10.
 
 (c:/texlive/2024/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 204.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 210.
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 204.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 210.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.204 \include{chapters/declarations}
+l.210 \include{chapters/declarations}
                                       [1
 
 ]
 \openout2 = `chapters/acknowledgments.aux'.
 
  (./chapters/acknowledgments.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 12--205
+Underfull \hbox (badness 10000) in paragraph at lines 12--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--205
+Underfull \hbox (badness 10000) in paragraph at lines 12--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--205
+Underfull \hbox (badness 10000) in paragraph at lines 12--211
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--205
+Underfull \hbox (badness 10000) in paragraph at lines 12--211
 
  []
 
@@ -1754,22 +1754,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--205
 \openout2 = `chapters/abstract.aux'.
 
  (./chapters/abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--206
+Underfull \hbox (badness 10000) in paragraph at lines 3--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--206
+Underfull \hbox (badness 10000) in paragraph at lines 3--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--206
+Underfull \hbox (badness 10000) in paragraph at lines 3--212
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--206
+Underfull \hbox (badness 10000) in paragraph at lines 3--212
 
  []
 
@@ -1880,7 +1880,7 @@ Overfull \hbox (33.02196pt too wide) in alignment at lines 25--45
 
 
 ]
-<graphics/React_Logo_SVG.png, id=243, 16.5605pt x 15.26878pt>
+<graphics/React_Logo_SVG.png, id=288, 16.5605pt x 15.26878pt>
 File: graphics/React_Logo_SVG.png Graphic file (type png)
 <use graphics/React_Logo_SVG.png>
 Package pdftex.def Info: graphics/React_Logo_SVG.png  used on input line 70.
@@ -1893,7 +1893,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 67--79
 [14]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 82.
-<graphics/material-ui-480.png, id=251, 481.8pt x 481.8pt>
+<graphics/material-ui-480.png, id=296, 481.8pt x 481.8pt>
 File: graphics/material-ui-480.png Graphic file (type png)
 <use graphics/material-ui-480.png>
 Package pdftex.def Info: graphics/material-ui-480.png  used on input line 113.
@@ -1903,7 +1903,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 106--119
 [][] 
  []
 
-<graphics/vite.png, id=252, 3011.25pt x 3023.295pt>
+<graphics/vite.png, id=297, 3011.25pt x 3023.295pt>
 File: graphics/vite.png Graphic file (type png)
 <use graphics/vite.png>
 Package pdftex.def Info: graphics/vite.png  used on input line 125.
@@ -1914,7 +1914,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 122--135
  []
 
 [15 <./graphics/React_Logo_SVG.png>]
-<graphics/nodejs.png, id=285, 411.136pt x 411.136pt>
+<graphics/nodejs.png, id=330, 411.136pt x 411.136pt>
 File: graphics/nodejs.png Graphic file (type png)
 <use graphics/nodejs.png>
 Package pdftex.def Info: graphics/nodejs.png  used on input line 143.
@@ -1924,7 +1924,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 140--152
 [][] 
  []
 
-<graphics/expressjs.png, id=286, 466.74374pt x 141.52875pt>
+<graphics/expressjs.png, id=331, 466.74374pt x 141.52875pt>
 File: graphics/expressjs.png Graphic file (type png)
 <use graphics/expressjs.png>
 Package pdftex.def Info: graphics/expressjs.png  used on input line 162.
@@ -1939,7 +1939,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 155--168
 [][] 
  []
 
-<graphics/socket-io.512x512.png, id=287, 513.92pt x 513.92pt>
+<graphics/socket-io.512x512.png, id=332, 513.92pt x 513.92pt>
 File: graphics/socket-io.512x512.png Graphic file (type png)
 <use graphics/socket-io.512x512.png>
 Package pdftex.def Info: graphics/socket-io.512x512.png  used on input line 173
@@ -1955,7 +1955,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 170--182
 [][] 
  []
 
-<graphics/jwt-logo.png, id=289, 300.12125pt x 301.125pt>
+<graphics/jwt-logo.png, id=334, 300.12125pt x 301.125pt>
 File: graphics/jwt-logo.png Graphic file (type png)
 <use graphics/jwt-logo.png>
 Package pdftex.def Info: graphics/jwt-logo.png  used on input line 189.
@@ -1965,59 +1965,287 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 186--198
 [][] 
  []
 
-[16 <./graphics/material-ui-480.png> <./graphics/vite.png> <./graphics/nodejs.p
-ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
+
 
 pdfTeX warning: pdflatex.exe (file ./graphics/jwt-explained.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/jwt-explained.pdf, id=304, 442.53331pt x 209.8239pt>
+<graphics/jwt-explained.pdf, id=335, 442.53331pt x 209.8239pt>
 File: graphics/jwt-explained.pdf Graphic file (type pdf)
 <use graphics/jwt-explained.pdf>
-Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 200.
+Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 201.
 (pdftex.def)             Requested size: 532.0695pt x 252.29327pt.
 
-Overfull \hbox (48.37263pt too wide) in paragraph at lines 200--201
- [] 
+Overfull \hbox (48.37263pt too wide) in paragraph at lines 201--202
+ [][] 
  []
 
-<graphics/redis.png, id=305, 598.235pt x 513.92pt>
+[16 <./graphics/material-ui-480.png> <./graphics/vite.png> <./graphics/nodejs.p
+ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
+<graphics/redis.png, id=349, 598.235pt x 513.92pt>
 File: graphics/redis.png Graphic file (type png)
 <use graphics/redis.png>
-Package pdftex.def Info: graphics/redis.png  used on input line 208.
+Package pdftex.def Info: graphics/redis.png  used on input line 211.
 (pdftex.def)             Requested size: 60.4621pt x 51.93608pt.
 
-Overfull \hbox (5.43848pt too wide) in paragraph at lines 205--217
+Overfull \hbox (5.43848pt too wide) in paragraph at lines 208--220
 [][] 
  []
 
-<graphics/postgresql.png, id=306, 852.18375pt x 832.10875pt>
+<graphics/postgresql.png, id=350, 852.18375pt x 832.10875pt>
 File: graphics/postgresql.png Graphic file (type png)
 <use graphics/postgresql.png>
-Package pdftex.def Info: graphics/postgresql.png  used on input line 224.
+Package pdftex.def Info: graphics/postgresql.png  used on input line 227.
 (pdftex.def)             Requested size: 85.22336pt x 83.21574pt.
 [17 <./graphics/jwt-logo.png> <./graphics/jwt-explained.pdf> <./graphics/redis.
-png>] [18 <./graphics/postgresql.png>] [19]) [20] (./report.bbl) [21
+png>] [18 <./graphics/postgresql.png>] [19]) [20]
+\openout2 = `chapters/3_system_design.aux'.
+
+
+(./chapters/3_system_design.tex
+Overfull \hbox (1.15147pt too wide) in paragraph at lines 12--12
+[]|\T5/cmr/bx/n/12 Priority| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--12
+[]|\T5/cmr/bx/n/12 User
+ []
+
+
+Overfull \hbox (2.82034pt too wide) in paragraph at lines 12--12
+[]|\T5/cmr/bx/n/12 Category| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+[]|\T5/cmr/m/n/12 Manage per-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+[]|\T5/cmr/m/n/12 Contact
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--16
+\T5/cmr/m/n/12 through mes-
+ []
+
+
+Underfull \hbox (badness 1215) in paragraph at lines 18--18
+[]|\T5/cmr/m/n/12 Users can view a news-feed
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 19--19
+[]|\T5/cmr/m/n/12 View no-ti-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--20
+[]|\T5/cmr/m/n/12 Feedback and
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 22--22
+\T5/cmr/m/n/12 pre-vi-ously han-dled sup-port
+ []
+
+
+Underfull \hbox (badness 1308) in paragraph at lines 23--23
+[]|\T5/cmr/m/n/12 Manage no-ti-fi-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--28
+[]|\T5/cmr/m/n/12 Manage feed-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T5/cmr/m/n/12 View sys-tem
+ []
+
+[21
+
 
 
 ]
+Overfull \hbox (19.50948pt too wide) in alignment at lines 39--42
+ [] [] 
+ []
 
+
+Overfull \hbox (19.50948pt too wide) in alignment at lines 42--90
+ [] [] 
+ []
+
+[22] [23]
+
+Package array Warning: Column L is already defined on input line 97.
+
+
+Overfull \hbox (3.07495pt too wide) in paragraph at lines 103--103
+[]|\T5/cmr/bx/n/12 No| 
+ []
+
+
+Overfull \hbox (4.91199pt too wide) in paragraph at lines 103--103
+[]|\T5/cmr/bx/n/12 Requirement| 
+ []
+
+
+Overfull \hbox (3.99693pt too wide) in paragraph at lines 103--103
+[]|\T5/cmr/bx/n/12 Priority| 
+ []
+
+
+Overfull \hbox (5.6658pt too wide) in paragraph at lines 103--103
+[]|\T5/cmr/bx/n/12 Category| 
+ []
+
+
+Overfull \hbox (1.49513pt too wide) in paragraph at lines 103--103
+[]|\T5/cmr/bx/n/12 Functioning| 
+ []
+
+
+Overfull \hbox (34.96576pt too wide) in alignment at lines 101--104
+ [] [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--105
+[]|\T5/cmr/m/n/12 Fast Re-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 105--105
+\T5/cmr/m/n/12 sub-mit-ting tick-ets, view-ing sta-tuses,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+[]|\T5/cmr/m/n/12 Real-Time
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
+\T5/cmr/m/n/12 Com-mu-ni-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]|\T5/cmr/m/n/12 Concurrent
+ []
+
+
+Underfull \hbox (badness 1748) in paragraph at lines 107--107
+\T5/cmr/m/n/12 con-cur-rent users with-out sig-nif-i-cant
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--108
+[]|\T5/cmr/m/n/12 Database
+ []
+
+
+Underfull \hbox (badness 7203) in paragraph at lines 108--108
+\T5/cmr/m/n/12 Query Op-ti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+[]|\T5/cmr/m/n/12 JWT-Based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--109
+\T5/cmr/m/n/12 Au-then-ti-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+[]|\T5/cmr/m/n/12 Role-Based
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 110--110
+\T5/cmr/m/n/12 Ac-cess Con-
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 112--112
+[]|\T5/cmr/m/n/12 Data Val-i-da-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
+[]|\T5/cmr/m/n/12 Database
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--115
+[]|\T5/cmr/m/n/12 User-Friendly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+[]|\T5/cmr/m/n/12 Cross-Device
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--116
+\T5/cmr/m/n/12 Com-pat-i-bil-
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 116--116
+\T5/cmr/m/n/12 func-tion well on desk-tops, lap-tops,
+ []
+
+
+Overfull \hbox (34.96576pt too wide) in alignment at lines 104--121
+ [] [] [] [] [] [] 
+ []
+
+[24] [25]
+
+pdfTeX warning: pdflatex.exe (file ./graphics/student use case.pdf): PDF inclus
+ion: found PDF version <1.7>, but at most version <1.5> allowed
+<graphics/student use case.pdf, id=410, 460.6008pt x 460.6008pt>
+File: graphics/student use case.pdf Graphic file (type pdf)
+<use graphics/student use case.pdf>
+Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
+
+(pdftex.def)             Requested size: 396.63496pt x 396.63608pt.
+<graphics/3-tier-arch.pdf, id=411, 1109.64563pt x 435.87843pt>
+File: graphics/3-tier-arch.pdf Graphic file (type pdf)
+<use graphics/3-tier-arch.pdf>
+Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 143.
+(pdftex.def)             Requested size: 338.58632pt x 132.99925pt.
+[26 <./graphics/student use case.pdf>]) [27 <./graphics/3-tier-arch.pdf>]
+(./report.bbl) [28
+
+
+] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./report.aux (./chapters/declarations.aux) (./chapters/acknowledgments.aux)
 (./chapters/abstract.aux) (./chapters/1_introduction.aux)
-(./chapters/2_literature_review.aux))
+(./chapters/2_literature_review.aux) (./chapters/3_system_design.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: B33181CB676ED442FF64194C4AEF8ACE;5220.
+(rerunfilecheck)             Checksum: BA6429C5816FBE409266F2535A4AD589;6145.
  ) 
 Here is how much of TeX's memory you used:
- 44094 strings out of 474116
- 911761 string characters out of 5747717
+ 44189 strings out of 474116
+ 914048 string characters out of 5747717
  2058190 words of memory out of 5000000
- 65635 multiletter control sequences out of 15000+600000
- 578417 words of font info for 81 fonts, out of 8000000 for 9000
+ 65700 multiletter control sequences out of 15000+600000
+ 578424 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,19n,107p,1288b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
@@ -2027,10 +2255,10 @@ t/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex
 xlive/2024/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/vntex/vnr/vntt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vn
 tex/vnr/vntt8.pfb>
-Output written on report.pdf (22 pages, 693038 bytes).
+Output written on report.pdf (29 pages, 788193 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 457 compressed objects within 5 object streams
+ 115 named destinations out of 1000 (max. 500000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -67,6 +67,12 @@
     % \addtocounter{page}{-1}%
     \newpage}
     
+%   Make /bigcdot
+\makeatletter
+\newcommand*\bigcdot{\mathpalette\bigcdot@{.5}}
+\newcommand*\bigcdot@[2]{\mathbin{\vcenter{\hbox{\scalebox{#2}{$\m@th#1\bullet$}}}}}
+\makeatother
+    
    
 % ========================================
 
@@ -221,6 +227,7 @@
 
 \include{chapters/1_introduction}
 \include{chapters/2_literature_review}
+\include{chapters/3_system_design}
 
 
 % ========================================= SAMPLE ===================================
