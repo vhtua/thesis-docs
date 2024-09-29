@@ -7,3 +7,12 @@
 \contentsline {table}{\numberline {5}{\ignorespaces Functional Requirements by User Roles}}{25}{table.5}%
 \contentsline {table}{\numberline {6}{\ignorespaces Non-Functional Requirements}}{27}{table.6}%
 \contentsline {table}{\numberline {7}{\ignorespaces User Entity}}{32}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Ticket Entity}}{33}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces User\_Ticket Relationship}}{33}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Ticket\_Type Entity}}{34}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Ticket\_Status Entity}}{35}{table.11}%
+\contentsline {table}{\numberline {12}{\ignorespaces Audience\_Type Entity}}{35}{table.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces Attachment Entity}}{36}{table.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces Rating Entity}}{37}{table.14}%
+\contentsline {table}{\numberline {15}{\ignorespaces Feedback Entity}}{38}{table.15}%
+\contentsline {table}{\numberline {16}{\ignorespaces Message Entity}}{39}{table.16}%

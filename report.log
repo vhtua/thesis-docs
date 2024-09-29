@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 18:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 22:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1677,12 +1677,12 @@ erthousand on input line 142.
 LaTeX Info: Redefining \ohm on input line 142.
 Package gensymb Info: Using \textohm for \ohm on input line 142.
 Package gensymb Info: Using \textmu for \micro on input line 142.
-<graphics/frauaslogo.png, id=143, 546.04pt x 228.855pt>
+<graphics/frauaslogo.png, id=179, 546.04pt x 228.855pt>
 File: graphics/frauaslogo.png Graphic file (type png)
 <use graphics/frauaslogo.png>
 Package pdftex.def Info: graphics/frauaslogo.png  used on input line 159.
 (pdftex.def)             Requested size: 136.50966pt x 57.21361pt.
-<graphics/vguLogo2Center.png, id=144, 376.40625pt x 132.495pt>
+<graphics/vguLogo2Center.png, id=180, 376.40625pt x 132.495pt>
 File: graphics/vguLogo2Center.png Graphic file (type png)
 <use graphics/vguLogo2Center.png>
 Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 161.
@@ -1887,7 +1887,7 @@ Overfull \hbox (33.02196pt too wide) in alignment at lines 25--45
 
 
 ]
-<graphics/React_Logo_SVG.png, id=324, 16.5605pt x 15.26878pt>
+<graphics/React_Logo_SVG.png, id=387, 16.5605pt x 15.26878pt>
 File: graphics/React_Logo_SVG.png Graphic file (type png)
 <use graphics/React_Logo_SVG.png>
 Package pdftex.def Info: graphics/React_Logo_SVG.png  used on input line 70.
@@ -1900,7 +1900,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 67--79
 [15]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 82.
-<graphics/material-ui-480.png, id=332, 481.8pt x 481.8pt>
+<graphics/material-ui-480.png, id=395, 481.8pt x 481.8pt>
 File: graphics/material-ui-480.png Graphic file (type png)
 <use graphics/material-ui-480.png>
 Package pdftex.def Info: graphics/material-ui-480.png  used on input line 113.
@@ -1910,7 +1910,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 106--119
 [][] 
  []
 
-<graphics/vite.png, id=333, 3011.25pt x 3023.295pt>
+<graphics/vite.png, id=396, 3011.25pt x 3023.295pt>
 File: graphics/vite.png Graphic file (type png)
 <use graphics/vite.png>
 Package pdftex.def Info: graphics/vite.png  used on input line 125.
@@ -1921,7 +1921,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 122--135
  []
 
 [16 <./graphics/React_Logo_SVG.png>]
-<graphics/nodejs.png, id=365, 411.136pt x 411.136pt>
+<graphics/nodejs.png, id=428, 411.136pt x 411.136pt>
 File: graphics/nodejs.png Graphic file (type png)
 <use graphics/nodejs.png>
 Package pdftex.def Info: graphics/nodejs.png  used on input line 143.
@@ -1931,7 +1931,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 140--152
 [][] 
  []
 
-<graphics/expressjs.png, id=366, 466.74374pt x 141.52875pt>
+<graphics/expressjs.png, id=429, 466.74374pt x 141.52875pt>
 File: graphics/expressjs.png Graphic file (type png)
 <use graphics/expressjs.png>
 Package pdftex.def Info: graphics/expressjs.png  used on input line 162.
@@ -1946,7 +1946,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 155--168
 [][] 
  []
 
-<graphics/socket-io.512x512.png, id=367, 513.92pt x 513.92pt>
+<graphics/socket-io.512x512.png, id=430, 513.92pt x 513.92pt>
 File: graphics/socket-io.512x512.png Graphic file (type png)
 <use graphics/socket-io.512x512.png>
 Package pdftex.def Info: graphics/socket-io.512x512.png  used on input line 173
@@ -1962,7 +1962,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 170--182
 [][] 
  []
 
-<graphics/jwt-logo.png, id=369, 300.12125pt x 301.125pt>
+<graphics/jwt-logo.png, id=432, 300.12125pt x 301.125pt>
 File: graphics/jwt-logo.png Graphic file (type png)
 <use graphics/jwt-logo.png>
 Package pdftex.def Info: graphics/jwt-logo.png  used on input line 189.
@@ -1976,7 +1976,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 186--198
 
 pdfTeX warning: pdflatex.exe (file ./graphics/jwt-explained.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/jwt-explained.pdf, id=370, 442.53331pt x 209.8239pt>
+<graphics/jwt-explained.pdf, id=433, 442.53331pt x 209.8239pt>
 File: graphics/jwt-explained.pdf Graphic file (type pdf)
 <use graphics/jwt-explained.pdf>
 Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 201.
@@ -1988,7 +1988,7 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 201--202
 
 [17 <./graphics/material-ui-480.png> <./graphics/vite.png> <./graphics/nodejs.p
 ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
-<graphics/redis.png, id=384, 598.235pt x 513.92pt>
+<graphics/redis.png, id=447, 598.235pt x 513.92pt>
 File: graphics/redis.png Graphic file (type png)
 <use graphics/redis.png>
 Package pdftex.def Info: graphics/redis.png  used on input line 211.
@@ -1998,7 +1998,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 208--220
 [][] 
  []
 
-<graphics/postgresql.png, id=385, 852.18375pt x 832.10875pt>
+<graphics/postgresql.png, id=448, 852.18375pt x 832.10875pt>
 File: graphics/postgresql.png Graphic file (type png)
 <use graphics/postgresql.png>
 Package pdftex.def Info: graphics/postgresql.png  used on input line 227.
@@ -2220,7 +2220,7 @@ Overfull \hbox (34.96576pt too wide) in alignment at lines 104--121
 
 pdfTeX warning: pdflatex.exe (file ./graphics/student use case.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/student use case.pdf, id=446, 460.6008pt x 460.6008pt>
+<graphics/student use case.pdf, id=509, 460.6008pt x 460.6008pt>
 File: graphics/student use case.pdf Graphic file (type pdf)
 <use graphics/student use case.pdf>
 Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
@@ -2230,7 +2230,7 @@ Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/staff use case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/staff use case.pdf, id=447, 475.7775pt x 460.6008pt>
+<graphics/staff use case.pdf, id=510, 475.7775pt x 460.6008pt>
 File: graphics/staff use case.pdf Graphic file (type pdf)
 <use graphics/staff use case.pdf>
 Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
@@ -2239,7 +2239,7 @@ Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/admin-use-case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/admin-use-case.pdf, id=462, 491.91779pt x 681.50606pt>
+<graphics/admin-use-case.pdf, id=525, 491.91779pt x 681.50606pt>
 File: graphics/admin-use-case.pdf Graphic file (type pdf)
 <use graphics/admin-use-case.pdf>
 Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
@@ -2248,58 +2248,308 @@ Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/sys-workflow.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/sys-workflow.pdf, id=477, 569.24669pt x 566.115pt>
+<graphics/sys-workflow.pdf, id=540, 569.24669pt x 566.115pt>
 File: graphics/sys-workflow.pdf Graphic file (type pdf)
 <use graphics/sys-workflow.pdf>
 Package pdftex.def Info: graphics/sys-workflow.pdf  used on input line 158.
-(pdftex.def)             Requested size: 406.30359pt x 404.08673pt.
+(pdftex.def)             Requested size: 483.69687pt x 481.05318pt.
 [29 <./graphics/admin-use-case.pdf>]
-<graphics/er-diagram.pdf, id=492, 1433.18333pt x 759.92268pt>
-File: graphics/er-diagram.pdf Graphic file (type pdf)
-<use graphics/er-diagram.pdf>
-Package pdftex.def Info: graphics/er-diagram.pdf  used on input line 168.
-(pdftex.def)             Requested size: 483.69687pt x 256.46863pt.
+<graphics/er-diagram-v2.pdf, id=555, 1418.10037pt x 759.92268pt>
+File: graphics/er-diagram-v2.pdf Graphic file (type pdf)
+<use graphics/er-diagram-v2.pdf>
+Package pdftex.def Info: graphics/er-diagram-v2.pdf  used on input line 168.
+(pdftex.def)             Requested size: 483.69687pt x 259.19357pt.
  [30 <./graphics/sys-workflow.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
+Underfull \hbox (badness 10000) in paragraph at lines 182--182
 []|\T5/cmr/bx/n/12 Key
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--181
-[]|\T5/cmr/bx/n/12 Filed
- []
-
-
-Overfull \hbox (2.64333pt too wide) in paragraph at lines 181--181
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 182--182
 []|\T5/cmr/bx/n/12 Constraints| 
  []
 
 
-Overfull \hbox (33.94716pt too wide) in alignment at lines 179--182
+Overfull \hbox (33.94716pt too wide) in alignment at lines 180--183
  [] [] [] [] [] 
  []
 
 
-Overfull \hbox (2.42125pt too wide) in paragraph at lines 184--184
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 185--185
 []|\T5/cmr/m/n/12 Primary| 
  []
 
 
-Overfull \hbox (33.94716pt too wide) in alignment at lines 182--196
+Overfull \hbox (33.94716pt too wide) in alignment at lines 183--204
  [] [] [] [] [] 
  []
 
-[31 <./graphics/er-diagram.pdf>]
-<graphics/3-tier-arch.pdf, id=542, 1109.64563pt x 435.87843pt>
+[31 <./graphics/er-diagram-v2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--215
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 215--215
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 213--216
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 218--218
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (1.06174pt too wide) in paragraph at lines 222--222
+[]|\T5/cmr/m/n/12 audience_type_id| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 216--231
+ [] [] [] [] [] 
+ []
+
+[32]
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 238--238
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 236--239
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 241--241
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 243--243
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 239--248
+ [] [] [] [] [] 
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 257--257
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 255--258
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 260--260
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (2.69328pt too wide) in paragraph at lines 261--261
+[]|\T5/cmr/m/n/12 ticket_type_name| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 258--268
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 293--293
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 291--294
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 296--296
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (33.94717pt too wide) in alignment at lines 294--302
+ [] [] [] [] [] 
+ []
+
+[34]
+Underfull \hbox (badness 10000) in paragraph at lines 323--323
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 323--323
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94716pt too wide) in alignment at lines 321--324
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 326--326
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (4.4561pt too wide) in paragraph at lines 327--327
+[]|\T5/cmr/m/n/12 audience_type_name| 
+ []
+
+
+Overfull \hbox (33.94716pt too wide) in alignment at lines 324--332
+ [] [] [] [] [] 
+ []
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 352--352
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (22.56624pt too wide) in alignment at lines 350--353
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 355--355
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (0.73549pt too wide) in paragraph at lines 357--357
+[]|\T5/cmr/m/n/12 attachment_name| 
+ []
+
+
+Overfull \hbox (22.56624pt too wide) in alignment at lines 353--364
+ [] [] [] [] [] 
+ []
+
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 388--388
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 388--388
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (11.18488pt too wide) in alignment at lines 386--389
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 391--391
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (11.18488pt too wide) in alignment at lines 389--399
+ [] [] [] [] [] 
+ []
+
+[37]
+Underfull \hbox (badness 10000) in paragraph at lines 421--421
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 421--421
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (11.18488pt too wide) in alignment at lines 419--422
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 424--424
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (11.18488pt too wide) in alignment at lines 422--434
+ [] [] [] [] [] 
+ []
+
+[38]
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 460--460
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (22.56581pt too wide) in alignment at lines 458--461
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 463--463
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (1.21808pt too wide) in paragraph at lines 466--466
+[]|\T5/cmr/m/n/12 message_details| 
+ []
+
+
+Overfull \hbox (22.56581pt too wide) in alignment at lines 461--472
+ [] [] [] [] [] 
+ []
+
+[39]
+<graphics/3-tier-arch.pdf, id=659, 1109.64563pt x 435.87843pt>
 File: graphics/3-tier-arch.pdf Graphic file (type pdf)
 <use graphics/3-tier-arch.pdf>
-Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 206.
+Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 501.
 (pdftex.def)             Requested size: 338.58632pt x 132.99925pt.
- [32 <./graphics/3-tier-arch.pdf>]) [33]
-(./report.bbl) [34
+ [40 <./graphics/3-tier-arch.pdf>]) [41] (./report.bbl) [42
 
 
-] 
+]
+
 enddocument/afterlastpage: lastpage setting LastPage.
 (./report.aux (./chapters/declarations.aux) (./chapters/acknowledgments.aux)
 (./chapters/abstract.aux) (./chapters/1_introduction.aux)
@@ -2309,14 +2559,14 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: A8F83C481DA65639F690F4FBD6D553FD;6717.
+(rerunfilecheck)             Checksum: 01ACB97CAEBB36D56BC075D7FAD87527;8140.
  ) 
 Here is how much of TeX's memory you used:
- 44406 strings out of 474116
- 917401 string characters out of 5747717
+ 44470 strings out of 474116
+ 918312 string characters out of 5747717
  2058190 words of memory out of 5000000
- 65899 multiletter control sequences out of 15000+600000
- 578430 words of font info for 81 fonts, out of 8000000 for 9000
+ 65935 multiletter control sequences out of 15000+600000
+ 578438 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,20n,107p,1288b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
@@ -2326,10 +2576,10 @@ t/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex
 xlive/2024/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/vntex/vnr/vntt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vn
 tex/vnr/vntt8.pfb>
-Output written on report.pdf (35 pages, 1000340 bytes).
+Output written on report.pdf (43 pages, 1024039 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
- 375 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 805 PDF objects out of 1000 (max. 8388607)
+ 671 compressed objects within 7 object streams
+ 158 named destinations out of 1000 (max. 500000)
+ 447 words of extra memory for PDF output out of 10000 (max. 10000000)
 
