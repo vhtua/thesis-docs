@@ -173,7 +173,7 @@ The core functionality of the Student Life Support Service is its ticket-raising
 
 	\subsubsection{User Entity}
 %	\newcolumntype{L}{>{\arraybackslash}m{3.5cm}}
-	This table presents the essential data required for effective user management, including key details such as username, full name, email, and password (see Table \ref{tab:user-entity})
+	The User entity is fundamental to the system's user management, encompassing essential information that defines each user’s profile and access rights. This entity includes several key attributes that contribute to its operational integrity (see Table \ref{tab:user-entity})
 	
 	
 	
@@ -202,6 +202,7 @@ The core functionality of the Student Life Support Service is its ticket-raising
 		\label{tab:user-entity}
 		
 	\end{longtable}
+	
 	
 	
 	
@@ -251,6 +252,7 @@ The core functionality of the Student Life Support Service is its ticket-raising
 	
 	
 	\subsubsection{Ticket\_Type Entity}
+	The Ticket\_Type entity serves to classify different categories of tickets within the system, each defined by a unique identifier and a descriptive name. It also includes a priority level that indicates the urgency of each ticket type, where a higher value corresponds to a lower priority. This structure enables efficient ticket management and prioritization (see Table \ref{tab:ticket-type}).
 	
 	\begin{longtable}{|m{1.4cm}|m{3.3cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
 		\hline
@@ -267,26 +269,22 @@ The core functionality of the Student Life Support Service is its ticket-raising
 		
 	\end{longtable}
 	
-	This table defines the Ticket\_Type entity, which represents various types of tickets that can be created within the system. It consists of three fields:
+%	This table defines the Ticket\_Type entity, which represents various types of tickets that can be created within the system. It consists of three fields:
+%
+%	\begin{itemize}
+%		\item The \texttt{id} field, which is a primary key, represented as a serial integer, serving as the unique identifier for each ticket type.
+%		
+%		\item The \texttt{ticket\_type\_name} field, stored as a \texttt{varchar(255)}, holds the name of the ticket type, such as "Lost items" or "Harassment".
+%		
+%		\item The \texttt{priority} field, an integer, determines the urgency level of the ticket type, where a higher number indicates lower priority.
+%	\end{itemize}
 %	
-%	The id field, which is a primary key, represented as a serial integer, serving as the unique identifier for each ticket type.
-%	
-%	The \texttt{ticket\_type\_name} field, stored as a \texttt{varchar(255)}, holds the name of the ticket type, such as "Technical Issue" or "Academic Inquiry."
-	
-%	The priority field, an integer, determines the urgency level of the ticket type, where a higher number indicates lower priority.
-	\begin{itemize}
-		\item The \texttt{id} field, which is a primary key, represented as a serial integer, serving as the unique identifier for each ticket type.
-		
-		\item The \texttt{ticket\_type\_name} field, stored as a \texttt{varchar(255)}, holds the name of the ticket type, such as "Lost items" or "Harassment".
-		
-		\item The \texttt{priority} field, an integer, determines the urgency level of the ticket type, where a higher number indicates lower priority.
-	\end{itemize}
-	
-	\noindent All fields are marked as \texttt{NOT NULL}, ensuring that every ticket type has a unique identifier, name, and priority level. This structure is essential for organizing and managing different categories of support tickets in the system (refer to Table \ref{tab:ticket-type}).
+%	\noindent All fields are marked as \texttt{NOT NULL}, ensuring that every ticket type has a unique identifier, name, and priority level. This structure is essential for organizing and managing different categories of support tickets in the system (refer to Table \ref{tab:ticket-type}).
 	
 	
 	
 	\subsubsection{Ticket\_Status Entity}
+	The Ticket\_Status entity is designed to define various states that a ticket can be in within the system. Each status is uniquely identified by an ID and has a descriptive name, allowing for clear tracking and management of tickets throughout their lifecycle. This structured approach enhances the ability to monitor ticket progress and provides clarity to users regarding the current status of their tickets (see Table \ref{tab:ticket-status}).
 	
 	\begin{longtable}{|m{1.4cm}|m{3.3cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
 		\hline
@@ -302,21 +300,23 @@ The core functionality of the Student Life Support Service is its ticket-raising
 	\end{longtable}
 	
 	
-	This table describes the Ticket\_Status entity, which is used to represent the current status of a support ticket within the system. It contains two fields:
-	
-	
-	\begin{enumerate}
-		
-		\item The \texttt{id} field is the primary key, defined as a serial integer, serving as the unique identifier for each ticket status. This field is essential for distinguishing between different statuses.
-		
-		\item The \texttt{status\_name} field is a \texttt{varchar(255)} that stores the name of the ticket status, such as "pending," "in progress," "done," or "cancelled." These status names provide insight into the progress of each support ticket.
-	\end{enumerate}
-	
-	\noindent Both fields are marked as \texttt{NOT NULL}, ensuring that every ticket status has a unique identifier and name, which is crucial for tracking and managing the lifecycle of tickets (refer to Table \ref{tab:ticket-status}).
+%	This table describes the Ticket\_Status entity, which is used to represent the current status of a support ticket within the system. It contains two fields:
+%	
+%	
+%	\begin{enumerate}
+%		
+%		\item The \texttt{id} field is the primary key, defined as a serial integer, serving as the unique identifier for each ticket status. This field is essential for distinguishing between different statuses.
+%		
+%		\item The \texttt{status\_name} field is a \texttt{varchar(255)} that stores the name of the ticket status, such as "pending," "in progress," "done," or "cancelled." These status names provide insight into the progress of each support ticket.
+%	\end{enumerate}
+%	
+%	\noindent Both fields are marked as \texttt{NOT NULL}, ensuring that every ticket status has a unique identifier and name, which is crucial for tracking and managing the lifecycle of tickets (refer to Table \ref{tab:ticket-status}).
 	
 	
 	
 	\subsubsection{Audience\_Type Entity}
+	
+	The Audience\_Type entity categorizes target audiences for tickets in the system. Each type is uniquely identified by an ID and has a descriptive name, enhancing communication and ticket management for specific user groups (see Table \ref{tab:audience-type}).
 	
 	\begin{longtable}{|m{1.4cm}|m{3.8cm}|m{2.3cm}|m{2.3cm}|m{6.2cm}|}
 		\hline
@@ -332,20 +332,21 @@ The core functionality of the Student Life Support Service is its ticket-raising
 	\end{longtable}
 	
 	
-	This table outlines the Audience\_Type entity, which is used to categorize the audience for support tickets within the system. It includes two fields:
-	
-	\begin{itemize}
-		\item The \texttt{id} field, which is the primary key, is a serial integer that uniquely identifies each audience type. This field ensures each audience type is distinct and traceable.
-		
-		\item The \texttt{audience\_type\_name} field is a \texttt{varchar(255)} that stores the name of the audience type for a ticket. It could be either "private" or "public," where public tickets are visible to other students, while private tickets are only visible to the ticket creator and assigned staff.
-	\end{itemize}
-	
-
-	\noindent Both fields are defined as NOT NULL, ensuring that each audience type has a unique identifier and a clearly defined type name, which is essential for managing ticket visibility (refer to Table \ref{tab:audience-type}).
-	
+%	This table outlines the Audience\_Type entity, which is used to categorize the audience for support tickets within the system. It includes two fields:
+%	
+%	\begin{itemize}
+%		\item The \texttt{id} field, which is the primary key, is a serial integer that uniquely identifies each audience type. This field ensures each audience type is distinct and traceable.
+%		
+%		\item The \texttt{audience\_type\_name} field is a \texttt{varchar(255)} that stores the name of the audience type for a ticket. It could be either "private" or "public," where public tickets are visible to other students, while private tickets are only visible to the ticket creator and assigned staff.
+%	\end{itemize}
+%	
+%
+%	\noindent Both fields are defined as NOT NULL, ensuring that each audience type has a unique identifier and a clearly defined type name, which is essential for managing ticket visibility (refer to Table \ref{tab:audience-type}).
+%	
 	
 	
 	\subsubsection{Attachment Entity}
+	The Attachment entity manages files associated with tickets in the system. Each attachment is uniquely identified by an ID and linked to a specific ticket through a foreign key. The entity includes attributes for the original file name, its server \acs{url}, and the timestamp of its upload, ensuring organized storage and retrieval of related documents for user reference (see Table \ref{tab:attachment}).
 	
 	\begin{longtable}{|m{1.4cm}|m{3.3cm}|m{2.3cm}|m{2.3cm}|m{6.3cm}|}
 		\hline
@@ -363,25 +364,26 @@ The core functionality of the Student Life Support Service is its ticket-raising
 		
 	\end{longtable}
 	
-	The Attachment entity captures essential details about files associated with support tickets in the system. The table comprises the following key fields:
-	
-	\begin{itemize}
-		\item \texttt{id}: This primary key is a serial integer that uniquely identifies each attachment in the system, ensuring every file is traceable.
-		
-		\item \texttt{ticket\_id}: A foreign key linking the attachment to the specific ticket it belongs to, creating a clear relationship between files and their corresponding support tickets.
-		
-		\item \texttt{attachment\_name}: This field stores the original name of the file, providing users and administrators with a clear reference to the document.
-		
-		\item \texttt{url}: A \texttt{varchar(255)} field that holds the unique server address where the attachment is stored. It is constrained to be both \texttt{NOT NULL} and \texttt{UNIQUE}, ensuring each file is stored at a distinct location.
-		
-		\item \texttt{created\_date}: A timestamp with time zone that records the exact moment the attachment was uploaded to the system, offering important chronological information for ticket management.
-	\end{itemize}
-
-	\noindent This entity provides a robust structure for managing files, enabling easy access and secure storage of attachments related to user support requests (refer to Table \ref{tab:attachment}).
+%	The Attachment entity captures essential details about files associated with support tickets in the system. The table comprises the following key fields:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: This primary key is a serial integer that uniquely identifies each attachment in the system, ensuring every file is traceable.
+%		
+%		\item \texttt{ticket\_id}: A foreign key linking the attachment to the specific ticket it belongs to, creating a clear relationship between files and their corresponding support tickets.
+%		
+%		\item \texttt{attachment\_name}: This field stores the original name of the file, providing users and administrators with a clear reference to the document.
+%		
+%		\item \texttt{url}: A \texttt{varchar(255)} field that holds the unique server address where the attachment is stored. It is constrained to be both \texttt{NOT NULL} and \texttt{UNIQUE}, ensuring each file is stored at a distinct location.
+%		
+%		\item \texttt{created\_date}: A timestamp with time zone that records the exact moment the attachment was uploaded to the system, offering important chronological information for ticket management.
+%	\end{itemize}
+%
+%	\noindent This entity provides a robust structure for managing files, enabling easy access and secure storage of attachments related to user support requests (refer to Table \ref{tab:attachment}).
 	
 	
 	
 	\subsubsection{Rating Entity}
+	The Rating entity captures user ratings for tickets in the system. Each rating is uniquely identified by an ID and linked to a specific ticket through a foreign key. It includes a score reflecting the user's assessment and a timestamp indicating when the rating was given, enabling effective tracking of user feedback (see Table \ref{tab:rating}).
 	
 	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
 		\hline
@@ -398,23 +400,25 @@ The core functionality of the Student Life Support Service is its ticket-raising
 		
 	\end{longtable}
 	
-	The Rating entity is designed to capture and store feedback from users regarding their support tickets. This table includes several key fields:
-	
-	\begin{itemize}
-		\item \texttt{id}: A serial integer serving as the primary key, which uniquely identifies each rating entry in the system.
-		
-		\item \texttt{ticket\_id}: A foreign key that links the rating to the specific ticket being evaluated, ensuring that every rating is associated with a particular support request.
-		
-		\item \texttt{rating\_score}: A number field that holds the actual score or feedback provided by the user. This score reflects the user's level of satisfaction with the handling of their ticket.
-		
-		\item \texttt{created\_date}: A timestamp with time zone indicating when the rating was submitted, allowing for tracking and auditing of feedback over time.
-	\end{itemize}
-	
-	\noindent This entity is crucial for maintaining a structured and traceable system for user feedback, enabling continuous service improvement based on user satisfaction (refer to Table \ref{tab:rating}).
+%	The Rating entity is designed to capture and store feedback from users regarding their support tickets. This table includes several key fields:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: A serial integer serving as the primary key, which uniquely identifies each rating entry in the system.
+%		
+%		\item \texttt{ticket\_id}: A foreign key that links the rating to the specific ticket being evaluated, ensuring that every rating is associated with a particular support request.
+%		
+%		\item \texttt{rating\_score}: A number field that holds the actual score or feedback provided by the user. This score reflects the user's level of satisfaction with the handling of their ticket.
+%		
+%		\item \texttt{created\_date}: A timestamp with time zone indicating when the rating was submitted, allowing for tracking and auditing of feedback over time.
+%	\end{itemize}
+%	
+%	\noindent This entity is crucial for maintaining a structured and traceable system for user feedback, enabling continuous service improvement based on user satisfaction (refer to Table \ref{tab:rating}).
 	
 	
 	
 	\subsubsection{Feedback Entity}
+	
+	The Feedback entity collects user feedback on various aspects of the system. Each feedback entry is uniquely identified by an ID and linked to the user providing it through a foreign key. It includes a title for the feedback, detailed content, a rating score reflecting the user's evaluation, and a timestamp indicating when the feedback was submitted. This structure facilitates the collection and analysis of user opinions to enhance system performance (see Table \ref{tab:feedback}).
 	
 	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
 		\hline
@@ -432,28 +436,29 @@ The core functionality of the Student Life Support Service is its ticket-raising
 		\label{tab:feedback}
 		
 	\end{longtable}
-	
-	The Feedback entity is structured to store user feedback, enabling users to provide detailed evaluations of the system. It consists of several key fields:
-	
-	\begin{itemize}
-		\item \texttt{id}: A serial integer that serves as the primary key, uniquely identifying each feedback entry.
-		
-		\item \texttt{sender\_id}: A foreign key representing the user who submits the feedback, ensuring proper linkage between the feedback and its author.
-		
-		\item \texttt{title}: A \texttt{varchar(255)} field that contains the subject or title of the feedback, summarizing the main point of the user's input.
-		
-		\item \texttt{content}: A text field used for the detailed explanation of the feedback, where users can elaborate on their experience or suggestions.
-		
-		\item \texttt{rating\_score}: An integer representing the overall rating score associated with the feedback, allowing users to quantify their level of satisfaction.
-		
-		\item \texttt{created\_date}: A timestamp with time zone capturing when the feedback was submitted, which aids in tracking and analysis over time.
-	\end{itemize}
-	
-	\noindent This entity is critical for gathering and storing user insights, helping administrators to improve the system based on user evaluations and suggestions (refer to Table \ref{tab:feedback}).
+%	
+%	The Feedback entity is structured to store user feedback, enabling users to provide detailed evaluations of the system. It consists of several key fields:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: A serial integer that serves as the primary key, uniquely identifying each feedback entry.
+%		
+%		\item \texttt{sender\_id}: A foreign key representing the user who submits the feedback, ensuring proper linkage between the feedback and its author.
+%		
+%		\item \texttt{title}: A \texttt{varchar(255)} field that contains the subject or title of the feedback, summarizing the main point of the user's input.
+%		
+%		\item \texttt{content}: A text field used for the detailed explanation of the feedback, where users can elaborate on their experience or suggestions.
+%		
+%		\item \texttt{rating\_score}: An integer representing the overall rating score associated with the feedback, allowing users to quantify their level of satisfaction.
+%		
+%		\item \texttt{created\_date}: A timestamp with time zone capturing when the feedback was submitted, which aids in tracking and analysis over time.
+%	\end{itemize}
+%	
+%	\noindent This entity is critical for gathering and storing user insights, helping administrators to improve the system based on user evaluations and suggestions (refer to Table \ref{tab:feedback}).
 	
 	
 	
 	\subsubsection{Message Entity}
+	The Message entity stores individual messages associated with tickets within the system. Each message is identified by a unique ID and linked to a specific ticket through a foreign key, effectively acting as a conversation identifier. It records the sender's ID, the content of the message, and a timestamp indicating when the message was sent. This structure supports organized communication related to tickets, enabling users to track conversations effectively (see Table \ref{tab:message}).
 	
 	\begin{longtable}{|m{1.4cm}|m{2.9cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
 		\hline
@@ -473,22 +478,215 @@ The core functionality of the Student Life Support Service is its ticket-raising
 	
 	
 	
-	The Message entity is designed to store and manage the communication between users related to a specific ticket, acting as the foundation for the system's real-time messaging feature. The key components of this entity include:
+%	The Message entity is designed to store and manage the communication between users related to a specific ticket, acting as the foundation for the system's real-time messaging feature. The key components of this entity include:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: A serial integer that uniquely identifies each message, serving as the primary key.
+%		
+%		\item \texttt{ticket\_id}: A foreign key that links the message to a specific ticket, representing the conversation associated with that ticket.
+%		
+%		\item \texttt{sender\_id}: This field stores the id of the user who sent the message, ensuring proper identification of the sender.
+%		
+%		\item \texttt{message\_details}: A text field that contains the content of the message, capturing the full details of the communication.
+%		
+%		\item \texttt{created\_date}: A timestamp with time zone that records when the message was sent, which helps in tracking the conversation timeline.
+%	\end{itemize}
+%	
+%	\noindent This entity is essential for facilitating and managing user interactions within the system's ticketing process, ensuring seamless communication between users (refer to Table \ref{tab:message}).
 	
-	\begin{itemize}
-		\item \texttt{id}: A serial integer that uniquely identifies each message, serving as the primary key.
-		
-		\item \texttt{ticket\_id}: A foreign key that links the message to a specific ticket, representing the conversation associated with that ticket.
-		
-		\item \texttt{sender\_id}: This field stores the id of the user who sent the message, ensuring proper identification of the sender.
-		
-		\item \texttt{message\_details}: A text field that contains the content of the message, capturing the full details of the communication.
-		
-		\item \texttt{created\_date}: A timestamp with time zone that records when the message was sent, which helps in tracking the conversation timeline.
-	\end{itemize}
 	
-	\noindent This entity is essential for facilitating and managing user interactions within the system's ticketing process, ensuring seamless communication between users (refer to Table \ref{tab:message}).
 	
+	\subsubsection{Dorm Entity}
+	The Dorm entity represents the various dormitories within the system. Each dormitory is uniquely identified by an ID and includes details about its area and specific room designation. This structure facilitates the organization and management of dormitory accommodations, ensuring that each location is easily identifiable (see Table \ref{tab:dorm}).
+	
+	
+	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a dorm \\ \hline
+		& area & varchar(255) & \makecell[l]{NOT NULL \\ UNIQUE} & the dorm area name  \\ \hline
+		& room & varchar(255) & \makecell[l]{NOT NULL \\ UNIQUE} & the dorm room of an area \\ \hline
+		
+		\caption{Dorm Entity}
+		\label{tab:dorm}
+		
+	\end{longtable}
+	
+%	The Dorm entity is a crucial component of the system, designed to encapsulate and manage information related to student accommodation within the dormitory facilities. This entity comprises the following key attributes:
+%	
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: This field serves as the primary key and is defined as a serial integer, uniquely identifying each dorm entry in the database.
+%		
+%		\item \texttt{area}: A varchar field that stores the name of the dorm area. This field is marked as NOT NULL and UNIQUE, ensuring that each area name is distinct and cannot be left empty, thereby preventing duplicate entries.
+%		
+%		\item \texttt{room}: Similar to the area field, this varchar field holds the specific room identifier within the dormitory. It is also marked as NOT NULL and UNIQUE, ensuring that each room name is unique and that no room entries can be left undefined.
+%	\end{itemize}
+%
+%	
+%	\noindent This structured representation of dormitory information is vital for effective accommodation management, allowing for easy tracking and organization of dorm areas and their respective rooms (see Table \ref{tab:dorm}).
+	
+	
+	
+	
+	\subsubsection{Announcement Entity}
+	The Announcement entity captures information about announcements made within the system. Each announcement is uniquely identified by an ID and includes details such as the sender's ID, title, content, and the timestamp of when it was created. This structure enables effective communication and dissemination of important information among users (see Table \ref{tab:announcement}).
+	
+	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of an announcement \\ \hline
+		Foreign & sender\_id & int & \makecell[l]{NOT NULL} & the id of user who sends the announcement  \\ \hline
+		& title & varchar(255) & \makecell[l]{NOT NULL} & the title of an announcement \\ \hline
+		& content & text & \makecell[l]{NOT NULL} & the details of an announcement \\ \hline
+		& created\_date & \makecell[l]{timestamp \\with time \\zone} & NOT NULL & the date time when user sends an announcement. \\ \hline
+		
+		\caption{Announcement Entity}
+		\label{tab:announcement}
+		
+	\end{longtable}
+	
+	
+%	The Announcement entity is integral to the communication framework of the system, facilitating the dissemination of important information to users. This entity encompasses several key attributes that define its structure and functionality:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: This field acts as the primary key for the announcement entity and is defined as a serial integer. It uniquely identifies each announcement within the database, ensuring that each entry is distinct.
+%		
+%		\item \texttt{sender\_id}: This foreign key field references the user who initiates the announcement. It is an integer marked as \texttt{NOT NULL}, ensuring that every announcement is attributed to a specific user.
+%		
+%		\item \texttt{title}: A \texttt{varchar} field that holds the title of the announcement. This field is also marked as NOT NULL, requiring a descriptive title for each announcement to enhance clarity and accessibility for users.
+%		
+%		\item \texttt{content}: This text field captures the detailed message of the announcement. It is crucial for providing comprehensive information and is marked as NOT NULL, ensuring that all announcements contain substantive content.
+%		
+%		\item \texttt{created\_date}: Defined as a timestamp with time zone, this field records the exact date and time when the announcement is sent. Marked as NOT NULL, it ensures that every announcement is time-stamped for reference.
+%	\end{itemize}
+%
+%	
+%	\noindent The structured nature of the Announcement entity enhances the system's ability to communicate effectively with its users, allowing for clear and organized dissemination of important information (see Table \ref{tab:announcement}).
+	
+	
+	\subsubsection{Notification Entity}
+	The Notification entity records details about notifications sent within the system. Each notification is uniquely identified by an ID and includes information such as the sender's ID, title, content, and the timestamp of when it was created. This structure supports timely communication and updates for users (see Table \ref{tab:notification}).
+	
+	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a notification \\ \hline
+		Foreign & sender\_id & int & \makecell[l]{NOT NULL} & the id of user who sends the notification  \\ \hline
+		& title & varchar(255) & \makecell[l]{NOT NULL} & the title of a notification \\ \hline
+		& content & text & \makecell[l]{NOT NULL} & the details of a notification \\ \hline
+		& created\_date & \makecell[l]{timestamp \\with time \\zone} & NOT NULL & the date time when user sends a notification. \\ \hline
+		
+		\caption{Notification Entity}
+		\label{tab:notification}
+		
+	\end{longtable}
+	
+	
+%	The Notification entity plays a critical role in the system's communication mechanism, ensuring that important alerts and updates reach users in a timely manner. This entity is structured with several key attributes that facilitate its functionality and organization:
+%	
+%	\begin{itemize}
+%		\item \texttt{id}: This primary key, defined as a serial integer, uniquely identifies each notification within the database, ensuring that all records are distinct and easily retrievable.
+%		
+%		\item \texttt{sender\_id}: A foreign key field that references the user who initiates the notification. It is marked as \texttt{NOT NULL}, ensuring that every notification is associated with a specific user, which aids in accountability and context.
+%		
+%		\item \texttt{title}: This \texttt{varchar} field holds the title of the notification. It is also marked as \texttt{NOT NULL}, requiring each notification to have a descriptive title, thus enhancing clarity and user engagement.
+%		
+%		\item \texttt{content}: A text field that captures the detailed message of the notification. Marked as \texttt{NOT NULL}, this attribute ensures that all notifications provide comprehensive information for users.
+%		
+%		\item \texttt{created\_date}: Defined as a timestamp with time zone, this field records the exact date and time when the notification is sent. Marked as \texttt{NOT NULL}, it ensures that each notification is time-stamped, allowing for accurate tracking and historical reference.
+%	\end{itemize}
+%	
+%	\noindent The structured attributes of the Notification entity bolster the system's capability to deliver timely and relevant updates, facilitating effective communication among users (see Table \ref{tab:notification}).
+	
+	
+	
+	\subsubsection{Role Entity}
+	The Role entity is crucial for defining user permissions and access levels within the system. This entity facilitates the management of user roles, ensuring that access rights are clearly delineated and easily maintained (see Table \ref{tab:role}).
+	
+	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a role \\ \hline
+		 & role\_name & varchar(255) & \makecell[l]{NOT NULL} & the name of a role  \\ \hline
+		
+		\caption{Role Entity}
+		\label{tab:role}
+		
+	\end{longtable}
+	
+	
+	
+	
+	\subsubsection{Notification\_Audience Relationship}
+	
+	The Notification\_Audience relationship establishes a many-to-many association between notifications and user roles, defining which roles are eligible to receive specific notifications. This structure enhances targeted communication within the system, allowing for tailored information delivery based on user roles (see Table \ref{tab:notification-audience}).
+	
+	\begin{longtable}{|m{1.4cm}|m{2.7cm}|m{2.3cm}|m{2.3cm}|m{6.5cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & notification\_id & int & \makecell[l]{NOT NULL} & id of a notification \\ \hline
+		Primary & role\_id & int & \makecell[l]{NOT NULL} & the id of a role  \\ \hline
+		
+		\caption{Notification\_Audience Entity}
+		\label{tab:notification-audience}
+		
+	\end{longtable}
+	
+	
+	
+	
+	
+	
+	\subsubsection{Log Entity}
+	
+	The Log entity serves as a critical component for tracking user actions and system events within the application. It records essential information, including the user involved, the specific event associated with the action, a detailed description, and the timestamp of when the log entry was created. This structured approach enables effective auditing and monitoring of system activities (see Table \ref{tab:log}).
+	
+	
+	\begin{longtable}{|m{1.4cm}|m{2.5cm}|m{2.3cm}|m{2.3cm}|m{6.7cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a log \\ \hline
+		Foreign & user\_id & int & \makecell[l]{NOT NULL} & the reference user who has actions on log  \\ \hline
+		Foreign & event\_id & int & \makecell[l]{NOT NULL} & the id of an event  \\ \hline
+		 & description & text & \makecell[l]{NOT NULL} & the details of a log  \\ \hline
+		 & timestamp & \makecell[l]{timestamp \\with time \\zone} & NOT NULL & the date time when a log is written to the database. \\ \hline
+		
+		\caption{Log Entity}
+		\label{tab:log}
+		
+	\end{longtable}
+	
+	
+	
+	
+	\subsubsection{Event\_Type Entity}
+	The Event\_Type entity is designed to categorize various system events, providing a structured framework for event classification. It includes unique identifiers for each event type, along with descriptive names that facilitate easy reference and management within the system. This organization enhances the overall functionality and tracking of system activities (see Table \ref{tab:event-type}).
+	
+	\begin{longtable}{|m{1.4cm}|m{3.3cm}|m{2.3cm}|m{2.3cm}|m{6cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Field Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a system event type \\ \hline
+		 & event\_type\_name & varchar(255) & \makecell[l]{NOT NULL \\ UNIQUE} & the name of a system event type  \\ \hline
+
+		\caption{Event\_Type Entity}
+		\label{tab:event-type}
+		
+	\end{longtable}
 	
 	
 
