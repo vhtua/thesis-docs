@@ -29,4 +29,4 @@
 \contentsline {subsection}{\numberline {3.2}Non-Functional Requirements}{24}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Use Case Diagrams}{26}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}System Architecture}{27}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Frontend Design}{27}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.5}Frontend Design}{28}{subsection.3.5}%
