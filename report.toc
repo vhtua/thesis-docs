@@ -32,5 +32,5 @@
 \contentsline {subsection}{\numberline {3.5}Database Design}{31}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}ER Diagram}{31}{subsubsection.3.5.1}%
 \contentsline {subsubsection}{\numberline {3.5.2}User Entity}{31}{subsubsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.6}System Architecture}{31}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Frontend Design}{32}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.6}System Architecture}{32}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Frontend Design}{33}{subsection.3.7}%

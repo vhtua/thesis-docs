@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  29 SEP 2024 18:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1281,15 +1281,21 @@ Package: transparent 2022-10-27 v1.5 Transparency with color stacks
 Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color
  stack (HO)
 ))
+(c:/texlive/2024/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen322
+\c@nlinenum=\count386
+\TeXr@lab=\toks49
+)
 (c:/texlive/2024/texmf-dist/tex/latex/acro/acro.sty
 (c:/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2024-02-18 LaTeX2e option processing using LaTeX3 keys
 )
 Package: acro 2022/04/01 v3.8 typeset acronyms and other abbreviations (CN)
-\l__acro_tmpa_int=\count386
-\l__acro_tmpb_int=\count387
-\l__acro_tmpc_int=\count388
-\l__acro_tmpd_int=\count389
+\l__acro_tmpa_int=\count387
+\l__acro_tmpb_int=\count388
+\l__acro_tmpc_int=\count389
+\l__acro_tmpd_int=\count390
 Loading module `base' ...
 Loading module `interface' ...
 Loading module `aux' ...
@@ -1298,16 +1304,16 @@ Loading module `acronyms' ...
 Loading module `formatting' ...
 Loading module `ppfixes' ...
 Loading module `tools' ...
-\l__acro_minimal_usage_int=\count390
-\l__acro_nest_int=\count391
-\g_acro_barrier_int=\count392
-\g_acro_barrier_total_int=\count393
+\l__acro_minimal_usage_int=\count391
+\l__acro_nest_int=\count392
+\g_acro_barrier_int=\count393
+\g_acro_barrier_total_int=\count394
 Loading module `commands' ...
-\l_acro_nest_level_int=\count394
+\l_acro_nest_level_int=\count395
 Loading module `templates' ...
 Loading module `list' ...
 Loading module `pages' ...
-\l__acro_pages_seq_threshold_int=\count395
+\l__acro_pages_seq_threshold_int=\count396
 Loading module `locale' ...
 
 (c:/texlive/2024/texmf-dist/tex/latex/translations/translations.sty
@@ -1324,24 +1330,24 @@ Package: gensymb 2022/10/17 v1.0.2 (KJH)
 )
 (c:/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count396
+\c@tracingmulticols=\count397
 \mult@box=\box98
-\multicol@leftmargin=\dimen322
-\c@unbalance=\count397
-\c@collectmore=\count398
-\doublecol@number=\count399
-\multicoltolerance=\count400
-\multicolpretolerance=\count401
-\full@width=\dimen323
-\page@free=\dimen324
-\premulticols=\dimen325
-\postmulticols=\dimen326
+\multicol@leftmargin=\dimen323
+\c@unbalance=\count398
+\c@collectmore=\count399
+\doublecol@number=\count400
+\multicoltolerance=\count401
+\multicolpretolerance=\count402
+\full@width=\dimen324
+\page@free=\dimen325
+\premulticols=\dimen326
+\postmulticols=\dimen327
 \multicolsep=\skip160
 \multicolbaselineskip=\skip161
 \partial@page=\box99
 \last@line=\box100
 \mc@boxedresult=\box101
-\maxbalancingoverflow=\dimen327
+\maxbalancingoverflow=\dimen328
 \mult@rightbox=\box102
 \mult@grightbox=\box103
 \mult@firstbox=\box104
@@ -1382,71 +1388,71 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 \@tempa=\box139
 \@tempa=\box140
 \@tempa=\box141
-\c@minrows=\count402
-\c@columnbadness=\count403
-\c@finalcolumnbadness=\count404
-\last@try=\dimen328
-\multicolovershoot=\dimen329
-\multicolundershoot=\dimen330
+\c@minrows=\count403
+\c@columnbadness=\count404
+\c@finalcolumnbadness=\count405
+\last@try=\dimen329
+\multicolovershoot=\dimen330
+\multicolundershoot=\dimen331
 \mult@nat@firstbox=\box142
 \colbreak@box=\box143
-\mc@col@check@num=\count405
+\mc@col@check@num=\count406
 )
 (c:/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip162
-\multirow@cntb=\count406
+\multirow@cntb=\count407
 \multirow@dima=\skip163
-\bigstrutjot=\dimen331
+\bigstrutjot=\dimen332
 )
 (c:/texlive/2024/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2024-02-15 v3.3.12 A comprehensive (SI) units package
-\l__siunitx_number_uncert_offset_int=\count407
-\l__siunitx_number_exponent_fixed_int=\count408
-\l__siunitx_number_min_decimal_int=\count409
-\l__siunitx_number_min_integer_int=\count410
-\l__siunitx_number_round_precision_int=\count411
-\l__siunitx_number_lower_threshold_int=\count412
-\l__siunitx_number_upper_threshold_int=\count413
-\l__siunitx_number_group_first_int=\count414
-\l__siunitx_number_group_size_int=\count415
-\l__siunitx_number_group_minimum_int=\count416
-\l__siunitx_angle_tmp_dim=\dimen332
+\l__siunitx_number_uncert_offset_int=\count408
+\l__siunitx_number_exponent_fixed_int=\count409
+\l__siunitx_number_min_decimal_int=\count410
+\l__siunitx_number_min_integer_int=\count411
+\l__siunitx_number_round_precision_int=\count412
+\l__siunitx_number_lower_threshold_int=\count413
+\l__siunitx_number_upper_threshold_int=\count414
+\l__siunitx_number_group_first_int=\count415
+\l__siunitx_number_group_size_int=\count416
+\l__siunitx_number_group_minimum_int=\count417
+\l__siunitx_angle_tmp_dim=\dimen333
 \l__siunitx_angle_marker_box=\box144
 \l__siunitx_angle_unit_box=\box145
-\l__siunitx_compound_count_int=\count417
+\l__siunitx_compound_count_int=\count418
 \l__siunitx_table_tmp_box=\box146
-\l__siunitx_table_tmp_dim=\dimen333
-\l__siunitx_table_column_width_dim=\dimen334
+\l__siunitx_table_tmp_dim=\dimen334
+\l__siunitx_table_column_width_dim=\dimen335
 \l__siunitx_table_integer_box=\box147
 \l__siunitx_table_decimal_box=\box148
 \l__siunitx_table_uncert_box=\box149
 \l__siunitx_table_before_box=\box150
 \l__siunitx_table_after_box=\box151
-\l__siunitx_table_before_dim=\dimen335
-\l__siunitx_table_carry_dim=\dimen336
-\l__siunitx_unit_tmp_int=\count418
-\l__siunitx_unit_position_int=\count419
-\l__siunitx_unit_total_int=\count420
+\l__siunitx_table_before_dim=\dimen336
+\l__siunitx_table_carry_dim=\dimen337
+\l__siunitx_unit_tmp_int=\count419
+\l__siunitx_unit_position_int=\count420
+\l__siunitx_unit_total_int=\count421
 )
 (c:/texlive/2024/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2023/07/08 v2.11c `tabularx' package (DPC)
-\TX@col@width=\dimen337
-\TX@old@table=\dimen338
-\TX@old@col=\dimen339
-\TX@target=\dimen340
-\TX@delta=\dimen341
-\TX@cols=\count421
-\TX@ftn=\toks49
+\TX@col@width=\dimen338
+\TX@old@table=\dimen339
+\TX@old@col=\dimen340
+\TX@target=\dimen341
+\TX@delta=\dimen342
+\TX@cols=\count422
+\TX@ftn=\toks50
 )
 (c:/texlive/2024/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip164
-\enit@outerparindent=\dimen342
-\enit@toks=\toks50
+\enit@outerparindent=\dimen343
+\enit@toks=\toks51
 \enit@inbox=\box152
-\enit@count@id=\count422
-\enitdp@description=\count423
+\enit@count@id=\count423
+\enitdp@description=\count424
 )
 (c:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
@@ -1456,10 +1462,10 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (c:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (c:/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks51
-\XKV@tempa@toks=\toks52
+\XKV@toks=\toks52
+\XKV@tempa@toks=\toks53
 )
-\XKV@depth=\count424
+\XKV@depth=\count425
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2024/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1473,80 +1479,80 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box153
 )
-\tc@llx=\dimen343
-\tc@lly=\dimen344
-\tc@urx=\dimen345
-\tc@ury=\dimen346
+\tc@llx=\dimen344
+\tc@lly=\dimen345
+\tc@urx=\dimen346
+\tc@ury=\dimen347
 Package trimclip Info: Using driver 'tc-pdftex.def'.
 
 (c:/texlive/2024/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen347
-\adjbox@Height=\dimen348
-\adjbox@Depth=\dimen349
-\adjbox@Totalheight=\dimen350
-\adjbox@pwidth=\dimen351
-\adjbox@pheight=\dimen352
-\adjbox@pdepth=\dimen353
-\adjbox@ptotalheight=\dimen354
+\adjbox@Width=\dimen348
+\adjbox@Height=\dimen349
+\adjbox@Depth=\dimen350
+\adjbox@Totalheight=\dimen351
+\adjbox@pwidth=\dimen352
+\adjbox@pheight=\dimen353
+\adjbox@pdepth=\dimen354
+\adjbox@ptotalheight=\dimen355
 
 (c:/texlive/2024/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box154
-\sift@deathcycles=\count425
-\@vwid@loff=\dimen355
-\@vwid@roff=\dimen356
+\sift@deathcycles=\count426
+\@vwid@loff=\dimen356
+\@vwid@roff=\dimen357
 ))
 (c:/texlive/2024/texmf-dist/tex/latex/mwe/mwe.sty
 Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
 
 (c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count426
-\l__lipsum_a_int=\count427
-\l__lipsum_b_int=\count428
+\g__lipsum_par_int=\count427
+\l__lipsum_a_int=\count428
+\l__lipsum_b_int=\count429
 
 (c:/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 (c:/texlive/2024/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-\c@blindtext=\count429
-\c@Blindtext=\count430
-\c@blind@countparstart=\count431
-\blind@countxx=\count432
-\blindtext@numBlindtext=\count433
-\blind@countyy=\count434
-\c@blindlist=\count435
-\c@blindlistlevel=\count436
-\c@blindlist@level=\count437
-\blind@listitem=\count438
-\c@blind@listcount=\count439
-\c@blind@levelcount=\count440
-\blind@mathformula=\count441
-\blind@Mathformula=\count442
-\c@blind@randomcount=\count443
-\c@blind@randommax=\count444
-\c@blind@pangramcount=\count445
-\c@blind@pangrammax=\count446
+\c@blindtext=\count430
+\c@Blindtext=\count431
+\c@blind@countparstart=\count432
+\blind@countxx=\count433
+\blindtext@numBlindtext=\count434
+\blind@countyy=\count435
+\c@blindlist=\count436
+\c@blindlistlevel=\count437
+\c@blindlist@level=\count438
+\blind@listitem=\count439
+\c@blind@listcount=\count440
+\c@blind@levelcount=\count441
+\blind@mathformula=\count442
+\blind@Mathformula=\count443
+\c@blind@randomcount=\count444
+\c@blind@randommax=\count445
+\c@blind@pangramcount=\count446
+\c@blind@pangrammax=\count447
 ))
-\c@memberrowno=\count447
-Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+\c@memberrowno=\count448
+Package hyperref Info: Option `colorlinks' set `true' on input line 49.
 
 (c:/texlive/2024/texmf-dist/tex/latex/tools/afterpage.sty
 Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
-\AP@output=\toks53
+\AP@output=\toks54
 \AP@partial=\box155
 \AP@footins=\box156
 ) (./acronyms.tex
-\c@g@acro@cse@int=\count448
-\c@g@acro@api@int=\count449
-\c@g@acro@vgu@int=\count450
-\c@g@acro@jwt@int=\count451
-\c@g@acro@ui@int=\count452
-\c@g@acro@rest@int=\count453
-\c@g@acro@ai@int=\count454
-\c@g@acro@sql@int=\count455
-\c@g@acro@rdbms@int=\count456
+\c@g@acro@cse@int=\count449
+\c@g@acro@api@int=\count450
+\c@g@acro@vgu@int=\count451
+\c@g@acro@jwt@int=\count452
+\c@g@acro@ui@int=\count453
+\c@g@acro@rest@int=\count454
+\c@g@acro@ai@int=\count455
+\c@g@acro@sql@int=\count456
+\c@g@acro@rdbms@int=\count457
 )
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > re
 port.aex <nul: /p x=^%~$PATH:i>> report.aex)...executed.
@@ -1559,26 +1565,26 @@ runsystem(del report.aex)...executed.
 (./chapters/2_literature_review.aux) (./chapters/3_system_design.aux))
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 142.
+LaTeX Font Info:    ... okay on input line 142.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1616,17 +1622,17 @@ LaTeX Font Info:    ... okay on input line 140.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count457
-\scratchdimen=\dimen357
+\scratchcounter=\count458
+\scratchdimen=\dimen358
 \scratchbox=\box157
-\nofMPsegments=\count458
-\nofMParguments=\count459
-\everyMPshowfont=\toks54
-\MPscratchCnt=\count460
-\MPscratchDim=\dimen358
-\MPnumerator=\count461
-\makeMPintoPDFobject=\count462
-\everyMPtoPDFconversion=\toks55
+\nofMPsegments=\count459
+\nofMParguments=\count460
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count461
+\MPscratchDim=\dimen359
+\MPnumerator=\count462
+\makeMPintoPDFobject=\count463
+\everyMPtoPDFconversion=\toks56
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1636,7 +1642,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 140.
+Package hyperref Info: Link coloring ON on input line 142.
 
 (./report.out) (./report.out)
 \@outlinefile=\write6
@@ -1651,7 +1657,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count463
+\c@lstlisting=\count464
 
 (c:/texlive/2024/texmf-dist/tex/latex/translations/translations-basic-dictionar
 y-english.trsl
@@ -1659,27 +1665,27 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 140.
+or `english'. on input line 142.
 \symgns@font=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 140.
-Package gensymb Info: Math companion symbols declared on input line 140.
-LaTeX Info: Redefining \degree on input line 140.
-LaTeX Info: Redefining \celsius on input line 140.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/b/n on input line 142.
+Package gensymb Info: Math companion symbols declared on input line 142.
+LaTeX Info: Redefining \degree on input line 142.
+LaTeX Info: Redefining \celsius on input line 142.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 140.
-LaTeX Info: Redefining \ohm on input line 140.
-Package gensymb Info: Using \textohm for \ohm on input line 140.
-Package gensymb Info: Using \textmu for \micro on input line 140.
+erthousand on input line 142.
+LaTeX Info: Redefining \ohm on input line 142.
+Package gensymb Info: Using \textohm for \ohm on input line 142.
+Package gensymb Info: Using \textmu for \micro on input line 142.
 <graphics/frauaslogo.png, id=143, 546.04pt x 228.855pt>
 File: graphics/frauaslogo.png Graphic file (type png)
 <use graphics/frauaslogo.png>
-Package pdftex.def Info: graphics/frauaslogo.png  used on input line 157.
+Package pdftex.def Info: graphics/frauaslogo.png  used on input line 159.
 (pdftex.def)             Requested size: 136.50966pt x 57.21361pt.
 <graphics/vguLogo2Center.png, id=144, 376.40625pt x 132.495pt>
 File: graphics/vguLogo2Center.png Graphic file (type png)
 <use graphics/vguLogo2Center.png>
-Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 159.
+Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 161.
 (pdftex.def)             Requested size: 150.55983pt x 52.99706pt.
  [1
 
@@ -1706,43 +1712,43 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 2
-10.
+12.
 
 (c:/texlive/2024/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 210.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 212.
 LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 210.
+(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 212.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.210 \include{chapters/declarations}
+l.212 \include{chapters/declarations}
                                       [1
 
 ]
 \openout2 = `chapters/acknowledgments.aux'.
 
  (./chapters/acknowledgments.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 12--211
+Underfull \hbox (badness 10000) in paragraph at lines 12--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--211
+Underfull \hbox (badness 10000) in paragraph at lines 12--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--211
+Underfull \hbox (badness 10000) in paragraph at lines 12--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--211
+Underfull \hbox (badness 10000) in paragraph at lines 12--213
 
  []
 
@@ -1754,22 +1760,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--211
 \openout2 = `chapters/abstract.aux'.
 
  (./chapters/abstract.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 3--212
+Underfull \hbox (badness 10000) in paragraph at lines 3--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--212
+Underfull \hbox (badness 10000) in paragraph at lines 3--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--212
+Underfull \hbox (badness 10000) in paragraph at lines 3--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--212
+Underfull \hbox (badness 10000) in paragraph at lines 3--214
 
  []
 
@@ -1881,7 +1887,7 @@ Overfull \hbox (33.02196pt too wide) in alignment at lines 25--45
 
 
 ]
-<graphics/React_Logo_SVG.png, id=322, 16.5605pt x 15.26878pt>
+<graphics/React_Logo_SVG.png, id=324, 16.5605pt x 15.26878pt>
 File: graphics/React_Logo_SVG.png Graphic file (type png)
 <use graphics/React_Logo_SVG.png>
 Package pdftex.def Info: graphics/React_Logo_SVG.png  used on input line 70.
@@ -1894,7 +1900,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 67--79
 [15]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 82.
-<graphics/material-ui-480.png, id=330, 481.8pt x 481.8pt>
+<graphics/material-ui-480.png, id=332, 481.8pt x 481.8pt>
 File: graphics/material-ui-480.png Graphic file (type png)
 <use graphics/material-ui-480.png>
 Package pdftex.def Info: graphics/material-ui-480.png  used on input line 113.
@@ -1904,7 +1910,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 106--119
 [][] 
  []
 
-<graphics/vite.png, id=331, 3011.25pt x 3023.295pt>
+<graphics/vite.png, id=333, 3011.25pt x 3023.295pt>
 File: graphics/vite.png Graphic file (type png)
 <use graphics/vite.png>
 Package pdftex.def Info: graphics/vite.png  used on input line 125.
@@ -1915,7 +1921,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 122--135
  []
 
 [16 <./graphics/React_Logo_SVG.png>]
-<graphics/nodejs.png, id=363, 411.136pt x 411.136pt>
+<graphics/nodejs.png, id=365, 411.136pt x 411.136pt>
 File: graphics/nodejs.png Graphic file (type png)
 <use graphics/nodejs.png>
 Package pdftex.def Info: graphics/nodejs.png  used on input line 143.
@@ -1925,7 +1931,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 140--152
 [][] 
  []
 
-<graphics/expressjs.png, id=364, 466.74374pt x 141.52875pt>
+<graphics/expressjs.png, id=366, 466.74374pt x 141.52875pt>
 File: graphics/expressjs.png Graphic file (type png)
 <use graphics/expressjs.png>
 Package pdftex.def Info: graphics/expressjs.png  used on input line 162.
@@ -1940,7 +1946,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 155--168
 [][] 
  []
 
-<graphics/socket-io.512x512.png, id=365, 513.92pt x 513.92pt>
+<graphics/socket-io.512x512.png, id=367, 513.92pt x 513.92pt>
 File: graphics/socket-io.512x512.png Graphic file (type png)
 <use graphics/socket-io.512x512.png>
 Package pdftex.def Info: graphics/socket-io.512x512.png  used on input line 173
@@ -1956,7 +1962,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 170--182
 [][] 
  []
 
-<graphics/jwt-logo.png, id=367, 300.12125pt x 301.125pt>
+<graphics/jwt-logo.png, id=369, 300.12125pt x 301.125pt>
 File: graphics/jwt-logo.png Graphic file (type png)
 <use graphics/jwt-logo.png>
 Package pdftex.def Info: graphics/jwt-logo.png  used on input line 189.
@@ -1970,7 +1976,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 186--198
 
 pdfTeX warning: pdflatex.exe (file ./graphics/jwt-explained.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/jwt-explained.pdf, id=368, 442.53331pt x 209.8239pt>
+<graphics/jwt-explained.pdf, id=370, 442.53331pt x 209.8239pt>
 File: graphics/jwt-explained.pdf Graphic file (type pdf)
 <use graphics/jwt-explained.pdf>
 Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 201.
@@ -1982,7 +1988,7 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 201--202
 
 [17 <./graphics/material-ui-480.png> <./graphics/vite.png> <./graphics/nodejs.p
 ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
-<graphics/redis.png, id=382, 598.235pt x 513.92pt>
+<graphics/redis.png, id=384, 598.235pt x 513.92pt>
 File: graphics/redis.png Graphic file (type png)
 <use graphics/redis.png>
 Package pdftex.def Info: graphics/redis.png  used on input line 211.
@@ -1992,7 +1998,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 208--220
 [][] 
  []
 
-<graphics/postgresql.png, id=383, 852.18375pt x 832.10875pt>
+<graphics/postgresql.png, id=385, 852.18375pt x 832.10875pt>
 File: graphics/postgresql.png Graphic file (type png)
 <use graphics/postgresql.png>
 Package pdftex.def Info: graphics/postgresql.png  used on input line 227.
@@ -2214,7 +2220,7 @@ Overfull \hbox (34.96576pt too wide) in alignment at lines 104--121
 
 pdfTeX warning: pdflatex.exe (file ./graphics/student use case.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/student use case.pdf, id=444, 460.6008pt x 460.6008pt>
+<graphics/student use case.pdf, id=446, 460.6008pt x 460.6008pt>
 File: graphics/student use case.pdf Graphic file (type pdf)
 <use graphics/student use case.pdf>
 Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
@@ -2224,7 +2230,7 @@ Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/staff use case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/staff use case.pdf, id=445, 475.7775pt x 460.6008pt>
+<graphics/staff use case.pdf, id=447, 475.7775pt x 460.6008pt>
 File: graphics/staff use case.pdf Graphic file (type pdf)
 <use graphics/staff use case.pdf>
 Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
@@ -2233,7 +2239,7 @@ Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/admin-use-case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/admin-use-case.pdf, id=460, 491.91779pt x 681.50606pt>
+<graphics/admin-use-case.pdf, id=462, 491.91779pt x 681.50606pt>
 File: graphics/admin-use-case.pdf Graphic file (type pdf)
 <use graphics/admin-use-case.pdf>
 Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
@@ -2242,26 +2248,55 @@ Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/sys-workflow.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/sys-workflow.pdf, id=475, 569.24669pt x 566.115pt>
+<graphics/sys-workflow.pdf, id=477, 569.24669pt x 566.115pt>
 File: graphics/sys-workflow.pdf Graphic file (type pdf)
 <use graphics/sys-workflow.pdf>
 Package pdftex.def Info: graphics/sys-workflow.pdf  used on input line 158.
 (pdftex.def)             Requested size: 406.30359pt x 404.08673pt.
 [29 <./graphics/admin-use-case.pdf>]
-<graphics/er-diagram.pdf, id=490, 1433.18333pt x 759.92268pt>
+<graphics/er-diagram.pdf, id=492, 1433.18333pt x 759.92268pt>
 File: graphics/er-diagram.pdf Graphic file (type pdf)
 <use graphics/er-diagram.pdf>
 Package pdftex.def Info: graphics/er-diagram.pdf  used on input line 168.
 (pdftex.def)             Requested size: 483.69687pt x 256.46863pt.
  [30 <./graphics/sys-workflow.pdf>]
-<graphics/3-tier-arch.pdf, id=521, 1109.64563pt x 435.87843pt>
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]|\T5/cmr/bx/n/12 Key
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--181
+[]|\T5/cmr/bx/n/12 Filed
+ []
+
+
+Overfull \hbox (2.64333pt too wide) in paragraph at lines 181--181
+[]|\T5/cmr/bx/n/12 Constraints| 
+ []
+
+
+Overfull \hbox (33.94716pt too wide) in alignment at lines 179--182
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (2.42125pt too wide) in paragraph at lines 184--184
+[]|\T5/cmr/m/n/12 Primary| 
+ []
+
+
+Overfull \hbox (33.94716pt too wide) in alignment at lines 182--196
+ [] [] [] [] [] 
+ []
+
+[31 <./graphics/er-diagram.pdf>]
+<graphics/3-tier-arch.pdf, id=542, 1109.64563pt x 435.87843pt>
 File: graphics/3-tier-arch.pdf Graphic file (type pdf)
 <use graphics/3-tier-arch.pdf>
-Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 183.
+Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 206.
 (pdftex.def)             Requested size: 338.58632pt x 132.99925pt.
-
-[31 <./graphics/er-diagram.pdf>]) [32 <./graphics/3-tier-arch.pdf>]
-(./report.bbl) [33
+ [32 <./graphics/3-tier-arch.pdf>]) [33]
+(./report.bbl) [34
 
 
 ] 
@@ -2277,11 +2312,11 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: A8F83C481DA65639F690F4FBD6D553FD;6717.
  ) 
 Here is how much of TeX's memory you used:
- 44242 strings out of 474116
- 915451 string characters out of 5747717
+ 44406 strings out of 474116
+ 917401 string characters out of 5747717
  2058190 words of memory out of 5000000
- 65740 multiletter control sequences out of 15000+600000
- 578429 words of font info for 81 fonts, out of 8000000 for 9000
+ 65899 multiletter control sequences out of 15000+600000
+ 578430 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,20n,107p,1288b,1303s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texl
@@ -2291,10 +2326,10 @@ t/fonts/type1/vntex/vnr/vnr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex
 xlive/2024/texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb><c:/texlive/2024/texmf-d
 ist/fonts/type1/vntex/vnr/vntt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vn
 tex/vnr/vntt8.pfb>
-Output written on report.pdf (34 pages, 998089 bytes).
+Output written on report.pdf (35 pages, 1000340 bytes).
 PDF statistics:
- 672 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
+ 679 PDF objects out of 1000 (max. 8388607)
+ 554 compressed objects within 6 object streams
+ 130 named destinations out of 1000 (max. 500000)
  375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

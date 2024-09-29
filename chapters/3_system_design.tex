@@ -165,13 +165,36 @@ The core functionality of the Student Life Support Service is its ticket-raising
 	\subsubsection{ER Diagram}
 	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1\columnwidth]{graphics/er-diagram.pdf}
+		\includegraphics[width=1 \columnwidth]{graphics/er-diagram.pdf}
 		\caption{ER Diagram}
 		\label{fig:er-diagram}
 	\end{figure}
 
 
 	\subsubsection{User Entity}
+%	\newcolumntype{L}{>{\arraybackslash}m{3.5cm}}
+	
+	
+	
+	\begin{longtable}{|m{1.4cm}|m{2cm}|m{2.3cm}|p{2.3cm}|m{8cm}|}
+		\hline
+		\textbf{Key Type} & \textbf{Filed Name} & \textbf{Data Type}                                                                                                                            & \textbf{Constraints} & \textbf{Description}   \\ \hline
+		\endhead
+		
+		Primary & id & serial (int) & \makecell[l]{NOT NULL} & id of a user \\ \hline
+		 & username & varchar(255) & \makecell[l]{NOT NULL \\ UNIQUE} & the user name of a user, it could be matriculation number of a student \\ \hline
+		 & email & varchar(255) & \makecell[l]{NOT NULL \\ UNIQUE} & the email of a user \\ \hline
+		 & fullname & varchar(255) & \makecell[l]{NOT NULL} & the full name of a user \\ \hline
+		 & gender & varchar(255) & \makecell[l]{NOT NULL} & the gender of a user \\ \hline
+		 & program & varchar(255) & \makecell[l]{NOT NULL} & the program that user registered at university (E.g: Computer Science, Architecture, etc.)\\ \hline
+		 & password & varchar(255) & \makecell[l]{NOT NULL} & the password of a user (in hashed string) \\ \hline
+		 Foreign & role\_id & int & \makecell[l]{NOT NULL} & the role id of a user \\ \hline
+		
+		\caption{User Entity}
+		\label{tab:user-entity}
+		
+	\end{longtable}
+	
 
 
 \subsection{System Architecture}
