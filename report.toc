@@ -72,5 +72,24 @@
 \contentsline {subsubsection}{\numberline {5.3.8}Announcement}{67}{subsubsection.5.3.8}%
 \contentsline {subsubsection}{\numberline {5.3.9}Settings}{68}{subsubsection.5.3.9}%
 \contentsline {subsubsection}{\numberline {5.3.10}Feedback}{70}{subsubsection.5.3.10}%
-\contentsline {subsection}{\numberline {5.4}Staff's functions}{70}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Conclusion and Future Work}{71}{section.6}%
+\contentsline {subsection}{\numberline {5.4}Staff's functions}{71}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Available Tickets}{71}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Tickets Handling}{73}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Tickets History}{74}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}Message}{75}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Notification}{76}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}Announcement}{78}{subsubsection.5.4.6}%
+\contentsline {subsubsection}{\numberline {5.4.7}Settings}{79}{subsubsection.5.4.7}%
+\contentsline {subsubsection}{\numberline {5.4.8}Feedback}{79}{subsubsection.5.4.8}%
+\contentsline {subsection}{\numberline {5.5}Admin's functions}{79}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Tickets Management}{79}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Users Management}{80}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Dormitory Management}{81}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}Logs Management}{82}{subsubsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.5}Feedback Management}{83}{subsubsection.5.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.6}Notification}{84}{subsubsection.5.5.6}%
+\contentsline {subsubsection}{\numberline {5.5.7}Announcement}{84}{subsubsection.5.5.7}%
+\contentsline {subsubsection}{\numberline {5.5.8}News feed}{84}{subsubsection.5.5.8}%
+\contentsline {subsubsection}{\numberline {5.5.9}Report}{84}{subsubsection.5.5.9}%
+\contentsline {subsubsection}{\numberline {5.5.10}Settings}{84}{subsubsection.5.5.10}%
+\contentsline {section}{\numberline {6}Conclusion and Future Work}{85}{section.6}%
