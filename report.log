@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  30 SEP 2024 13:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.28)  30 SEP 2024 14:44
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1702,12 +1702,12 @@ erthousand on input line 143.
 LaTeX Info: Redefining \ohm on input line 143.
 Package gensymb Info: Using \textohm for \ohm on input line 143.
 Package gensymb Info: Using \textmu for \micro on input line 143.
-<graphics/frauaslogo.png, id=380, 546.04pt x 228.855pt>
+<graphics/frauaslogo.png, id=356, 546.04pt x 228.855pt>
 File: graphics/frauaslogo.png Graphic file (type png)
 <use graphics/frauaslogo.png>
 Package pdftex.def Info: graphics/frauaslogo.png  used on input line 160.
 (pdftex.def)             Requested size: 136.50966pt x 57.21361pt.
-<graphics/vguLogo2Center.png, id=381, 376.40625pt x 132.495pt>
+<graphics/vguLogo2Center.png, id=357, 376.40625pt x 132.495pt>
 File: graphics/vguLogo2Center.png Graphic file (type png)
 <use graphics/vguLogo2Center.png>
 Package pdftex.def Info: graphics/vguLogo2Center.png  used on input line 162.
@@ -1877,7 +1877,7 @@ Overfull \hbox (33.02196pt too wide) in alignment at lines 25--45
 
 
 ]
-<graphics/React_Logo_SVG.png, id=761, 16.5605pt x 15.26878pt>
+<graphics/React_Logo_SVG.png, id=729, 16.5605pt x 15.26878pt>
 File: graphics/React_Logo_SVG.png Graphic file (type png)
 <use graphics/React_Logo_SVG.png>
 Package pdftex.def Info: graphics/React_Logo_SVG.png  used on input line 70.
@@ -1890,7 +1890,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 67--79
 [17]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 82.
-<graphics/material-ui-480.png, id=769, 481.8pt x 481.8pt>
+<graphics/material-ui-480.png, id=737, 481.8pt x 481.8pt>
 File: graphics/material-ui-480.png Graphic file (type png)
 <use graphics/material-ui-480.png>
 Package pdftex.def Info: graphics/material-ui-480.png  used on input line 114.
@@ -1900,7 +1900,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 107--120
 [][] 
  []
 
-<graphics/vite.png, id=770, 3011.25pt x 3023.295pt>
+<graphics/vite.png, id=738, 3011.25pt x 3023.295pt>
 File: graphics/vite.png Graphic file (type png)
 <use graphics/vite.png>
 Package pdftex.def Info: graphics/vite.png  used on input line 127.
@@ -1911,7 +1911,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 124--137
  []
 
 [18 <./graphics/React_Logo_SVG.png>]
-<graphics/nodejs.png, id=803, 411.136pt x 411.136pt>
+<graphics/nodejs.png, id=771, 411.136pt x 411.136pt>
 File: graphics/nodejs.png Graphic file (type png)
 <use graphics/nodejs.png>
 Package pdftex.def Info: graphics/nodejs.png  used on input line 145.
@@ -1921,7 +1921,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 142--154
 [][] 
  []
 
-<graphics/expressjs.png, id=804, 466.74374pt x 141.52875pt>
+<graphics/expressjs.png, id=772, 466.74374pt x 141.52875pt>
 File: graphics/expressjs.png Graphic file (type png)
 <use graphics/expressjs.png>
 Package pdftex.def Info: graphics/expressjs.png  used on input line 164.
@@ -1931,7 +1931,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 157--170
 [][] 
  []
 
-<graphics/socket-io.512x512.png, id=805, 513.92pt x 513.92pt>
+<graphics/socket-io.512x512.png, id=773, 513.92pt x 513.92pt>
 File: graphics/socket-io.512x512.png Graphic file (type png)
 <use graphics/socket-io.512x512.png>
 Package pdftex.def Info: graphics/socket-io.512x512.png  used on input line 175
@@ -1942,7 +1942,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 172--184
 [][] 
  []
 
-<graphics/jwt-logo.png, id=807, 300.12125pt x 301.125pt>
+<graphics/jwt-logo.png, id=775, 300.12125pt x 301.125pt>
 File: graphics/jwt-logo.png Graphic file (type png)
 <use graphics/jwt-logo.png>
 Package pdftex.def Info: graphics/jwt-logo.png  used on input line 191.
@@ -1956,7 +1956,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 188--200
 
 pdfTeX warning: pdflatex.exe (file ./graphics/jwt-explained.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/jwt-explained.pdf, id=808, 442.53331pt x 209.8239pt>
+<graphics/jwt-explained.pdf, id=776, 442.53331pt x 209.8239pt>
 File: graphics/jwt-explained.pdf Graphic file (type pdf)
 <use graphics/jwt-explained.pdf>
 Package pdftex.def Info: graphics/jwt-explained.pdf  used on input line 203.
@@ -1968,7 +1968,7 @@ Overfull \hbox (48.37263pt too wide) in paragraph at lines 203--204
 
 [19 <./graphics/material-ui-480.png> <./graphics/vite.png> <./graphics/nodejs.p
 ng> <./graphics/expressjs.png> <./graphics/socket-io.512x512.png>]
-<graphics/redis.png, id=823, 598.235pt x 513.92pt>
+<graphics/redis.png, id=790, 598.235pt x 513.92pt>
 File: graphics/redis.png Graphic file (type png)
 <use graphics/redis.png>
 Package pdftex.def Info: graphics/redis.png  used on input line 213.
@@ -1978,7 +1978,7 @@ Overfull \hbox (5.43848pt too wide) in paragraph at lines 210--222
 [][] 
  []
 
-<graphics/postgresql.png, id=824, 852.18375pt x 832.10875pt>
+<graphics/postgresql.png, id=791, 852.18375pt x 832.10875pt>
 File: graphics/postgresql.png Graphic file (type png)
 <use graphics/postgresql.png>
 Package pdftex.def Info: graphics/postgresql.png  used on input line 229.
@@ -2055,7 +2055,7 @@ Overfull \hbox (34.96576pt too wide) in alignment at lines 104--121
 
 pdfTeX warning: pdflatex.exe (file ./graphics/student use case.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/student use case.pdf, id=883, 460.6008pt x 460.6008pt>
+<graphics/student use case.pdf, id=851, 460.6008pt x 460.6008pt>
 File: graphics/student use case.pdf Graphic file (type pdf)
 <use graphics/student use case.pdf>
 Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
@@ -2065,7 +2065,7 @@ Package pdftex.def Info: graphics/student use case.pdf  used on input line 128.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/staff use case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/staff use case.pdf, id=884, 475.7775pt x 460.6008pt>
+<graphics/staff use case.pdf, id=852, 475.7775pt x 460.6008pt>
 File: graphics/staff use case.pdf Graphic file (type pdf)
 <use graphics/staff use case.pdf>
 Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
@@ -2074,7 +2074,7 @@ Package pdftex.def Info: graphics/staff use case.pdf  used on input line 137.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/admin-use-case.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/admin-use-case.pdf, id=899, 491.91779pt x 681.50606pt>
+<graphics/admin-use-case.pdf, id=867, 491.91779pt x 681.50606pt>
 File: graphics/admin-use-case.pdf Graphic file (type pdf)
 <use graphics/admin-use-case.pdf>
 Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
@@ -2083,13 +2083,13 @@ Package pdftex.def Info: graphics/admin-use-case.pdf  used on input line 146.
 
 pdfTeX warning: pdflatex.exe (file ./graphics/sys-workflow.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<graphics/sys-workflow.pdf, id=915, 569.24669pt x 566.115pt>
+<graphics/sys-workflow.pdf, id=883, 569.24669pt x 566.115pt>
 File: graphics/sys-workflow.pdf Graphic file (type pdf)
 <use graphics/sys-workflow.pdf>
 Package pdftex.def Info: graphics/sys-workflow.pdf  used on input line 158.
 (pdftex.def)             Requested size: 483.69687pt x 481.05318pt.
 [31 <./graphics/admin-use-case.pdf>]
-<graphics/er-diagram-v2.pdf, id=931, 1418.10037pt x 759.92268pt>
+<graphics/er-diagram-v2.pdf, id=898, 1418.10037pt x 759.92268pt>
 File: graphics/er-diagram-v2.pdf Graphic file (type pdf)
 <use graphics/er-diagram-v2.pdf>
 Package pdftex.def Info: graphics/er-diagram-v2.pdf  used on input line 168.
@@ -2479,7 +2479,7 @@ Overfull \hbox (14.03032pt too wide) in alignment at lines 681--689
  [] [] [] [] [] 
  []
 
-<graphics/3-tier-arch.pdf, id=1045, 1109.64563pt x 435.87843pt>
+<graphics/3-tier-arch.pdf, id=1013, 1109.64563pt x 435.87843pt>
 File: graphics/3-tier-arch.pdf Graphic file (type pdf)
 <use graphics/3-tier-arch.pdf>
 Package pdftex.def Info: graphics/3-tier-arch.pdf  used on input line 701.
@@ -2621,17 +2621,17 @@ Overfull \hbox (28.2567pt too wide) in alignment at lines 1006--1024
 
 
 (./chapters/5_user_manual.tex
-<graphics/gui/user/landing.png, id=1218, 1018.40475pt x 531.78674pt>
+<graphics/gui/user/landing.png, id=1186, 1018.40475pt x 531.78674pt>
 File: graphics/gui/user/landing.png Graphic file (type png)
 <use graphics/gui/user/landing.png>
 Package pdftex.def Info: graphics/gui/user/landing.png  used on input line 6.
 (pdftex.def)             Requested size: 483.69687pt x 252.57698pt.
-<graphics/gui/user/login.png, id=1219, 372.79276pt x 451.6875pt>
+<graphics/gui/user/login.png, id=1187, 372.79276pt x 451.6875pt>
 File: graphics/gui/user/login.png Graphic file (type png)
 <use graphics/gui/user/login.png>
 Package pdftex.def Info: graphics/gui/user/login.png  used on input line 18.
 (pdftex.def)             Requested size: 217.66211pt x 263.72954pt.
-<graphics/gui/user/login-error.png, id=1220, 372.79276pt x 451.6875pt>
+<graphics/gui/user/login-error.png, id=1188, 372.79276pt x 451.6875pt>
 File: graphics/gui/user/login-error.png Graphic file (type png)
 <use graphics/gui/user/login-error.png>
 Package pdftex.def Info: graphics/gui/user/login-error.png  used on input line 
@@ -2642,26 +2642,26 @@ Package pdftex.def Info: graphics/gui/user/login-error.png  used on input line
 
 
  <./graphics/gui/user/landing.png>]
-<graphics/gui/user/reset-pass.png, id=1231, 374.5995pt x 267.399pt>
+<graphics/gui/user/reset-pass.png, id=1199, 374.5995pt x 267.399pt>
 File: graphics/gui/user/reset-pass.png Graphic file (type png)
 <use graphics/gui/user/reset-pass.png>
 Package pdftex.def Info: graphics/gui/user/reset-pass.png  used on input line 4
 6.
 (pdftex.def)             Requested size: 338.58632pt x 241.69324pt.
  [57 <./graphics/gui/user/login.png> <./graphics/gui/user/login-error.png>]
-<graphics/gui/user/reset-pass-success.png, id=1243, 252.945pt x 75.28125pt>
+<graphics/gui/user/reset-pass-success.png, id=1210, 252.945pt x 75.28125pt>
 File: graphics/gui/user/reset-pass-success.png Graphic file (type png)
 <use graphics/gui/user/reset-pass-success.png>
 Package pdftex.def Info: graphics/gui/user/reset-pass-success.png  used on inpu
 t line 59.
 (pdftex.def)             Requested size: 217.66211pt x 64.78195pt.
-<graphics/gui/user/reset-pass-failed.png, id=1244, 251.13824pt x 70.46326pt>
+<graphics/gui/user/reset-pass-failed.png, id=1211, 251.13824pt x 70.46326pt>
 File: graphics/gui/user/reset-pass-failed.png Graphic file (type png)
 <use graphics/gui/user/reset-pass-failed.png>
 Package pdftex.def Info: graphics/gui/user/reset-pass-failed.png  used on input
  line 65.
 (pdftex.def)             Requested size: 217.66211pt x 61.0735pt.
-<graphics/gui/user/email-reset.png, id=1245, 513.71925pt x 570.933pt>
+<graphics/gui/user/email-reset.png, id=1212, 513.71925pt x 570.933pt>
 File: graphics/gui/user/email-reset.png Graphic file (type png)
 <use graphics/gui/user/email-reset.png>
 Package pdftex.def Info: graphics/gui/user/email-reset.png  used on input line 
@@ -2669,222 +2669,234 @@ Package pdftex.def Info: graphics/gui/user/email-reset.png  used on input line
 (pdftex.def)             Requested size: 386.95897pt x 430.08041pt.
  [58 <./graphics/gui/user/reset-pass.png> <./graphics/gui/user/reset-pass-succe
 ss.png> <./graphics/gui/user/reset-pass-failed.png>]
-<graphics/gui/student/homepage.png, id=1254, 1924.94156pt x 935.74594pt>
+<graphics/gui/student/homepage.png, id=1222, 1924.94156pt x 935.74594pt>
 File: graphics/gui/student/homepage.png Graphic file (type png)
 <use graphics/gui/student/homepage.png>
 Package pdftex.def Info: graphics/gui/student/homepage.png  used on input line 
 85.
 (pdftex.def)             Requested size: 483.69687pt x 235.13528pt.
  [59 <./graphics/gui/user/email-reset.png>]
-<graphics/gui/student/profile.png, id=1261, 1926.44719pt x 946.28531pt>
+<graphics/gui/student/profile.png, id=1229, 1926.44719pt x 946.28531pt>
 File: graphics/gui/student/profile.png Graphic file (type png)
 <use graphics/gui/student/profile.png>
 Package pdftex.def Info: graphics/gui/student/profile.png  used on input line 9
 4.
 (pdftex.def)             Requested size: 483.69687pt x 237.59592pt.
-<graphics/gui/student/my-tickets.png, id=1262, 1926.44719pt x 949.29657pt>
+ [60 <./graphics/gui/student/homepage.png> <./graphics/gui/student/profile.png>
+]
+<graphics/gui/student/my-tickets.png, id=1239, 1926.44719pt x 949.29657pt>
 File: graphics/gui/student/my-tickets.png Graphic file (type png)
 <use graphics/gui/student/my-tickets.png>
 Package pdftex.def Info: graphics/gui/student/my-tickets.png  used on input lin
-e 103.
+e 108.
 (pdftex.def)             Requested size: 483.69687pt x 238.35199pt.
- [60 <./graphics/gui/student/homepage.png> <./graphics/gui/student/profile.png>
-]
-<graphics/gui/student/create-ticket.png, id=1271, 1926.44719pt x 950.80219pt>
+<graphics/gui/student/create-ticket.png, id=1241, 1926.44719pt x 950.80219pt>
 File: graphics/gui/student/create-ticket.png Graphic file (type png)
 <use graphics/gui/student/create-ticket.png>
 Package pdftex.def Info: graphics/gui/student/create-ticket.png  used on input 
-line 112.
+line 119.
 (pdftex.def)             Requested size: 483.69687pt x 238.73003pt.
  [61 <./graphics/gui/student/my-tickets.png>]
-<graphics/gui/student/rate-ticket.png, id=1278, 1926.44719pt x 950.80219pt>
+<graphics/gui/student/rate-ticket.png, id=1250, 1926.44719pt x 950.80219pt>
 File: graphics/gui/student/rate-ticket.png Graphic file (type png)
 <use graphics/gui/student/rate-ticket.png>
 Package pdftex.def Info: graphics/gui/student/rate-ticket.png  used on input li
-ne 121.
+ne 130.
 (pdftex.def)             Requested size: 483.69687pt x 238.73003pt.
  [62 <./graphics/gui/student/create-ticket.png>]
-<graphics/gui/student/rate-ticket1.png, id=1285, 305.34074pt x 178.86826pt>
+<graphics/gui/student/rate-ticket1.png, id=1257, 305.34074pt x 178.86826pt>
 File: graphics/gui/student/rate-ticket1.png Graphic file (type png)
 <use graphics/gui/student/rate-ticket1.png>
 Package pdftex.def Info: graphics/gui/student/rate-ticket1.png  used on input l
-ine 130.
+ine 139.
 (pdftex.def)             Requested size: 241.84843pt x 141.67828pt.
-<graphics/gui/student/msg.png, id=1286, 946.28531pt x 881.54344pt>
+<graphics/gui/student/msg.png, id=1258, 946.28531pt x 881.54344pt>
 File: graphics/gui/student/msg.png Graphic file (type png)
 <use graphics/gui/student/msg.png>
-Package pdftex.def Info: graphics/gui/student/msg.png  used on input line 140.
-(pdftex.def)             Requested size: 483.69687pt x 450.6035pt.
+Package pdftex.def Info: graphics/gui/student/msg.png  used on input line 150.
+(pdftex.def)             Requested size: 435.32422pt x 405.52835pt.
  [63 <./graphics/gui/student/rate-ticket.png> <./graphics/gui/student/rate-tick
 et1.png>]
-<graphics/gui/student/newsfeed.png, id=1294, 1926.44719pt x 944.02687pt>
+<graphics/gui/student/newsfeed.png, id=1267, 1926.44719pt x 944.02687pt>
 File: graphics/gui/student/newsfeed.png Graphic file (type png)
 <use graphics/gui/student/newsfeed.png>
 Package pdftex.def Info: graphics/gui/student/newsfeed.png  used on input line 
-150.
+163.
 (pdftex.def)             Requested size: 483.69687pt x 237.02887pt.
  [64 <./graphics/gui/student/msg.png>]
-<graphics/gui/student/noti.png, id=1301, 1315.16344pt x 860.46469pt>
+<graphics/gui/student/noti.png, id=1275, 1315.16344pt x 860.46469pt>
 File: graphics/gui/student/noti.png Graphic file (type png)
 <use graphics/gui/student/noti.png>
-Package pdftex.def Info: graphics/gui/student/noti.png  used on input line 160.
+Package pdftex.def Info: graphics/gui/student/noti.png  used on input line 176.
 
 (pdftex.def)             Requested size: 483.69687pt x 316.46317pt.
  [65 <./graphics/gui/student/newsfeed.png>]
-<graphics/gui/student/announcement.png, id=1308, 1139.00531pt x 882.29625pt>
+<graphics/gui/student/announcement.png, id=1283, 1139.00531pt x 882.29625pt>
 File: graphics/gui/student/announcement.png Graphic file (type png)
 <use graphics/gui/student/announcement.png>
 Package pdftex.def Info: graphics/gui/student/announcement.png  used on input l
-ine 170.
+ine 187.
 (pdftex.def)             Requested size: 483.69687pt x 374.6815pt.
- [66 <./graphics/gui/student/noti.png>]
-<graphics/gui/student/sett-edit-profile.png, id=1316, 1130.72438pt x 855.94781p
+ [66 <./graphics/gui/student/noti.png>] [67 <./graphics/gui/student/announcemen
+t.png>]
+<graphics/gui/student/sett-edit-profile.png, id=1298, 1130.72438pt x 855.94781p
 t>
 File: graphics/gui/student/sett-edit-profile.png Graphic file (type png)
 <use graphics/gui/student/sett-edit-profile.png>
 Package pdftex.def Info: graphics/gui/student/sett-edit-profile.png  used on in
-put line 179.
+put line 200.
 (pdftex.def)             Requested size: 483.69687pt x 366.14352pt.
- [67 <./graphics/gui/student/announcement.png>]
-<graphics/gui/student/sett-password.png, id=1323, 1135.99406pt x 881.54344pt>
+<graphics/gui/student/sett-password.png, id=1299, 1135.99406pt x 881.54344pt>
 File: graphics/gui/student/sett-password.png Graphic file (type png)
 <use graphics/gui/student/sett-password.png>
 Package pdftex.def Info: graphics/gui/student/sett-password.png  used on input 
-line 187.
+line 208.
 (pdftex.def)             Requested size: 483.69687pt x 375.3572pt.
  [68 <./graphics/gui/student/sett-edit-profile.png>]
-<graphics/gui/student/feedback.png, id=1330, 1068.99374pt x 852.18375pt>
+<graphics/gui/student/feedback.png, id=1307, 1068.99374pt x 852.18375pt>
 File: graphics/gui/student/feedback.png Graphic file (type png)
 <use graphics/gui/student/feedback.png>
 Package pdftex.def Info: graphics/gui/student/feedback.png  used on input line 
-196.
+218.
 (pdftex.def)             Requested size: 483.69687pt x 385.59866pt.
- [69 <./graphics/gui/student/sett-password.png>]
-<graphics/gui/staff/avail-ticket.png, id=1337, 1926.44719pt x 944.02687pt>
+ [69 <./graphics/gui/student/sett-password.png>] [70 <./graphics/gui/student/fe
+edback.png>]
+<graphics/gui/staff/avail-ticket.png, id=1320, 1926.44719pt x 944.02687pt>
 File: graphics/gui/staff/avail-ticket.png Graphic file (type png)
 <use graphics/gui/staff/avail-ticket.png>
 Package pdftex.def Info: graphics/gui/staff/avail-ticket.png  used on input lin
-e 207.
+e 231.
 (pdftex.def)             Requested size: 483.69687pt x 237.02887pt.
- [70 <./graphics/gui/student/feedback.png>]
-<graphics/gui/staff/avail-ticket-handle.png, id=1344, 589.60275pt x 368.577pt>
+<graphics/gui/staff/avail-ticket-handle.png, id=1321, 589.60275pt x 368.577pt>
 File: graphics/gui/staff/avail-ticket-handle.png Graphic file (type png)
 <use graphics/gui/staff/avail-ticket-handle.png>
 Package pdftex.def Info: graphics/gui/staff/avail-ticket-handle.png  used on in
-put line 214.
+put line 240.
 (pdftex.def)             Requested size: 386.95897pt x 241.90054pt.
  [71 <./graphics/gui/staff/avail-ticket.png>]
-<graphics/gui/staff/avail-ticket-handle-success.png, id=1352, 307.90031pt x 74.
+<graphics/gui/staff/avail-ticket-handle-success.png, id=1328, 307.90031pt x 74.
 52844pt>
 File: graphics/gui/staff/avail-ticket-handle-success.png Graphic file (type png
 )
 <use graphics/gui/staff/avail-ticket-handle-success.png>
 Package pdftex.def Info: graphics/gui/staff/avail-ticket-handle-success.png  us
-ed on input line 222.
+ed on input line 248.
 (pdftex.def)             Requested size: 241.84843pt x 58.54132pt.
-<graphics/gui/staff/ticket-handling.png, id=1353, 1926.44719pt x 946.28531pt>
+<graphics/gui/staff/ticket-handling.png, id=1329, 1926.44719pt x 946.28531pt>
 File: graphics/gui/staff/ticket-handling.png Graphic file (type png)
 <use graphics/gui/staff/ticket-handling.png>
 Package pdftex.def Info: graphics/gui/staff/ticket-handling.png  used on input 
-line 231.
+line 258.
 (pdftex.def)             Requested size: 483.69687pt x 237.59592pt.
  [72 <./graphics/gui/staff/avail-ticket-handle.png> <./graphics/gui/staff/avail
 -ticket-handle-success.png>]
-<graphics/gui/staff/ticket-handling-done.png, id=1362, 618.51076pt x 382.42876p
+<graphics/gui/staff/ticket-handling-done.png, id=1338, 618.51076pt x 382.42876p
 t>
 File: graphics/gui/staff/ticket-handling-done.png Graphic file (type png)
 <use graphics/gui/staff/ticket-handling-done.png>
 Package pdftex.def Info: graphics/gui/staff/ticket-handling-done.png  used on i
-nput line 239.
+nput line 266.
 (pdftex.def)             Requested size: 338.58632pt x 209.35028pt.
-<graphics/gui/staff/ticket-handling-cancel.png, id=1363, 585.98924pt x 365.5657
+<graphics/gui/staff/ticket-handling-cancel.png, id=1339, 585.98924pt x 365.5657
 5pt>
 File: graphics/gui/staff/ticket-handling-cancel.png Graphic file (type png)
 <use graphics/gui/staff/ticket-handling-cancel.png>
 Package pdftex.def Info: graphics/gui/staff/ticket-handling-cancel.png  used on
- input line 246.
+ input line 273.
 (pdftex.def)             Requested size: 338.58632pt x 211.2306pt.
  [73 <./graphics/gui/staff/ticket-handling.png> <./graphics/gui/staff/ticket-ha
 ndling-done.png>]
-<graphics/gui/staff/ticket-history.png, id=1371, 1926.44719pt x 942.52126pt>
+<graphics/gui/staff/ticket-history.png, id=1349, 1926.44719pt x 942.52126pt>
 File: graphics/gui/staff/ticket-history.png Graphic file (type png)
 <use graphics/gui/staff/ticket-history.png>
 Package pdftex.def Info: graphics/gui/staff/ticket-history.png  used on input l
-ine 257.
+ine 286.
 (pdftex.def)             Requested size: 483.69687pt x 236.65083pt.
-<graphics/gui/staff/message.png, id=1372, 988.44281pt x 881.54344pt>
+ [74 <./graphics/gui/staff/ticket-handling-cancel.png>]
+<graphics/gui/staff/message.png, id=1357, 988.44281pt x 881.54344pt>
 File: graphics/gui/staff/message.png Graphic file (type png)
 <use graphics/gui/staff/message.png>
-Package pdftex.def Info: graphics/gui/staff/message.png  used on input line 266
+Package pdftex.def Info: graphics/gui/staff/message.png  used on input line 296
 .
 (pdftex.def)             Requested size: 483.69687pt x 431.38167pt.
- [74 <./graphics/gui/staff/ticket-handling-cancel.png> <./graphics/gui/staff/ti
-cket-history.png>]
-<graphics/gui/staff/notification.png, id=1380, 1206.00563pt x 873.2625pt>
-File: graphics/gui/staff/notification.png Graphic file (type png)
-<use graphics/gui/staff/notification.png>
-Package pdftex.def Info: graphics/gui/staff/notification.png  used on input lin
-e 274.
-(pdftex.def)             Requested size: 483.69687pt x 350.23155pt.
- [75 <./graphics/gui/staff/message.png>]
-<graphics/gui/staff/notìication-create.png, id=1387, 366.168pt x 464.937pt>
+ [75 <./graphics/gui/staff/ticket-history.png>] [76 <./graphics/gui/staff/messa
+ge.png>]
+<graphics/gui/staff/notìication-create.png, id=1370, 366.168pt x 464.937pt>
 File: graphics/gui/staff/notìication-create.png Graphic file (type png)
 <use graphics/gui/staff/notìication-create.png>
 Package pdftex.def Info: graphics/gui/staff/notìication-create.png  used on in
-put line 282.
+put line 313.
 (pdftex.def)             Requested size: 241.84843pt x 307.08638pt.
- [76 <./graphics/gui/staff/notification.png>]
-<graphics/gui/staff/announcement-create.png, id=1394, 453.94594pt x 511.15968pt
+<graphics/gui/staff/announcement-create.png, id=1371, 453.94594pt x 511.15968pt
 >
 File: graphics/gui/staff/announcement-create.png Graphic file (type png)
 <use graphics/gui/staff/announcement-create.png>
 Package pdftex.def Info: graphics/gui/staff/announcement-create.png  used on in
-put line 294.
+put line 328.
 (pdftex.def)             Requested size: 241.84843pt x 272.33287pt.
  [77 <./graphics/gui/staff/notìication-create.png>]
-<graphics/gui/admin/ticket-mng.png, id=1401, 1918.16624pt x 949.29657pt>
+<graphics/gui/admin/ticket-mng.png, id=1378, 1918.16624pt x 949.29657pt>
 File: graphics/gui/admin/ticket-mng.png Graphic file (type png)
 <use graphics/gui/admin/ticket-mng.png>
 Package pdftex.def Info: graphics/gui/admin/ticket-mng.png  used on input line 
-308.
+343.
 (pdftex.def)             Requested size: 483.69687pt x 239.38043pt.
- [78 <./graphics/gui/staff/announcement-create.png>]
-<graphics/gui/admin/user-mng.png, id=1409, 1924.94156pt x 947.03813pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 338--346
+
+ []
+
+[78 <./graphics/gui/staff/announcement-create.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 350--353
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--353
+
+ []
+
+[79 <./graphics/gui/admin/ticket-mng.png>]
+<graphics/gui/admin/user-mng.png, id=1392, 1924.94156pt x 947.03813pt>
 File: graphics/gui/admin/user-mng.png Graphic file (type png)
 <use graphics/gui/admin/user-mng.png>
-Package pdftex.def Info: graphics/gui/admin/user-mng.png  used on input line 31
-7.
+Package pdftex.def Info: graphics/gui/admin/user-mng.png  used on input line 35
+6.
 (pdftex.def)             Requested size: 483.69687pt x 237.9728pt.
-[79 <./graphics/gui/admin/ticket-mng.png>]
-<graphics/gui/admin/dorm-mng.png, id=1416, 955.31906pt x 864.22874pt>
+<graphics/gui/admin/dorm-mng.png, id=1393, 955.31906pt x 864.22874pt>
 File: graphics/gui/admin/dorm-mng.png Graphic file (type png)
 <use graphics/gui/admin/dorm-mng.png>
-Package pdftex.def Info: graphics/gui/admin/dorm-mng.png  used on input line 32
+Package pdftex.def Info: graphics/gui/admin/dorm-mng.png  used on input line 36
 5.
-(pdftex.def)             Requested size: 483.69687pt x 437.57274pt.
+(pdftex.def)             Requested size: 435.32422pt x 393.80492pt.
  [80 <./graphics/gui/admin/user-mng.png>]
-<graphics/gui/admin/logs-mng.png, id=1423, 1924.18875pt x 931.22906pt>
+<graphics/gui/admin/logs-mng.png, id=1400, 1924.18875pt x 931.22906pt>
 File: graphics/gui/admin/logs-mng.png Graphic file (type png)
 <use graphics/gui/admin/logs-mng.png>
-Package pdftex.def Info: graphics/gui/admin/logs-mng.png  used on input line 33
-4.
+Package pdftex.def Info: graphics/gui/admin/logs-mng.png  used on input line 37
+5.
 (pdftex.def)             Requested size: 483.69687pt x 234.08554pt.
  [81 <./graphics/gui/admin/dorm-mng.png>]
-<graphics/gui/admin/feedback-mng.png, id=1430, 1912.14375pt x 925.95938pt>
+<graphics/gui/admin/feedback-mng.png, id=1407, 1912.14375pt x 925.95938pt>
 File: graphics/gui/admin/feedback-mng.png Graphic file (type png)
 <use graphics/gui/admin/feedback-mng.png>
 Package pdftex.def Info: graphics/gui/admin/feedback-mng.png  used on input lin
-e 343.
+e 385.
 (pdftex.def)             Requested size: 483.69687pt x 234.2303pt.
  [82 <./graphics/gui/admin/logs-mng.png>]
-<graphics/gui/admin/report-util.png, id=1437, 1921.93031pt x 938.00438pt>
+<graphics/gui/admin/report-util.png, id=1414, 1921.93031pt x 938.00438pt>
 File: graphics/gui/admin/report-util.png Graphic file (type png)
 <use graphics/gui/admin/report-util.png>
 Package pdftex.def Info: graphics/gui/admin/report-util.png  used on input line
- 358.
+ 394.
 (pdftex.def)             Requested size: 483.69687pt x 236.06061pt.
- [83 <./graphics/gui/admin/feedback-mng.png>]) [84 <./graphics/gui/admin/report
--util.png>]
+ [83 <./graphics/gui/admin/feedback-mng.png> <./graphics/gui/admin/report-util.
+png>]) [84]
 \openout2 = `chapters/6_conclusion.aux'.
 
  (./chapters/6_conclusion.tex) [85
@@ -2907,13 +2919,13 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 17F29BFC46AFE97F8E692D009B203F90;15039.
+(rerunfilecheck)             Checksum: C0B1B6FC61082F593BFC24FD9BE52587;14342.
  ) 
 Here is how much of TeX's memory you used:
- 45588 strings out of 474116
- 953086 string characters out of 5747717
+ 45562 strings out of 474116
+ 952347 string characters out of 5747717
  2112190 words of memory out of 5000000
- 66818 multiletter control sequences out of 15000+600000
+ 66799 multiletter control sequences out of 15000+600000
  579381 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,20n,107p,1288b,2590s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2925,10 +2937,10 @@ pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vnr8.pfb><c:/texlive/2024
 /texmf-dist/fonts/type1/vntex/vnr/vntt10.pfb><c:/texlive/2024/texmf-dist/fonts/
 type1/vntex/vnr/vntt12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/vntex/vnr/vn
 tt8.pfb>
-Output written on report.pdf (87 pages, 4705915 bytes).
+Output written on report.pdf (87 pages, 4633957 bytes).
 PDF statistics:
- 1593 PDF objects out of 1728 (max. 8388607)
- 1332 compressed objects within 14 object streams
- 364 named destinations out of 1000 (max. 500000)
- 1032 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1568 PDF objects out of 1728 (max. 8388607)
+ 1309 compressed objects within 14 object streams
+ 357 named destinations out of 1000 (max. 500000)
+ 979 words of extra memory for PDF output out of 10000 (max. 10000000)
 
