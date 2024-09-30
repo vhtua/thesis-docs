@@ -1000,6 +1000,7 @@ this API structure enhances user interaction with the ticketing system, providin
 
 
 \subsubsection{Dormitory API}
+The Dormitory API provides functionality for managing dormitories, areas, and rooms. It allows users to retrieve lists of all dormitories, specific dormitory areas, or rooms within an area. Additionally, it supports creating new dormitories by specifying an area and room and allows for the deletion of dormitory rooms based on the area and room identifiers. These operations require user authentication via a Bearer token for access control.
 \begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
 	\hline
 	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
@@ -1013,9 +1014,7 @@ this API structure enhances user interaction with the ticketing system, providin
 	
 	POST & /api/v1/dorms/ & Authorization: Bearer <token> & JSON object which contains dormitory area and room  & Create a new dormitory with supplied data \\ \hline
 	
-	DELETE & /api/v1/dorms/\{area\}/ \newline \{room\}  & Authorization: Bearer <token> & JSON object which contains dormitory area and room  & Create a new dormitory with supplied data \\ \hline
-	
-	
+	DELETE & /api/v1/dorms/\{area\}/ \newline \{room\}  & Authorization: Bearer <token> & None  & Delete a dormitory room \\ \hline
 
 	
 	\caption{Dormitory API}
@@ -1024,9 +1023,117 @@ this API structure enhances user interaction with the ticketing system, providin
 \end{longtable}
 
 
+\begin{lstlisting}[breaklines=true, caption=Dormitory Scheme]
+[
+	{
+		"dorm_area": "string",
+		"rooms": [ { "dorm_room": "string"}, ... ]
+	}, ...
+]
+\end{lstlisting}
+
+
+
+\subsubsection{Attachment API}
+The Attachment API allows users to retrieve an image or video file by specifying the attachment name in the endpoint. It does not require authentication or a request body, and the response includes the requested media file (either image or video).
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/attachment/ \newline \{attachment\_name\} & None & None & image or video file \\ \hline
+	
+	
+	\caption{Attachment API}
+	\label{tab:attachment-api}
+	
+\end{longtable}
+
+
+
+\subsubsection{Rating API}
+
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/rating/\{ticket\_id\} & Authorization: Bearer <token>  & None & JOSN object which contains rating score of a ticket\\ \hline
+	
+	POST & /api/v1/rating & Authorization: Bearer <token>  & JSON object which contains ticket id and the rating score & Create a rating score for the ticket with given id\\ \hline
+	
+	
+	\caption{Rating API}
+	\label{tab:rating-api}
+	
+\end{longtable}
+
+
+
+\subsubsection{Message API}
+
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/message/conversation & Authorization: Bearer <token>  & None & JOSN object which contains all conversation id of the user\\ \hline
+	
+	GET & /api/v1/message/\{ticket\_id\} & Authorization: Bearer <token>  & None & List of JOSN objects which contain all messages of the given ticket id\\ \hline
+	
+	WebSocket \newline Event & send\_message &  Authorization: Bearer <token> & 
+	
+	\caption{Rating API}
+	\label{tab:message-api}
+	
+\end{longtable}
+
+\subsubsection{Message Web Socket Event}
+
+	\begin{itemize}
+		\item Method: WebSocket Event
+		\item Headers: Authorization: Bearer <token> 
+		\item Request Body: 
+	\end{itemize}
+
 
 
 \subsection{UI/\acs{ux} Design}
+In accordance with the functional requirements, the system must incorporate a user interface (UI) that is not only intuitive and user-friendly but also fully functional and straightforward. The design should prioritize simplicity, ensuring that users can navigate and utilize the features without encountering unnecessary complexity. Additionally, the UI must be responsive, seamlessly adapting to various devices, including desktops, tablets, and smartphones. This adaptability will enhance the overall user experience, allowing individuals to access and engage with the system effortlessly, regardless of the device they are using. Ultimately, the goal is to create a cohesive and effective interface that meets users' needs while providing a smooth and enjoyable interaction with the system.
+
+	
+	\subsubsection{Responsive Design}
+	The web user interface (UI) is designed to be fully responsive, ensuring an optimal user experience (UX) across a diverse range of devices, including mobile phones, tablets, and desktop computers. This adaptability allows the interface to seamlessly adjust its layout and functionality according to the screen size and resolution of the device being used. By prioritizing responsiveness, the design enhances accessibility and usability, providing users with a consistent and intuitive experience regardless of whether they are accessing the application on a small mobile screen, a medium-sized tablet, or a larger desktop monitor. This commitment to a responsive design ultimately fosters greater user engagement and satisfaction. (see Figures \ref{fig:res1}, \ref{fig:res2})
+		
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{graphics/responsive/res2}
+		\caption{Profile UI in Desktop device}
+		\label{fig:res2}
+	\end{figure}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{graphics/responsive/res1}
+		\caption{Profile UI in Mobile device}
+		\label{fig:res1}
+	\end{figure}
+	
+
+	
+	
+	\subsubsection{Live Customization}
+	Users have the ability to personalize the web application in real-time by selecting the "Live Customize" option. Within this feature, they can choose from a variety of font families and adjust the border radius to suit their preferences. This functionality not only allows users to create a more tailored and visually appealing experience but also significantly enhances overall user experience (UX). By empowering users to modify these visual elements according to their individual tastes, the application becomes more engaging and user-friendly, ultimately leading to greater satisfaction and a more enjoyable interaction with the platform.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.5\linewidth]{graphics/responsive/live-custom}
+		\caption{Web UI Live Customization}
+		\label{fig:live-custom}
+	\end{figure}
+	
+	
+	
 
 
 
