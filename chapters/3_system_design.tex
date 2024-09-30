@@ -692,40 +692,341 @@ The core functionality of the Student Life Support Service is its ticket-raising
 
 \subsection{System Architecture}
 
-The system follows a three-tier architecture, consisting of the following layers:
+	\subsubsection{Overview}
+	
+	The system follows a three-tier architecture, consisting of the following layers:
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\columnwidth]{graphics/3-tier-arch.pdf}
+		\caption{Three-tier Architecture \cite{3-tier}}
+		\label{fig:3-tier}
+	\end{figure}
+	
+	
+	\begin{enumerate}
+		\item \textbf{Presentation Layer (Client):}
+		
+		Handles all interactions with the user.
+		Implements the user interface using ReactJS and Material UI.
+		Communicates with the server through RESTful API calls and SocketIO for real-time features.
+		Responsible for rendering components, collecting user input, and displaying data received from the backend.
+		
+		\item \textbf{Business Logic Layer (Server)}:
+		
+		NodeJS and ExpressJS handle the core business logic, such as processing support ticket requests, authenticating users, managing roles, and communicating with the database.
+		SocketIO is used to manage real-time messaging between students and staff.
+		Implements security features like JWT-based authentication and session management using Redis.
+		
+		\item \textbf{ Data Layer (Database)}:
+		
+		PostgreSQL stores all persistent data, including user profiles, support tickets, messages, and system logs.
+		The server communicates with the database using SQL queries to retrieve, create, update, and delete records.
+		Ensures data consistency and integrity by enforcing constraints, foreign keys, and relationships.
+		
+	\end{enumerate}
+	
+	
+	\subsubsection{3-Tier Architecture Implementation}
+	
+	\begin{longtable}{|m{4cm}|m{13cm}|}
+		\hline
+		
+		
+		Presentation Layer & The frontend is built using ReactJS, Material UI, and Vite. These technologies allow for dynamic rendering, responsive design, and a user-friendly interface. The presentation layer is responsible for capturing user input, displaying data, and providing real-time updates through WebSockets (using Socket.IO).  \\ \hline
+		
+		Business Logic Layer & The backend is implemented using NodeJS and ExpressJS. This layer handles all business logic, processes user requests, applies business rules, and interacts with the data layer. The business logic layer leverages Socket.IO for real-time communication, allowing instant messaging between students and staff.  \\ \hline
+		
+		Data Access Layer & The data access layer utilizes PostgreSQL to store user data, support ticket information, and system logs. The data layer interacts with the business logic layer to retrieve and store information as needed. Redis is employed for session management by storing the user JWT refresh token. \\ \hline
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\columnwidth]{graphics/3-tier-arch.pdf}
-	\caption{Three-tier Architecture \cite{3-tier}}
-	\label{fig:3-tier}
-\end{figure}
+		
+		\caption{3-Tier Architecture Implementation}
+		\label{tab:3-tier-implement}
+		
+	\end{longtable}
 
 
-\begin{enumerate}
-	\item \textbf{Presentation Layer (Client):}
+\subsection{API Design}
+The API (Application Programming Interface) design is crucial for enabling communication between the frontend and backend of the Student Life Support Service application. A well-structured API facilitates seamless data exchange and supports the application's functionalities. \\
+
+	API Design Principles:
+	\begin{itemize}
+		\item \textbf{RESTful Architecture}: The API follows RESTful principles, utilizing standard HTTP methods (GET, POST, PATCH, DELETE) for interaction. This allows for clear and intuitive endpoints.
+		
+		\item \textbf{Versioning}: The API is versioned (/api/v1/) to manage changes and ensure backward compatibility for existing clients.
+		
+		\item \textbf{Error Handling}: Consistent error responses are defined, returning meaningful HTTP status codes (200 for success, 404 for not found, 500 for server errors) along with descriptive messages.
+	\end{itemize}
 	
-	Handles all interactions with the user.
-	Implements the user interface using ReactJS and Material UI.
-	Communicates with the server through RESTful API calls and SocketIO for real-time features.
-	Responsible for rendering components, collecting user input, and displaying data received from the backend.
+	Data format:
+	\begin{itemize}
+		\item \textbf{Request Format}: All requests to the API are in JSON format, with the appropriate headers set (Content-Type: application/json).
+		
+		\item \textbf{Response Format}: API responses are standardized to return JSON objects. Successful responses include a status field, data field (for returned data), and an optional message field for additional context.
+	\end{itemize}
 	
-	\item \textbf{Business Logic Layer (Server)}:
+	Security Measures: 
+	\begin{itemize}
+		\item JWT is used for user authentication, with tokens sent in the Authorization header of each request (Authorization: Bearer <token>).
+	\end{itemize}
+
+	\newpage 
+	\subsubsection{Authentication/Authorization API}
+	\begin{longtable}{|m{1.5cm}|m{4.8cm}|m{3.3cm}|m{3cm}|m{3.2cm}|}
+		\hline
+		\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+		\endhead
+		
+		POST & /auth/login & Content-Type: application/json & JSON object with username and password & JSON object which contains access token, refresh token and general user information \\ \hline
+		
+		POST & /auth/logout & Authorization: Bearer <token>\newline Cookie: <refreshToken> & None  & Clear tokens and cookie \\ \hline
+		
+		POST & /auth/refresh-token & Cookie: <refreshToken>& None & JSON object which contains new access token \\ \hline
+		
+		POST & /auth/verify-refreshToken & Cookie: <refreshToken>& None & JSON object which contains validation status and message \\ \hline
+		
+		POST & /auth/reset-password &  Content-Type: application/json &  JSON object with email  &  JSON object which contains message \\ \hline
+		
+		PATCH & /auth/reset-password &  Content-Type: application/json &  JSON object with reset password token &  JSON object which contains message \\ \hline
+		
+		
+		\caption{Authentication/Authorization API}
+		\label{tab:auth-api}
+		
+	\end{longtable}
 	
-	NodeJS and ExpressJS handle the core business logic, such as processing support ticket requests, authenticating users, managing roles, and communicating with the database.
-	SocketIO is used to manage real-time messaging between students and staff.
-	Implements security features like JWT-based authentication and session management using Redis.
 	
-	\item \textbf{ Data Layer (Database)}:
-	
-	PostgreSQL stores all persistent data, including user profiles, support tickets, messages, and system logs.
-	The server communicates with the database using SQL queries to retrieve, create, update, and delete records.
-	Ensures data consistency and integrity by enforcing constraints, foreign keys, and relationships.
-	
-\end{enumerate}
+The Login API enables the client to authenticate with the server and obtain permissions based on the client’s role. Upon a successful request, the server returns a token string, which the client can use to access the server's protected routes.
+
+\texttt{POST /auth/login}
+\begin{lstlisting}[language=Javascript, caption=Request body of Login API]
+	{
+		"username": "string",
+		"password": "string"
+	}
+\end{lstlisting}
 
 
-\subsection{Frontend Design}
+
+\begin{lstlisting}[breaklines=true, caption=Response of Login API]
+	{
+		"user_id": "string",         // Unique identifier for the user
+		"username": "string",        // User's login name
+		"email": "string",           // User's email address
+		"fullname": "string",        // User's full name
+		"role_name": "string",       // User's role in the system (e.g., Admin)
+		"accessToken": "string"      // JWT access token for authorization
+	}
+\end{lstlisting}
+
+\vspace*{0.5cm}
+The Refresh Token API issues a new access token for the user, using the refresh token stored in the secure cookie for authorization.
+
+\texttt{POST /auth/refresh-token}
+\begin{lstlisting}[breaklines=true, caption=Response of Refresh Token API]
+	{
+		"accessToken": "string"      // JWT access token for authentication
+	}
+\end{lstlisting}
+
+\vspace*{0.5cm}
+
+The Verify Refresh Token API is used to verify the validity of a refresh token. Upon receiving a request, the server checks if the provided refresh token is valid. If the token is valid, the response will return a JSON object indicating the token's validity status.
+	
+\texttt{POST /auth/verify-refreshToken}
+\begin{lstlisting}[breaklines=true, caption=Response of Verify Refresh Token API]
+	{
+		"valid": boolean   
+	}
+\end{lstlisting}
+
+
+
+\newpage
+The Reset Password API enables users to reset their passwords by sending a password reset link to their email. 
+
+\texttt{POST /auth/reset-password}
+\begin{lstlisting}[breaklines=true, caption=Response of Reset Password API]
+	{
+		"message": "string"   
+	}
+\end{lstlisting}
+
+
+
+\subsubsection{User API}
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/users & Authorization: Bearer <token> & None & JSON object which contains current user details \\ \hline
+	
+	GET & /api/v1/users/all & Authorization: Bearer <token> & None  & List of JSON objects which contain all user details \\ \hline
+	
+	POST & /api/v1/users & Authorization: Bearer <token> & JSON object with needed information to create a new user & create a new user with supplied information \\ \hline
+	
+	PATCH & /api/v1/users/password & Authorization: Bearer <token>& JSON object with old password and new password & Update new password of the current user \\ \hline
+	
+	PATCH & /api/v1/users/phone-number & Authorization: Bearer <token>& JSON object with new phone number & Update new phone number of the current user \\ \hline
+	
+	PATCH & /api/v1/users/dorm/ \newline \{user\_id\} & Authorization: Bearer <token>& JSON object with new dorm details & Update new dorm details for the given user id \\ \hline
+	
+	PATCH & /api/v1/users/role/ \newline \{user\_id\} & Authorization: Bearer <token>& JSON object with new role detail & Update new role for the given user id \\ \hline
+	
+	PATCH & /api/v1/users/\{user\_id\} & Authorization: Bearer <token>& JSON object with new user details & Update personal details for the given user id \\ \hline
+	
+	
+	DELETE & /api/v1/users/\{user\_id\} & Authorization: Bearer <token>& None & Delete a user \\ \hline
+
+	
+	
+	\caption{User API}
+	\label{tab:user-api}
+	
+\end{longtable}
+
+The User API provides various endpoints to manage user-related functionalities within the Student Life Support Service application. It allows users to retrieve their own details, view all users, and perform actions like creating new users or updating existing user information. Each request requires an authentication token in the header to ensure secure access. \\ \\
+Users can retrieve their personal information or a list of all users through GET requests. For user creation, a POST request is utilized, where necessary details are supplied in the request body. The API also facilitates user updates through PATCH requests, allowing users to change their passwords, phone numbers, dormitory assignments, roles, or any personal details. Finally, a DELETE request enables the removal of a user from the system. \\ \\
+This API structure ensures comprehensive user management while maintaining security through token-based authentication.
+
+\begin{lstlisting}[breaklines=true, caption=User Scheme]
+	{
+		"username": "string",
+		"fullname": "string",
+		"email": "string",
+		"role_name": "string",
+		"gender": "string",
+		"created_date": "string",
+		"program": "string",
+		"area": "string",
+		"room": "string",
+		"phone_number": "string",
+		"intake": "string",
+		"place_of_birth": "string",
+		"date_of_birth": "string"
+	}
+\end{lstlisting}
+
+
+
+%The API retrieves the details of the current user based on the provided authentication token.
+%
+%\texttt{GET /api/v1/users}
+%\textbf{Headers:}
+%\texttt{Authorization: Bearer <token>}
+%\begin{lstlisting}[breaklines=true, caption=Response of Get Current User API] 
+%	{ 
+%		"user_id": "string",
+%		"username": "string",
+%		"email": "string", "fullname": "string", "role_name": "string" 
+%		} 
+%\end{lstlisting}
+
+
+\subsubsection{Ticket API}
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/tickets & Authorization: Bearer <token> & None & List of JSON objects which contain current user tickets \\ \hline
+	
+	GET & /api/v1/tickets/\{ticket\_id\} & Authorization: Bearer <token> & None  & JSON object which contains a ticket detail of current user\\ \hline
+	
+	GET & /api/v1/tickets/all & Authorization: Bearer <token> & None & List of JSON objects which contain all tickets \\ \hline
+	
+	GET & /api/v1/tickets/all/ \newline \{ticket\_id\} & Authorization: Bearer <token> & None & JSON object which contains a ticket detail \\ \hline
+	
+	
+	GET & /api/v1/tickets/types & Authorization: Bearer <token> & None & List of JSON objects which contain all ticket types \\ \hline
+	
+
+	GET & /api/v1/tickets/types & Authorization: Bearer <token> & None & List of JSON objects which contain all ticket types \\ \hline
+	
+	GET & /api/v1/tickets/public & Authorization: Bearer <token> & None & List of JSON objects which contain all public tickets \\ \hline
+	
+	GET & /api/v1/tickets/pending & Authorization: Bearer <token> & None & List of JSON objects which contain all pending tickets \\ \hline
+	
+	GET & /api/v1/tickets/in-progress & Authorization: Bearer <token> & None & List of JSON objects which contain all closed tickets \\ \hline
+	
+	GET & /api/v1/tickets/audience-type & Authorization: Bearer <token> & None & List of JSON objects which contain all ticket audience types \\ \hline
+	
+	
+	POST & /api/v1/tickets/ & Authorization: Bearer <token> \newline Content-Type: 'multipart/form-data' & JSON object with needed information to create a ticket & Create a new ticket with supplied information \\ \hline
+	
+	
+	PATCH & /api/v1/tickets/status & Authorization: Bearer <token> & JSON object with ticket id and status id & Update a ticket status with given information \\ \hline
+	
+	DELETE & /api/v1/tickets/\{ticket\_id\} & Authorization: Bearer <token> & None & Delete a specific ticket \\ \hline
+	
+	\caption{Ticket API}
+	\label{tab:ticket-api}
+	
+\end{longtable}
+
+\vspace*{0.8cm}
+
+The Ticket API provides a set of endpoints to manage support tickets within the Student Life Support Service application. It enables users to create, view, update, and delete tickets, ensuring comprehensive ticket management while enforcing secure access through token-based authentication. \\ \\
+Users can retrieve a list of their own tickets or all tickets using GET requests, and detailed information about specific tickets is accessible through dedicated endpoints. The API also provides functionality to list all ticket types and audience types, as well as to filter tickets based on their current status, such as pending or in-progress. \\ \\
+For ticket creation, a POST request is utilized, where necessary details are submitted in the request body. Updates to ticket status can be performed with PATCH requests. Finally, users can delete tickets using DELETE requests, which ensures that the system can manage and maintain a clean ticket database effectively.\\ \\
+this API structure enhances user interaction with the ticketing system, providing the necessary tools for both users and administrators to manage support tickets efficiently.
+
+\begin{lstlisting}[breaklines=true, caption=Ticket Scheme]
+{
+	"ticket_id": number,
+	"username": "string",
+	"fullname": "string",
+	"created_date": "string",
+	"ended_date": "string",
+	"ticket_type_name": "string",
+	"subject": "string",
+	"details": "string",
+	"audience_type": "string",
+	"status": "string",
+	"dorm_area": "string",
+	"dorm_room": "string",
+	"attachments": [
+		{
+			"id": number,
+			"type": "string",
+			"name": "string",
+			"url": "string"
+		},
+	]
+}
+\end{lstlisting}
+
+
+
+\subsubsection{Dormitory API}
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/dorms & Authorization: Bearer <token> & None & List of JSON objects which contain all dormitory details \\ \hline
+	
+	GET & /api/v1/dorms/area & Authorization: Bearer <token> & None  & List of JSON objects which contain all dormitory areas\\ \hline
+	
+	GET & /api/v1/dorms/rooms/ \newline \{area\} & Authorization: Bearer <token> & None  & List of JSON objects which contain all dormitory rooms in a specific area\\ \hline
+	
+	POST & /api/v1/dorms/ & Authorization: Bearer <token> & JSON object which contains dormitory area and room  & Create a new dormitory with supplied data \\ \hline
+	
+	DELETE & /api/v1/dorms/\{area\}/ \newline \{room\}  & Authorization: Bearer <token> & JSON object which contains dormitory area and room  & Create a new dormitory with supplied data \\ \hline
+	
+	
+
+	
+	\caption{Dormitory API}
+	\label{tab:dorm-api}
+	
+\end{longtable}
+
+
+
+
+\subsection{UI/\acs{ux} Design}
 
 
 

@@ -1,18 +1,25 @@
 \acswitchoff 
 \babel@toc {english}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces ReactJS Logo}}{16}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Material UI Logo}}{17}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Vite Logo}}{17}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces NodeJS Logo}}{17}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Expressjs Logo}}{17}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces SocketIO Logo}}{17}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces JWT Logo}}{18}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Detailed explanation of JWT-based authentication mechanism.}}{18}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Redis Logo}}{18}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces PostgreSQL \acs {rdbms} Logo}}{19}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Student Use Case Diagram}}{27}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Staff (Dormitory staff, Student affairs) Use Case Diagram}}{28}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Admin Use Case Diagram}}{29}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Ticket-Raising Process Workflow}}{30}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces ER Diagram}}{31}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Three-tier Architecture \cite {3-tier}}}{41}{figure.16}%
+\contentsline {figure}{\numberline {1}{\ignorespaces ReactJS Logo}}{17}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Material UI Logo}}{18}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Vite Logo}}{18}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces NodeJS Logo}}{18}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Expressjs Logo}}{18}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces SocketIO Logo}}{18}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces JWT Logo}}{19}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Detailed explanation of JWT-based authentication mechanism.}}{19}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Redis Logo}}{19}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces PostgreSQL \acs {rdbms} Logo}}{20}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Student Use Case Diagram}}{28}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Staff (Dormitory staff, Student affairs) Use Case Diagram}}{29}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Admin Use Case Diagram}}{30}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Ticket-Raising Process Workflow}}{31}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces ER Diagram}}{32}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Three-tier Architecture \cite {3-tier}}}{42}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Landing page}}{55}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Sign in Form}}{56}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Failed Sign in attempt}}{56}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Reset password form}}{57}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Reset password successfully}}{57}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Reset password failed}}{57}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Reset password email instructions}}{58}{figure.23}%
