@@ -5,6 +5,11 @@ Apidog.
 \newblock {Socket. IO vs. WebSocket: Keys Differences}, Accessed on 01.10.2024.
 \newblock URL: \url{https://apidog.com/articles/socket-io-vs-websocket/}.
 
+\bibitem{google-recaptcha}
+Google Documentation.
+\newblock {What is reCAPTCHA?}, Accessed on 01.10.2024.
+\newblock URL: \url{https://www.google.com/recaptcha/about/}.
+
 \bibitem{jwt}
 JWT Documentation.
 \newblock {Introduction to JSON Web Tokens}, Accessed on 01.10.2024.

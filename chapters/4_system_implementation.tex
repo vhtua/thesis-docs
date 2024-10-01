@@ -399,10 +399,81 @@ socket.on('disconnect', () => {
 });
 \end{lstlisting}
 
-
+\newpage
 \subsection{Security Measures}
+	\subsubsection{JWT Authentication/Authorization}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.58\columnwidth]{graphics/jwt-auth.pdf}
+		\caption{JWT Authentication/Authorization Workflow}
+		\label{fig:jwt-auth}
+	\end{figure}
+	
+	The JWT (JSON Web Token) authentication and authorization workflow in the Student Life Support Service is designed to ensure secure access to the system's resources while providing a seamless user experience. The process begins when a user signs in by submitting their credentials, such as a username and password. Upon successful validation of these credentials, the system generates two tokens: an access token and a refresh token. The access token is used for short-term authorization and is typically included in the Authorization header of API requests to grant the user access to protected resources. 
+	
+	\noindent To ensure a high level of security, the refresh token is stored in two secure locations: a cookie on the client-side and in Redis, which serves as an in-memory database for managing sessions. The refresh token allows the system to issue a new access token when the original one expires, ensuring that the user does not need to log in repeatedly.
+	
+	\noindent When a user makes an API request, the system first checks the validity of the provided access token. If the token is valid, the request is processed, and the appropriate data is returned. However, if the access token is expired or invalid, the system turns to the refresh token. If the refresh token is verified as valid, a new access token is generated, and the user can continue to access the API without re-authenticating.
+	
+	\noindent In cases where both the access and refresh tokens are invalid, the user is required to log in again, ensuring that expired or tampered tokens do not grant unauthorized access to the system. By utilizing this access-refresh token structure, with refresh tokens stored securely in Redis and cookies, the system balances both security and usability, providing users with continuous access while protecting against unauthorized usage or token expiration.
+	
+	\noindent This approach ensures that the system is scalable and can handle multiple user sessions efficiently, while also offering robust security through token validation and management.
 
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Store refresh token in secure cookie]
+// Send Refresh Token as an HTTP-only, Secure cookie
+res.cookie('refreshToken', refreshToken, {
+	httpOnly: true,       					// Prevent JavaScript access to the cookie
+	secure: true,         					// Send only over HTTPS
+	sameSite: 'Strict',   					// Protect against CSRF
+	maxAge: REFRESH_TOKEN_EXPIRED_IN * 1000, 
+});
+\end{lstlisting}
 
+	\subsubsection{Password Hashing}
+	All user passwords within the system are securely protected through the use of a one-way hashing algorithm. This is accomplished by employing the \texttt{\textbf{bcryptjs}} library, which ensures that passwords are irreversibly encrypted, thereby enhancing the security and integrity of user credentials. \\
+	
+	The \texttt{\textbf{hashPassword}} function below takes a user's plaintext password as input and securely hashes it. First, the function generates a salt using bcrypt.genSalt, which adds an extra layer of randomness to the hashing process. This salt is combined with the user's password using the bcrypt.hash function to create a unique hashed version of the password. The hashed password is then returned, ensuring that even if the same password is used by multiple users, the stored hash will be different due to the unique salt for each password. In case of any errors during this process, the function throws a detailed error message for debugging purposes.
+	
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Password Hashing]
+async function hashPassword(userInputPassword) {
+	try {
+		const salt = await bcrypt.genSalt(saltRounds);
+		const hash = await bcrypt.hash(userInputPassword, salt);
+		return hash; // Return the hashed password
+	} catch (error) {
+		throw new Error('Error hashing password: ' + error.message);
+	}
+}
+\end{lstlisting}
+
+	The verifyPassword function is used to check if a user's inputted password matches the stored hashed password in the system. It does this by using bcrypt.compare, which compares the plaintext password with the hashed password stored in the database. If the passwords match, the function returns true; otherwise, it returns false. Similar to hashPassword, if an error occurs during the verification process, an error message is thrown for further investigation.
+	
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Password Verification]
+async function verifyPassword(userInputPassword, encryptedPassword) {
+	try {
+		const isMatch = await bcrypt.compare(userInputPassword, encryptedPassword);
+		return isMatch;
+	} catch (error) {
+		throw new Error('Error verifying password: ' + error.message);
+	}
+}
+\end{lstlisting}
+	
+	
+	
+	\subsubsection{Google reCAPTCHA}
+	Google reCAPTCHA is a security service designed to protect websites from bots and automated abuse. It uses a combination of behavioral analysis, machine learning, and user challenges to distinguish between human users and malicious bots. The main goal of reCAPTCHA is to prevent attacks such as credential stuffing, brute-force attempts, and other forms of automated exploits while allowing legitimate users to interact with the site without interruption. \cite{google-recaptcha}
+	
+	In this system, integrating reCAPTCHA in the "Edit Profile" and "Change Password" features enhances security by preventing automated attacks and brute-force attempts. It ensures that only legitimate users can make critical changes, reducing the risk of unauthorized access and data breaches. reCAPTCHA also helps protect sensitive user information, adds an extra layer of verification for critical actions, and prevents abuse or spam, maintaining system integrity and keeping accounts secure.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.3\linewidth]{graphics/change-password-captcha}
+		\caption{reCAPTCHA in Change Password form}
+		\label{fig:change-password-captcha}
+	\end{figure}
+	
+	
+	
 	
 	
 	
