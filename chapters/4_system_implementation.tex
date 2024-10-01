@@ -14,27 +14,27 @@
 	
 	context/ & contains the constants which have to be shared across these components. \\ \hline
 	
-	hooks/ & contains custom React hooks \\ \hline
+	hooks/ & contains custom React hooks. \\ \hline
 	
 	public/ & contains public assets (mostly for landing page). \\ \hline
 	
-	routes/ & defines all routes of the frontend \\ \hline
+	routes/ & defines all routes of the frontend. \\ \hline
 	
-	store/ & holds specific states of the frontend \\ \hline
+	store/ & holds specific states of the frontend. \\ \hline
 	
-	themes/ & defines the color scheme, palette for the frontend \\ \hline
+	themes/ & defines the color scheme, palette for the frontend. \\ \hline
 	
-	utils/ & contains shared utilities across components \\ \hline
+	utils/ & contains shared utilities across components. \\ \hline
 	
-	views/ & contains main UI components for each roles \\ \hline
+	views/ & contains main UI components for each roles. \\ \hline
 	
-	index.jsx & root component of the frontend \\ \hline
+	index.jsx & root component of the frontend. \\ \hline
 	
-	config.js & contains initial configuration of the front end \\ \hline
+	config.js & contains initial configuration of the front end. \\ \hline
 	
-	package.json & contains custom scripts and frontend package information \\ \hline
+	package.json & contains custom scripts and frontend package information. \\ \hline
 	
-	vite.config.mjs & contains configuration for Vite \\ \hline
+	vite.config.mjs & contains configuration for Vite. \\ \hline
 	
 	\caption{Frontend source code structure} % needs to go inside longtable environment
 	\label{tab:fe-src-code}
@@ -47,10 +47,10 @@
 		\caption{Web UI Main Components}
 		\label{fig:fe-main-comp}
 	\end{figure}
-	There are 3 main components in the Web UI (from Figure \ref{fig:fe-main-comp}):
+	There are 3 main components in the Web UI (marked on Figure \ref{fig:fe-main-comp}):
 	
 	\begin{enumerate}
-		\item 	\colorbox{Salmon}{Header}: contains Logo image, Menu toggle button, Search bar, and Profile section  across all pages
+		\item 	\colorbox{Salmon}{Header} (marked as Red color on Figure \ref{fig:fe-main-comp}) contains Logo image, Menu toggle button, Search bar, and Profile section  across all pages
 		
 \begin{lstlisting}[language=Javascript, breaklines=true, caption=Frontend Header Component]
 const Header = ({ handleLeftDrawerToggle }) => {
@@ -112,7 +112,7 @@ Header.propTypes = {
 export default Header;
 \end{lstlisting}
 		
-		\item 	\colorbox{Aquamarine}{Sidebar}: A dynamic navigation panel which renders all menu items of a specific roles.
+		\item 	\colorbox{Aquamarine}{Sidebar} (marked as Blue color on Figure \ref{fig:fe-main-comp}): A dynamic navigation panel which renders all menu items of a specific roles.
 		
 \begin{lstlisting}[language=Javascript, breaklines=true, caption=Frontend Sidebar Component]
 const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
@@ -163,10 +163,10 @@ const Sidebar = ({ drawerOpen, drawerToggle, window }) => {
 		
 		
 		
-		\item  \colorbox{YellowGreen}{Content Components}: The content component will be displayed based on the matched predefined route. Once the route is determined, the content component is then lazy-loaded into the page. This means that the component will only be fetched and rendered when it is needed, which optimizes performance and improves loading times by minimizing the amount of initial content loaded.
+		\item  \colorbox{YellowGreen}{Content Components} (marked as Green color on Figure \ref{fig:fe-main-comp}): The content component will be displayed based on the matched predefined route. Once the route is determined, the content component is then lazy-loaded into the page. This means that the component will only be fetched and rendered when it is needed, which optimizes performance and improves loading times by minimizing the amount of initial content loaded.
 		
 		
-\begin{lstlisting}[language=Javascript, breaklines=true, caption=Example of Lazy Load Frontend Components]
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Example of Lazy Loading Frontend Components]
 const DashboardDefault = Loadable(lazy(() => import('views/homepage')));
 const EditProfile = Loadable(lazy(() => import('views/EditProfile')));
 const MyTickets = Loadable(lazy(() => import('views/MyTickets')));
@@ -179,7 +179,7 @@ const MyTickets = Loadable(lazy(() => import('views/MyTickets')));
 	Using Material-UI's grid system, responsive components, and utility features enables us to create a flexible and adaptive user interface in React applications. This ensures that the Web UI looks good and functions well on devices of all sizes, enhancing the overall user experience.
 	
 	\begin{enumerate}
-		\item Grid System:
+		\item \textbf{Grid System}
 		
 		MUI provides a powerful Grid component that allows us to create responsive layouts easily. It uses a 12-column layout, and we can specify how many columns a component should span at different screen sizes.
 
@@ -202,7 +202,7 @@ import { Grid } from '@mui/material';
 	</Grid>
 \end{lstlisting}		
 
-	\item Media Queries:
+	\item \textbf{Media Queries}
 	
 	MUI allows us to utilize CSS media queries through the sx prop or styles to create responsive designs that adapt to different screen sizes without much hassle.
 
@@ -217,9 +217,10 @@ import { Grid } from '@mui/material';
 \end{lstlisting}	
 
 
-		
 	\end{enumerate}
-
+	
+	
+\newpage
 \subsection{Backend Implementation}
 	\subsubsection{Source code structure}
 	
@@ -233,19 +234,19 @@ import { Grid } from '@mui/material';
 		
 		middleware/ & contains server middleware (token authentication, logger, mailer). \\ \hline
 		
-		routes/ & defines explicit API routes  \\ \hline
+		routes/ & defines explicit API routes.  \\ \hline
 		
 		sql/ & contains all SQL queries. \\ \hline
 		
-		uploads/ & saves the user's uploaded attachments\\ \hline
+		uploads/ & saves the user's uploaded attachments.\\ \hline
 		
-		utils/ & contains shared utilities across modules \\ \hline
+		utils/ & contains shared utilities across modules. \\ \hline
 		
-		index.js & root (start module) module of the backend server \\ \hline
+		index.js & root (start module) module of the backend server. \\ \hline
 		
-		package.json & contains custom scripts and backend packages information \\ \hline
+		package.json & contains custom scripts and backend packages information. \\ \hline
 		
-		.env & contains sensitive backend configurations \\ \hline
+		.env & contains sensitive backend configurations. \\ \hline
 		
 		\caption{Backend source code structure} % needs to go inside longtable environment
 		\label{tab:be-src-code}
@@ -321,7 +322,85 @@ const connectRedis = async () => {
 \end{lstlisting}	
 
 
-\subsubsection{Security Measures}
+\subsubsection{Middleware}
+In the system, the \texttt{authenticateToken} middleware is designed to protect API endpoints by verifying JWT (JSON Web Tokens) based on user roles. The authenticateToken function accepts an array of allowedRoles, which specifies which user roles are permitted to access the route that this middleware protects. The middleware checks for a valid access token in the request headers and verifies it against predefined secrets corresponding to different user roles (e.g., student, staff, admin).
+
+Additionally, \texttt{logger} - an asynchronous middleware designed to log events to a PostgreSQL database. This function serves as a logging mechanism, capturing important user actions or system events and storing them in a dedicated "Log" table. 
+\begin{lstlisting}[language=Javascript, breaklines=true, caption= Logger middleware - write log to database]
+const writeLogToDB = async (user_id, event_id, description, timestamp) => {
+	try {
+		await pool.query('BEGIN');
+		await pool.query(
+		'INSERT INTO "Log" (user_id, event_id, description, timestamp) VALUES ($1, $2, $3, $4)',
+		[user_id, event_id, description, timestamp]
+		);
+		await pool.query('COMMIT');
+		logger.info('Log written to database');
+	} catch (error) {
+		await pool.query('ROLLBACK');
+		logger.error(error);
+	}
+};
+\end{lstlisting}	
+
+\subsubsection{Real-time messages}
+By creating an HTTP server that integrates with the existing Express application. The Socket.IO server is attached to this HTTP server, allowing for real-time communication over web sockets.
+
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Create Socket.io HTTP server]
+const server = http.createServer(app);
+const io = new Server(server, {
+	cors: {
+		origin: WebConfig.corsOptions.origin,
+		methods: ['GET', 'POST'],
+	},
+});
+\end{lstlisting}	
+
+
+
+The backend sets up an event listener for incoming connections using the \texttt{io.on('connection')} method. This function is triggered whenever a new user connects to the server. When a user joins a conversation, they emit a \texttt{join\_conversation} event along with the \texttt{ticket\_id} of the conversation.
+
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Socket.io join\_conversation event]
+socket.on('join_conversation', (ticket_id) => {
+	socket.join(ticket_id);
+	console.log(`User joined conversation ${ticket_id}`);
+});
+\end{lstlisting}	
+
+When a user sends a message, they emit a \texttt{send\_message} event with the message details. This event is processed to store the message in the database and then broadcast it to other users in the same conversation.
+
+
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Socket.io send\_message event]
+socket.on('send_message', async (data) => {
+	const { ticket_id, sender_id, message_details } = data;
+	const created_date = new Date();
+	
+	try {
+		await pool.query('BEGIN'); // Start a transaction
+		
+		// Insert messages data into database
+		
+		await pool.query('COMMIT'); // Commit the transaction
+		
+		io.to(ticket_id).emit('receive_message', newMessage); // Emit the new message to the room
+	} catch (err) {
+		await pool.query('ROLLBACK'); // Rollback in case of error
+		console.error(err);
+	}
+});
+
+\end{lstlisting}	
+
+Lastly, the disconnect event is implemented to clean up and log when a user disconnects from the conversation.
+\begin{lstlisting}[language=Javascript, breaklines=true, caption=Socket.io disconnect event]
+socket.on('disconnect', () => {
+	console.log('A user disconnected from the conversation');
+	// Handle clean up
+});
+\end{lstlisting}
+
+
+\subsection{Security Measures}
 
 
 	

@@ -7,6 +7,9 @@ A level-1 auxiliary file: chapters/abstract.aux
 A level-1 auxiliary file: chapters/1_introduction.aux
 A level-1 auxiliary file: chapters/2_literature_review.aux
 A level-1 auxiliary file: chapters/3_system_design.aux
+A level-1 auxiliary file: chapters/4_system_implementation.aux
+A level-1 auxiliary file: chapters/5_user_manual.aux
+A level-1 auxiliary file: chapters/6_conclusion.aux
 The style file: plainurl.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
@@ -14,44 +17,44 @@ Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: refs.bib
-You've used 5 entries,
+You've used 14 entries,
             2943 wiz_defined-function locations,
-            662 strings with 5665 characters,
-and the built_in function-call counts, 1691 in all, are:
-= -- 165
-> -- 40
+            702 strings with 6740 characters,
+and the built_in function-call counts, 4653 in all, are:
+= -- 462
+> -- 112
 < -- 0
-+ -- 15
-- -- 10
-* -- 55
-:= -- 242
-add.period$ -- 15
-call.type$ -- 5
-change.case$ -- 20
++ -- 42
+- -- 28
+* -- 144
+:= -- 622
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 45
-empty$ -- 206
-format.name$ -- 10
-if$ -- 471
+cite$ -- 14
+duplicate$ -- 126
+empty$ -- 575
+format.name$ -- 28
+if$ -- 1317
 int.to.chr$ -- 0
-int.to.str$ -- 5
+int.to.str$ -- 14
 missing$ -- 0
-newline$ -- 28
-num.names$ -- 10
-pop$ -- 70
+newline$ -- 73
+num.names$ -- 28
+pop$ -- 196
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 42
 quote$ -- 0
-skip$ -- 140
+skip$ -- 391
 stack$ -- 0
-substring$ -- 25
-swap$ -- 5
+substring$ -- 70
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
+type$ -- 56
 warning$ -- 0
-while$ -- 10
-width$ -- 6
-write$ -- 52
+while$ -- 28
+width$ -- 16
+write$ -- 142

@@ -106,7 +106,9 @@
 	
 	 \begin{tabular}{ @{} m{0.7\textwidth} m{0.25\textwidth} @{} }
 		\begin{minipage}{\linewidth}
-			\textbf{Material UI} is a React-based UI component library that implements Google’s Material Design principles. Material UI ensures that the frontend is both visually appealing and functionally intuitive. Pre-built components like buttons, forms, and dialogs accelerate development while maintaining consistency in design. \cite{material-ui}
+			\textbf{Material UI} is a React-based UI component library that implements Google’s Material Design principles. Material UI ensures that the frontend is both visually appealing and functionally intuitive. Pre-built components like buttons, forms, and dialogs accelerate development while maintaining consistency in design. \cite{material-ui} \\
+			
+			Material UI is a great option for creating responsive web applications with a sleek and contemporary design. It offers a vast selection of components that allow developers to efficiently build intricate layouts and user interfaces. Additionally, its well-organized and comprehensive API documentation makes it easy to explore each component and customize it to meet specific requirements. Whether you're developing a basic website or a more complex web application, Material UI helps you meet both design and functionality objectives while providing a seamless and responsive user experience. \cite{material-ui-why-use}
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
@@ -129,11 +131,15 @@
 			\label{fig:vite}
 		\end{minipage}
 		&
-		\begin{minipage}{\linewidth}
-			\textbf{Vite}, a modern frontend build tool that offers faster development speed compared to older tools like Webpack. Vite optimizes the build process for React applications by providing instant hot module replacement (HMR), which is useful for a smooth developer experience during iterative development cycles. \cite{vite} 
+		\begin{minipage}{\linewidth}			
+			Vite is an innovative frontend build tool designed to enhance development speed and efficiency compared to traditional tools like Webpack. One of Vite's standout features is its instant hot module replacement (HMR), which significantly improves the developer experience by allowing changes to be reflected in the browser almost instantaneously without a full page reload. This feature is particularly beneficial during iterative development cycles, as it enables developers to see the effects of their code modifications in real-time, thereby accelerating the debugging process and fostering a more dynamic workflow. \cite{vite} 
+			
+			Furthermore, Vite leverages native ES modules in the browser, allowing for a more optimized development environment. Unlike older bundlers that require extensive preprocessing, Vite serves source files directly to the browser during development, resulting in quicker start-up times and faster builds. This approach not only enhances productivity but also simplifies the development setup, making it accessible for developers of all skill levels. \cite{why-vite}
+			
+%			Overall, Vite represents a significant advancement in frontend tooling, making it an ideal choice for modern web development, particularly for projects using frameworks like React. Its emphasis on speed, simplicity, and developer experience positions Vite as a compelling alternative to traditional build tools .
 		\end{minipage}
 	\end{tabular}
-	\vspace*{0.5 cm}
+%	\vspace*{0.5 cm}
 	
 	
 	\subsubsection{Backend: NodeJS, ExpressJS, SocketIO}
@@ -148,15 +154,17 @@
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
-			\textbf{NodeJS} is a runtime that enables JavaScript to be used for server-side scripting, making it possible to use a single language (JavaScript) throughout the stack. NodeJS is non-blocking and event-driven, making it ideal for handling I/O-heavy tasks like managing support ticket requests in real time.
+			\textbf{NodeJS} is a runtime that enables JavaScript to be used for server-side scripting, making it possible to use a single language (JavaScript) throughout the stack. NodeJS is non-blocking and event-driven, making it ideal for handling I/O-heavy tasks like managing support ticket requests in real time. \cite{nodejs-about}
+			
+			Node.js is also lightweight and efficient, allowing developers to use JavaScript on both the frontend and backend, which enhances flexibility and cross-functionality within teams, ultimately reducing development costs. This code reusability accelerates the development process, and since JavaScript is the most popular programming language, the single-thread event loop it employs makes asynchronous programming more manageable. Consequently, new engineers will find it easier to understand the application’s codebase. \cite{why-nodejs}
 		\end{minipage}
 	\end{tabular}
 	
-	\vspace*{0.5cm}
+	\vspace*{0.8cm}
 	
 	\begin{tabular}{ @{} m{0.7\textwidth} m{0.25\textwidth} @{} }
 		\begin{minipage}{\linewidth}
-			\textbf{ExpressJS} is a minimalist web framework for NodeJS, Express simplifies routing, middleware management, and API handling. It serves as the backbone of the server, processing requests from the frontend, interacting with the database, and managing the business logic.
+			\textbf{ExpressJS} is a minimalist web framework for NodeJS, Express simplifies routing, middleware management, and API handling. Over the years, ExpressJS has demonstrated significant scalability, evidenced by its widespread use among major companies operating it on their servers daily. It efficiently manages user requests and responses, needing minimal configuration for large-scale web application development. With its robust modules, packages, and resources, it supports developers in building reliable and scalable web applications.\cite{express-what-is} In this application, ExpressJS serves as the backbone of the server, processing requests from the frontend, interacting with the database, and managing the business logic.
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
@@ -169,6 +177,7 @@
 	\end{tabular}
 	
 	\vspace*{0.5cm}
+	\newpage
 	\begin{tabular}{ @{} m{0.25\textwidth} m{0.7\textwidth} @{} }
 		\begin{minipage}{\linewidth}
 			\centering
@@ -178,7 +187,7 @@
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
-			\textbf{SocketIO} is a JavaScript library that enables real-time, bidirectional communication between clients and servers. SocketIO is used to implement features such as real-time messaging between students and staff, making the system more interactive and responsive. \cite{socketio}
+			\textbf{SocketIO} is a JavaScript library that enables real-time, bidirectional communication between clients and servers. \cite{socketio} In addition, Socket.IO offers various fallback options, such as long polling, \acs{jsonp} polling, and iframe-based transport. This allows for continued communication in environments where WebSocket is unavailable. \cite{socketio-vs-websocket} SocketIO is used to implement features such as real-time messaging between students and staff, making the system more interactive and responsive. 
 		\end{minipage}
 	\end{tabular}
 	
@@ -194,7 +203,7 @@
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
-			JWT (JSON Web Tokens) is a token-based authentication system that provides secure stateless authentication for users. JWT is ideal for modern web applications because tokens can be stored on the client-side (in local storage or cookies) and are transmitted with each request, allowing for scalability.
+			JWT (\acs{json} Web Tokens) is a token-based authentication system that provides secure stateless authentication for users. JWT is ideal for modern web applications because tokens can be stored on the client-side (in local storage or cookies) and are transmitted with each request, allowing for scalability. \cite{jwt}
 		\end{minipage}
 	\end{tabular}
 	
@@ -216,7 +225,7 @@
 		\end{minipage}
 		&
 		\begin{minipage}{\linewidth}
-			\textbf{Redis} is an in-memory data structure store, Redis is used for session management, particularly in storing refresh tokens. By caching these tokens, Redis reduces the load on the database and enhances the system’s performance.
+			\textbf{Redis} is an in-memory data structure store, commonly used as a database, cache, and message broker. It is part of the NoSQL database category called key/value stores. Keys serve as unique identifiers, and their corresponding values can be any of the data types supported by Redis. These data types include basic Strings, Linked Lists, Sets, and Streams, each with its own specific behaviors and commands. \cite{redis-what-is} In this system, Redis is specifically utilized for session management, particularly in storing refresh tokens. By caching these tokens, Redis helps to reduce the load on the primary database, which improves both scalability and performance. Since Redis operates in memory, it allows for faster retrieval of session data, ensuring that the authentication process remains responsive and efficient. Additionally, Redis offers built-in features like automatic expiration, which helps in managing token lifetimes and ensuring secure token invalidation, further enhancing the security and reliability of the system.
 		\end{minipage}
 	\end{tabular}
 	
@@ -231,8 +240,11 @@
 		\label{fig:postgresql}
 	\end{figure}
 	
-	\textbf{PostgreSQL} is a powerful, open-source relational database that offers strong ACID compliance, making it suitable for managing critical data like user accounts, ticket information, and communication logs. Its support for advanced querying and indexing ensures the system can handle complex searches efficiently.
+	PostgreSQL is a powerful, open-source relational database that provides strong ACID (Atomicity, Consistency, Isolation, Durability) compliance, ensuring reliability and data integrity, which is critical for managing sensitive information such as user accounts, ticketing systems, and communication logs. Its robust support for advanced querying and indexing mechanisms ensures that the system can handle complex searches and queries with high efficiency, even as data grows over time. \cite{postgres}\\
 	
+	PostgreSQL also supports features like foreign key constraints, triggers, and stored procedures, which help in maintaining data consistency across multiple tables, ensuring that relationships between different data entities (such as users and tickets) are enforced and managed correctly. Additionally, its ability to support JSON and JSONB data types allows the system to store and query semi-structured data, offering flexibility in handling modern web applications that require both structured and unstructured data. \\
+	
+	The database also scales well, supporting a large number of concurrent users and high-volume transactions, making it an ideal choice for applications with growing user bases. PostgreSQL’s support for full-text search and geospatial data (via PostGIS) can be useful for implementing advanced search functionalities and geographical features in the system. With its extensibility (allowing the addition of custom functions, data types, and more), PostgreSQL provides a solid and scalable foundation for the back-end data management of the system. \\
 	
 	\subsubsection{Responsive Web Design: Techniques and Tools}
 	

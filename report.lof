@@ -3,56 +3,58 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces ReactJS Logo}}{20}{figure.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Material UI Logo}}{21}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Vite Logo}}{21}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces NodeJS Logo}}{21}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Expressjs Logo}}{21}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces SocketIO Logo}}{21}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces JWT Logo}}{22}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Detailed explanation of JWT-based authentication mechanism.}}{22}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Redis Logo}}{22}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces PostgreSQL \acs {rdbms} Logo}}{23}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Student Use Case Diagram}}{31}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Staff (Dormitory staff, Student affairs) Use Case Diagram}}{32}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Admin Use Case Diagram}}{33}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Ticket-Raising Process Workflow}}{34}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces ER Diagram}}{35}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Three-tier Architecture \cite {3-tier}}}{45}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Profile UI in Desktop device}}{59}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Profile UI in Mobile device}}{60}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Web UI Live Customization}}{61}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Web UI Main Components}}{63}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Landing Page}}{71}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Sign in Form}}{72}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Failed Sign in attempt}}{72}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Reset Password Form}}{73}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Reset password successfully}}{73}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Reset password failed}}{73}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Reset password email instructions}}{74}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Student's Home Page}}{75}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Student's Profile Page}}{75}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Student's Tickets List Page}}{76}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Student's Create Tickets Page}}{77}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Student's Rate Tickets Page}}{78}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Submit a ticket rating}}{78}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Student's Message Page}}{79}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Student's Newsfeed}}{80}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Student's Notification Page}}{81}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Student's Announcement Page}}{82}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Student's Edit Profile Page}}{83}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Student's Change Password Page}}{84}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Student's Feedback Page}}{85}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Staff's Available Tickets Page}}{86}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Handle a ticket}}{87}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Successfully add a ticket to ticket handling list}}{87}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Staff's Tickets Handling List}}{88}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Mark a ticket as done}}{88}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Cancel a ticket}}{89}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Staff's Tickets History Page}}{90}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Staff's Message Page}}{91}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Create a Notification Modal}}{92}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Create an Announcement Modal}}{93}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Admin's Ticket Management Page}}{94}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Admin's User Management Page}}{95}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Admin's Dormitory Management Page}}{96}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Admin's Logs Management Page}}{97}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Admin's Feedback Management Page}}{98}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Admin's Report Page}}{98}{figure.56}%
+\contentsline {figure}{\numberline {4}{\ignorespaces NodeJS Logo}}{22}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Expressjs Logo}}{22}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces SocketIO Logo}}{23}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces JWT Logo}}{23}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Detailed explanation of JWT-based authentication mechanism.}}{23}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Redis Logo}}{24}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces PostgreSQL \acs {rdbms} Logo}}{24}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Student Use Case Diagram}}{33}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Staff (Dormitory staff, Student affairs) Use Case Diagram}}{34}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Admin Use Case Diagram}}{35}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Ticket-Raising Process Workflow}}{36}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces ER Diagram}}{37}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Three-tier Architecture \cite {3-tier}}}{47}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Get Messages API - HTTP Response with error status code 401}}{50}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Get Messages API - HTTP Response with success status code 200}}{50}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Profile UI in Desktop device}}{68}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Profile UI in Mobile device}}{69}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Web UI Live Customization}}{70}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Web UI Main Components}}{72}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Landing Page}}{82}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Sign in Form}}{83}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Failed Sign in attempt}}{83}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Reset Password Form}}{84}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Reset password successfully}}{84}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Reset password failed}}{84}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Reset password email instructions}}{85}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Student's Home Page}}{86}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Student's Profile Page}}{86}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Student's Tickets List Page}}{87}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Student's Create Tickets Page}}{88}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Student's Rate Tickets Page}}{89}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Submit a ticket rating}}{89}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Student's Message Page}}{90}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Student's Newsfeed}}{91}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Student's Notification Page}}{92}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Student's Announcement Page}}{93}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Student's Edit Profile Page}}{94}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Student's Change Password Page}}{95}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Student's Feedback Page}}{96}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Staff's Available Tickets Page}}{97}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Handle a ticket}}{98}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Successfully add a ticket to ticket handling list}}{98}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Staff's Tickets Handling List}}{99}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Mark a ticket as done}}{99}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Cancel a ticket}}{100}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Staff's Tickets History Page}}{101}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Staff's Message Page}}{102}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Create a Notification Modal}}{103}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Create an Announcement Modal}}{104}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Admin's Ticket Management Page}}{105}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Admin's User Management Page}}{106}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Admin's Dormitory Management Page}}{107}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Admin's Logs Management Page}}{108}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Admin's Feedback Management Page}}{109}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Admin's Report Page}}{109}{figure.58}%

@@ -1,9 +1,45 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{socketio-vs-websocket}
+Apidog.
+\newblock {Socket. IO vs. WebSocket: Keys Differences}, Accessed on 01.10.2024.
+\newblock URL: \url{https://apidog.com/articles/socket-io-vs-websocket/}.
+
+\bibitem{jwt}
+JWT Documentation.
+\newblock {Introduction to JSON Web Tokens}, Accessed on 01.10.2024.
+\newblock URL: \url{https://jwt.io/introduction}.
+
+\bibitem{postgres}
+PostgreSQL Documentation.
+\newblock {About}, Accessed on 01.10.2024.
+\newblock URL: \url{https://www.postgresql.org/about/}.
+
+\bibitem{why-vite}
+Vitejs Documentation.
+\newblock {Why Vite}, 2023.
+\newblock URL: \url{https://vitejs.dev/guide/why}.
+
+\bibitem{express-what-is}
+Kinsta.
+\newblock {What Is Express.js? Everything You Should Know}, September 2023.
+\newblock URL: \url{https://kinsta.com/knowledgebase/what-is-express-js/}.
 
 \bibitem{3-tier}
 Aryan Patil.
 \newblock {Three-tier architecture}, 2023.
 \newblock URL: \url{https://hyperskill.org/learn/step/25083}.
+
+\bibitem{redis-what-is}
+Simon Prickett.
+\newblock {What is Redis?: An Overview}, February 2024.
+\newblock URL:
+  \url{https://redis.io/learn/develop/node/nodecrashcourse/whatisredis}.
+
+\bibitem{why-nodejs}
+Justyna Rachowicz.
+\newblock {When, How, And Why Use Node.js as Your Backend?}, July 2024.
+\newblock URL: \url{https://www.netguru.com/blog/node-js-backend}.
 
 \bibitem{react}
 Sanity.
@@ -12,7 +48,7 @@ Sanity.
 
 \bibitem{vite}
 Eric Simons.
-\newblock {What is Vite (and why is it so popular)?}, September 2024.
+\newblock {What is Vite (and why is it so popular?)}, September 2024.
 \newblock URL:
   \url{https://blog.stackblitz.com/posts/what-is-vite-introduction/}.
 
@@ -23,7 +59,19 @@ Alesia Sirotka.
 
 \bibitem{socketio}
 Socket.IO.
-\newblock {Introduction}, July 2024.
+\newblock {Introduction}, Accessed on 01.10.2024.
 \newblock URL: \url{https://socket.io/docs/v4/}.
+
+\bibitem{nodejs-about}
+Taha Sufiyan.
+\newblock {What Is Node.js? A Complete Guide for Developers}, July 2024.
+\newblock URL:
+  \url{https://www.simplilearn.com/tutorials/nodejs-tutorial/what-is-nodejs}.
+
+\bibitem{material-ui-why-use}
+Goodluck Woha.
+\newblock {Why should you use Material UI?}, May 2023.
+\newblock URL:
+  \url{https://blog.openreplay.com/why-should-you-use-material-ui/}.
 
 \end{thebibliography}

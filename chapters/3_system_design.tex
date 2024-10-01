@@ -755,7 +755,7 @@ The API (Application Programming Interface) design is crucial for enabling commu
 		
 		\item \textbf{Versioning}: The API is versioned (/api/v1/) to manage changes and ensure backward compatibility for existing clients.
 		
-		\item \textbf{Error Handling}: Consistent error responses are defined, returning meaningful HTTP status codes (200 for success, 404 for not found, 500 for server errors) along with descriptive messages.
+		\item \textbf{Error Handling}: Consistent error responses are defined, returning meaningful HTTP status codes (200 for success, 401 for unauthorized, 403 for forbidden, 404 for not found 500 for server errors) along with descriptive messages.
 	\end{itemize}
 	
 	Data format:
@@ -769,6 +769,26 @@ The API (Application Programming Interface) design is crucial for enabling commu
 	\begin{itemize}
 		\item JWT is used for user authentication, with tokens sent in the Authorization header of each request (Authorization: Bearer <token>).
 	\end{itemize}
+	
+	(see Figures \ref{fig:getmessage-401}, \ref{fig:getmessage-200})
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{graphics/api/getMessage-401}
+		\caption{Get Messages API - HTTP Response with error status code 401}
+		\label{fig:getmessage-401}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.8\linewidth]{graphics/api/getMessage-200}
+		\caption{Get Messages API - HTTP Response with success status code 200}
+		\label{fig:getmessage-200}
+	\end{figure}
+	
+	
+	
 
 	\newpage 
 	\subsubsection{Authentication/Authorization API}
@@ -779,11 +799,11 @@ The API (Application Programming Interface) design is crucial for enabling commu
 		
 		POST & /auth/login & Content-Type: application/json & JSON object with username and password & JSON object which contains access token, refresh token and general user information \\ \hline
 		
-		POST & /auth/logout & Authorization: Bearer <token>\newline Cookie: <refreshToken> & None  & Clear tokens and cookie \\ \hline
+		POST & /auth/logout & Authorization: Bearer <token>\newline Cookie: \newline <refreshToken> & None  & Clear tokens and cookie \\ \hline
 		
-		POST & /auth/refresh-token & Cookie: <refreshToken>& None & JSON object which contains new access token \\ \hline
+		POST & /auth/refresh-token & Cookie: \newline <refreshToken>& None & JSON object which contains new access token \\ \hline
 		
-		POST & /auth/verify-refreshToken & Cookie: <refreshToken>& None & JSON object which contains validation status and message \\ \hline
+		POST & /auth/verify-refreshToken & Cookie: \newline <refreshToken>& None & JSON object which contains validation status and message \\ \hline
 		
 		POST & /auth/reset-password &  Content-Type: application/json &  JSON object with email  &  JSON object which contains message \\ \hline
 		
@@ -810,12 +830,12 @@ The Login API enables the client to authenticate with the server and obtain perm
 
 \begin{lstlisting}[breaklines=true, caption=Response of Login API]
 	{
-		"user_id": "string",         // Unique identifier for the user
-		"username": "string",        // User's login name
-		"email": "string",           // User's email address
-		"fullname": "string",        // User's full name
-		"role_name": "string",       // User's role in the system (e.g., Admin)
-		"accessToken": "string"      // JWT access token for authorization
+		"user_id": number,         
+		"username": "string",        
+		"email": "string",           
+		"fullname": "string",        
+		"role_name": "string",       
+		"accessToken": "string"      
 	}
 \end{lstlisting}
 
@@ -890,21 +910,21 @@ The User API provides various endpoints to manage user-related functionalities w
 Users can retrieve their personal information or a list of all users through GET requests. For user creation, a POST request is utilized, where necessary details are supplied in the request body. The API also facilitates user updates through PATCH requests, allowing users to change their passwords, phone numbers, dormitory assignments, roles, or any personal details. Finally, a DELETE request enables the removal of a user from the system. \\ \\
 This API structure ensures comprehensive user management while maintaining security through token-based authentication.
 
-\begin{lstlisting}[breaklines=true, caption=User Scheme]
+\begin{lstlisting}[breaklines=true, caption=User Schema]
 	{
 		"username": "string",
 		"fullname": "string",
 		"email": "string",
 		"role_name": "string",
 		"gender": "string",
-		"created_date": "string",
 		"program": "string",
 		"area": "string",
 		"room": "string",
 		"phone_number": "string",
 		"intake": "string",
 		"place_of_birth": "string",
-		"date_of_birth": "string"
+		"date_of_birth": "string",
+		"created_date": "string"
 	}
 \end{lstlisting}
 
@@ -972,13 +992,11 @@ Users can retrieve a list of their own tickets or all tickets using GET requests
 For ticket creation, a POST request is utilized, where necessary details are submitted in the request body. Updates to ticket status can be performed with PATCH requests. Finally, users can delete tickets using DELETE requests, which ensures that the system can manage and maintain a clean ticket database effectively.\\ \\
 this API structure enhances user interaction with the ticketing system, providing the necessary tools for both users and administrators to manage support tickets efficiently.
 
-\begin{lstlisting}[breaklines=true, caption=Ticket Scheme]
+\begin{lstlisting}[breaklines=true, caption=Ticket Schema]
 {
 	"ticket_id": number,
 	"username": "string",
 	"fullname": "string",
-	"created_date": "string",
-	"ended_date": "string",
 	"ticket_type_name": "string",
 	"subject": "string",
 	"details": "string",
@@ -986,6 +1004,8 @@ this API structure enhances user interaction with the ticketing system, providin
 	"status": "string",
 	"dorm_area": "string",
 	"dorm_room": "string",
+	"created_date": "string",
+	"ended_date": "string",
 	"attachments": [
 		{
 			"id": number,
@@ -1023,7 +1043,7 @@ The Dormitory API provides functionality for managing dormitories, areas, and ro
 \end{longtable}
 
 
-\begin{lstlisting}[breaklines=true, caption=Dormitory Scheme]
+\begin{lstlisting}[breaklines=true, caption=Dormitory Schema]
 [
 	{
 		"dorm_area": "string",
@@ -1052,6 +1072,7 @@ The Attachment API allows users to retrieve an image or video file by specifying
 
 
 \subsubsection{Rating API}
+The Rating API allows users to retrieve and submit ratings for tickets. A GET request fetches the rating score for a specific ticket by ticket ID, while a POST request allows users to submit a rating for a ticket by providing the ticket ID and rating score. Both operations require user authentication via a Bearer token.
 
 \begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
 	\hline
@@ -1068,11 +1089,22 @@ The Attachment API allows users to retrieve an image or video file by specifying
 	
 \end{longtable}
 
+\newpage
+\begin{lstlisting}[breaklines=true, caption=Rating Schema]
+	{
+		"ticket_id": number,
+		"rating_score": number,
+		"created_date": "string"
+	}
+\end{lstlisting}
+
+
 
 
 \subsubsection{Message API}
+The Message API allows users to manage and send messages related to tickets. Additionally, real-time messaging is supported via a WebSocket event, where users can send messages along with ticket and sender details. All actions require authentication using a Bearer token.
 
-\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3.2cm}|}
+\begin{longtable}{|m{1.9cm}|m{5.5cm}|m{3cm}|m{2.5cm}|m{3cm}|}
 	\hline
 	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
 	\endhead
@@ -1081,20 +1113,207 @@ The Attachment API allows users to retrieve an image or video file by specifying
 	
 	GET & /api/v1/message/\{ticket\_id\} & Authorization: Bearer <token>  & None & List of JOSN objects which contain all messages of the given ticket id\\ \hline
 	
-	WebSocket \newline Event & send\_message &  Authorization: Bearer <token> & 
+	WebSocket \newline Event & send\_message &  Authorization: Bearer <token> & JSON object which contains ticket id, sender details and message & JOSN object which contains ticket id, sender details, message and created date\\ \hline
 	
-	\caption{Rating API}
+	\caption{Message API}
 	\label{tab:message-api}
 	
 \end{longtable}
 
-\subsubsection{Message Web Socket Event}
+\begin{lstlisting}[breaklines=true, caption=Message Schema]
+	{
+		"ticket_id": number,
+		"sender_id": number,
+		"sender_fullName": "string",
+		"message_details": "string",
+		"created_date": "string"
+	}
+\end{lstlisting}
 
-	\begin{itemize}
-		\item Method: WebSocket Event
-		\item Headers: Authorization: Bearer <token> 
-		\item Request Body: 
-	\end{itemize}
+
+
+\subsubsection{Role API}
+The Role API provides a method for retrieving all user roles within the system. 
+	\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3cm}|}
+		\hline
+		\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+		\endhead
+		
+		GET & /api/v1/roles & Authorization: Bearer <token>  & None & JSON object which contains all roles name\\ \hline
+		
+		
+		\caption{Role API}
+		\label{tab:role-api}
+		
+	\end{longtable}
+	
+\begin{lstlisting}[breaklines=true, caption=Role Schema]
+	{
+		"role_id": number,
+		"role_name": "string"
+	}
+\end{lstlisting}	
+
+	
+
+\subsubsection{Notification API}
+The Notification API allows users to retrieve and create notifications. The GET request returns a list of all notifications, requiring an Authorization Bearer token. The POST request, also requiring a token, allows users to create a new notification by supplying necessary details in the request body, such as the sender ID, recipient roles, title, and content of the notification.
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/notification & Authorization: Bearer <token>  & None & List of JSON objects which contain all notification\\ \hline
+	
+	POST & /api/v1/notification & Authorization: Bearer <token>  & JSON object contains needed information to create a notification & Create a new notification with supplied data\\ \hline
+	
+	
+	\caption{Notification API}
+	\label{tab:notification-api}
+	
+\end{longtable}
+
+
+\begin{lstlisting}[breaklines=true, caption=Notification Schema]
+{
+	"sender_id": number,
+	"recipients": [ { "role_id": number } ],
+	"title": "string",
+	"content": "string",
+	"created_date": "string"
+}
+\end{lstlisting}
+
+
+\subsubsection{Announcement API}
+The Announcement API provides functionality to retrieve and create announcements. Users can fetch a list of all announcements, requiring authorization. Additionally, authorized users can create new announcements by submitting relevant details, including sender ID, title, content, and the creation date.
+\begin{longtable}{|m{1.6cm}|m{5cm}|m{3cm}|m{3cm}|m{3cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/announcement & Authorization: Bearer <token>  & None & List of JSON objects which contain all announcements\\ \hline
+	
+	POST & /api/v1/announcement & Authorization: Bearer <token>  & JSON object contains needed information to create an announcement & Create a new announcement with supplied data\\ \hline
+	
+	
+	\caption{Announcement API}
+	\label{tab:announcement-api}
+	
+\end{longtable}
+
+\begin{lstlisting}[breaklines=true, caption=Notification Schema]
+	{
+		"sender_id": number,
+		"title": "string",
+		"content": "string",
+		"created_date": "string"
+	}
+\end{lstlisting}
+
+
+
+\subsubsection{Feedback API}
+The Feedback API allows users to manage feedback within the system. Users can retrieve a list of all feedback or details of specific feedback items by their ID. Authorized users can also create new feedback by submitting relevant information, including the sender's ID, title, content, and rating score. Additionally, the API supports the deletion of specific feedback based on its ID.
+
+\begin{longtable}{|m{1.8cm}|m{4.8cm}|m{3cm}|m{3cm}|m{3cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/feedback & Authorization: Bearer <token>  & None & List of JSON objects which contain all feedback \\ \hline
+	
+	GET & /api/v1/feedback/ \newline \{feedback\_id\} & Authorization: Bearer <token>  & None & JSON object which contains feedback details with supplied feedback id\\ \hline
+	
+	POST & /api/v1/feedback/ & Authorization: Bearer <token>  & JSON object which contains needed information to create a feedback & Create a new feedback with supplied data\\ \hline
+	
+	DELETE & /api/v1/feedback/ \newline \{feedback\_id\} & Authorization: Bearer <token>  & None & Delete a feedback\\ \hline
+	
+	
+	\caption{Feedback API}
+	\label{tab:feedback-api}
+	
+\end{longtable}
+
+\texttt{GET /api/v1/feedback\{feedback\_id\}}
+\begin{lstlisting}[breaklines=true, caption=Feedback Schema]
+	{
+		"feedback_id": number,
+		"title": "string",
+		"content": "string",
+		"rating_score": number,
+		"created_date": "string"
+	}
+\end{lstlisting}
+
+\newpage
+
+\texttt{POST /api/v1/feedback}
+\begin{lstlisting}[breaklines=true, caption=Create a Feedback]
+	{
+		"sender_id": number,
+		"title": "string",
+		"content": "string",
+		"rating_score": number,
+		"created_date": "string"
+	}
+\end{lstlisting}
+
+
+\subsubsection{Log API}
+The Log API allows authorized users to manage system logs. It provides an endpoint to retrieve a list of all logs, each containing details such as log ID, event type, timestamp, user information, and a description of the event. The API also supports deleting a specific log by its ID or clearing all logs from the system.
+
+\begin{longtable}{|m{1.6cm}|m{4.6cm}|m{3cm}|m{2.8cm}|m{3.4cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/logs & Authorization: Bearer <token>  & None & List of JSON objects which contain all system logs \\ \hline
+	
+	
+	DELETE & /api/v1/logs/\{log\_id\} & Authorization: Bearer <token>  & None & Delete a specific log\\ \hline
+	
+	DELETE & /api/v1/logs  & Authorization: Bearer <token>  & None & Delete all system logs\\ \hline
+	
+	
+	\caption{Log API}
+	\label{tab:log-api}
+	
+\end{longtable}
+
+
+\begin{lstlisting}[breaklines=true, caption=Log Schema]
+	{
+		"log_id": number,
+		"event_type_name": "string",
+		"timestamp": "string",
+		"description": "string",
+		"user_id": number,
+		"username": string,
+		"fullname": "string",
+		"role_name": "string"
+	}
+\end{lstlisting}
+
+
+
+\subsubsection{Report API}
+The Report API provides a method to retrieve report data on tickets within a specified date range. Authorized users can get a list of JSON objects containing ticket report details by providing the start and end dates in the query parameters.
+
+\begin{longtable}{|m{1.6cm}|m{4.6cm}|m{3cm}|m{2.8cm}|m{3.4cm}|}
+	\hline
+	\textbf{Method} & \textbf{Endpoint} & \textbf{Header}                                                                                                                            & \textbf{Request Body} & \textbf{Response / Description}   \\ \hline
+	\endhead
+	
+	GET & /api/v1/report/reports/ \newline tickets?start\_date \newline \&end\_date & Authorization: Bearer <token>  & None & List of JSON objects which contain ticket report data \\ \hline
+	
+	
+	\caption{Report API}
+	\label{tab:report-api}
+	
+\end{longtable}
+
+
 
 
 
@@ -1103,7 +1322,7 @@ In accordance with the functional requirements, the system must incorporate a us
 
 	
 	\subsubsection{Responsive Design}
-	The web user interface (UI) is designed to be fully responsive, ensuring an optimal user experience (UX) across a diverse range of devices, including mobile phones, tablets, and desktop computers. This adaptability allows the interface to seamlessly adjust its layout and functionality according to the screen size and resolution of the device being used. By prioritizing responsiveness, the design enhances accessibility and usability, providing users with a consistent and intuitive experience regardless of whether they are accessing the application on a small mobile screen, a medium-sized tablet, or a larger desktop monitor. This commitment to a responsive design ultimately fosters greater user engagement and satisfaction. (see Figures \ref{fig:res1}, \ref{fig:res2})
+	The web user interface (UI) is designed to be fully responsive, ensuring an optimal user experience (UX) across a diverse range of devices, including mobile phones, tablets, and desktop computers. This adaptability allows the interface to seamlessly adjust its layout and functionality according to the screen size and resolution of the device being used. By prioritizing responsiveness, the design enhances accessibility and usability, providing users with a consistent and intuitive experience regardless of whether they are accessing the application on a small mobile screen, a medium-sized tablet, or a larger desktop monitor. This commitment to a responsive design ultimately fosters greater user engagement and satisfaction. (see Figures \ref{fig:res2}, \ref{fig:res1})
 		
 	\begin{figure}[H]
 		\centering
