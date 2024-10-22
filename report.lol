@@ -20,14 +20,14 @@
 \contentsline {lstlisting}{\numberline {20}{\ignorespaces Example of Lazy Loading Frontend Components}}{76}{lstlisting.20}%
 \contentsline {lstlisting}{\numberline {21}{\ignorespaces MUI Grid System}}{77}{lstlisting.21}%
 \contentsline {lstlisting}{\numberline {22}{\ignorespaces MUI Media Queries}}{77}{lstlisting.22}%
-\contentsline {lstlisting}{\numberline {23}{\ignorespaces ExpressJS Server Setup}}{78}{lstlisting.23}%
-\contentsline {lstlisting}{\numberline {24}{\ignorespaces Server connects to PostgreSQL Database}}{79}{lstlisting.24}%
-\contentsline {lstlisting}{\numberline {25}{\ignorespaces Server connects to Redis}}{80}{lstlisting.25}%
-\contentsline {lstlisting}{\numberline {26}{\ignorespaces Logger middleware - write log to database}}{80}{lstlisting.26}%
-\contentsline {lstlisting}{\numberline {27}{\ignorespaces Create Socket.io HTTP server}}{81}{lstlisting.27}%
-\contentsline {lstlisting}{\numberline {28}{\ignorespaces Socket.io join\_conversation event}}{81}{lstlisting.28}%
-\contentsline {lstlisting}{\numberline {29}{\ignorespaces Socket.io send\_message event}}{82}{lstlisting.29}%
-\contentsline {lstlisting}{\numberline {30}{\ignorespaces Socket.io disconnect event}}{82}{lstlisting.30}%
-\contentsline {lstlisting}{\numberline {31}{\ignorespaces Store refresh token in secure cookie}}{84}{lstlisting.31}%
-\contentsline {lstlisting}{\numberline {32}{\ignorespaces Password Hashing}}{85}{lstlisting.32}%
-\contentsline {lstlisting}{\numberline {33}{\ignorespaces Password Verification}}{85}{lstlisting.33}%
+\contentsline {lstlisting}{\numberline {23}{\ignorespaces ExpressJS Server Setup}}{79}{lstlisting.23}%
+\contentsline {lstlisting}{\numberline {24}{\ignorespaces Server connects to PostgreSQL Database}}{80}{lstlisting.24}%
+\contentsline {lstlisting}{\numberline {25}{\ignorespaces Server connects to Redis}}{81}{lstlisting.25}%
+\contentsline {lstlisting}{\numberline {26}{\ignorespaces Logger middleware - write log to database}}{81}{lstlisting.26}%
+\contentsline {lstlisting}{\numberline {27}{\ignorespaces Create Socket.io HTTP server}}{82}{lstlisting.27}%
+\contentsline {lstlisting}{\numberline {28}{\ignorespaces Socket.io join\_conversation event}}{82}{lstlisting.28}%
+\contentsline {lstlisting}{\numberline {29}{\ignorespaces Socket.io send\_message event}}{83}{lstlisting.29}%
+\contentsline {lstlisting}{\numberline {30}{\ignorespaces Socket.io disconnect event}}{83}{lstlisting.30}%
+\contentsline {lstlisting}{\numberline {31}{\ignorespaces Store refresh token in secure cookie}}{85}{lstlisting.31}%
+\contentsline {lstlisting}{\numberline {32}{\ignorespaces Password Hashing}}{86}{lstlisting.32}%
+\contentsline {lstlisting}{\numberline {33}{\ignorespaces Password Verification}}{86}{lstlisting.33}%
