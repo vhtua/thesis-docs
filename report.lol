@@ -15,19 +15,19 @@
 \contentsline {lstlisting}{\numberline {15}{\ignorespaces Feedback Schema}}{66}{lstlisting.15}%
 \contentsline {lstlisting}{\numberline {16}{\ignorespaces Create a Feedback}}{67}{lstlisting.16}%
 \contentsline {lstlisting}{\numberline {17}{\ignorespaces Log Schema}}{67}{lstlisting.17}%
-\contentsline {lstlisting}{\numberline {18}{\ignorespaces Frontend Header Component}}{73}{lstlisting.18}%
-\contentsline {lstlisting}{\numberline {19}{\ignorespaces Frontend Sidebar Component}}{75}{lstlisting.19}%
-\contentsline {lstlisting}{\numberline {20}{\ignorespaces Example of Lazy Loading Frontend Components}}{76}{lstlisting.20}%
-\contentsline {lstlisting}{\numberline {21}{\ignorespaces MUI Grid System}}{77}{lstlisting.21}%
-\contentsline {lstlisting}{\numberline {22}{\ignorespaces MUI Media Queries}}{77}{lstlisting.22}%
-\contentsline {lstlisting}{\numberline {23}{\ignorespaces ExpressJS Server Setup}}{79}{lstlisting.23}%
-\contentsline {lstlisting}{\numberline {24}{\ignorespaces Server connects to PostgreSQL Database}}{80}{lstlisting.24}%
-\contentsline {lstlisting}{\numberline {25}{\ignorespaces Server connects to Redis}}{81}{lstlisting.25}%
-\contentsline {lstlisting}{\numberline {26}{\ignorespaces Logger middleware - write log to database}}{81}{lstlisting.26}%
-\contentsline {lstlisting}{\numberline {27}{\ignorespaces Create Socket.io HTTP server}}{82}{lstlisting.27}%
-\contentsline {lstlisting}{\numberline {28}{\ignorespaces Socket.io join\_conversation event}}{82}{lstlisting.28}%
-\contentsline {lstlisting}{\numberline {29}{\ignorespaces Socket.io send\_message event}}{83}{lstlisting.29}%
-\contentsline {lstlisting}{\numberline {30}{\ignorespaces Socket.io disconnect event}}{83}{lstlisting.30}%
-\contentsline {lstlisting}{\numberline {31}{\ignorespaces Store refresh token in secure cookie}}{85}{lstlisting.31}%
-\contentsline {lstlisting}{\numberline {32}{\ignorespaces Password Hashing}}{86}{lstlisting.32}%
-\contentsline {lstlisting}{\numberline {33}{\ignorespaces Password Verification}}{86}{lstlisting.33}%
+\contentsline {lstlisting}{\numberline {18}{\ignorespaces Frontend Header Component}}{75}{lstlisting.18}%
+\contentsline {lstlisting}{\numberline {19}{\ignorespaces Frontend Sidebar Component}}{77}{lstlisting.19}%
+\contentsline {lstlisting}{\numberline {20}{\ignorespaces Example of Lazy Loading Frontend Components}}{78}{lstlisting.20}%
+\contentsline {lstlisting}{\numberline {21}{\ignorespaces MUI Grid System}}{79}{lstlisting.21}%
+\contentsline {lstlisting}{\numberline {22}{\ignorespaces MUI Media Queries}}{79}{lstlisting.22}%
+\contentsline {lstlisting}{\numberline {23}{\ignorespaces ExpressJS Server Setup}}{80}{lstlisting.23}%
+\contentsline {lstlisting}{\numberline {24}{\ignorespaces Server connects to PostgreSQL Database}}{81}{lstlisting.24}%
+\contentsline {lstlisting}{\numberline {25}{\ignorespaces Server connects to Redis}}{82}{lstlisting.25}%
+\contentsline {lstlisting}{\numberline {26}{\ignorespaces Logger middleware - write log to database}}{82}{lstlisting.26}%
+\contentsline {lstlisting}{\numberline {27}{\ignorespaces Create Socket.io HTTP server}}{83}{lstlisting.27}%
+\contentsline {lstlisting}{\numberline {28}{\ignorespaces Socket.io join\_conversation event}}{83}{lstlisting.28}%
+\contentsline {lstlisting}{\numberline {29}{\ignorespaces Socket.io send\_message event}}{84}{lstlisting.29}%
+\contentsline {lstlisting}{\numberline {30}{\ignorespaces Socket.io disconnect event}}{84}{lstlisting.30}%
+\contentsline {lstlisting}{\numberline {31}{\ignorespaces Store refresh token in secure cookie}}{86}{lstlisting.31}%
+\contentsline {lstlisting}{\numberline {32}{\ignorespaces Password Hashing}}{87}{lstlisting.32}%
+\contentsline {lstlisting}{\numberline {33}{\ignorespaces Password Verification}}{87}{lstlisting.33}%

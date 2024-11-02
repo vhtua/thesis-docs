@@ -41,7 +41,41 @@
 \end{longtable}
 
 	
-	\subsubsection{UI Pages}
+	\subsubsection{UI pages structure}
+	These diagrams below illustrate all the Web pages of each role 
+	%	Quick brown fox \tikz[baseline=(X.base)]\node [draw=black,fill=cyan!20,thick,rectangle,inner sep=3pt, rounded corners=4pt] (X) {jumped}; over the lazy dog.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{graphics/fe/ui-pages-std.pdf}
+		\caption{Web UI pages structure of Student role}
+		\label{fig:fe-ui-page-std}
+	\end{figure}
+	
+	\begin{enumerate}
+		\item \textbf{Landing page}: Students can view the web application overview.
+		\item \textbf{Login page}: Students can then enter their credential to access the services.
+		\item \textbf{Reset password page}: Students can enter their email to receive the reset password.
+		\item \textbf{Homepage}: Students can view the welcome card, guidance, and general personal details
+		\item \textbf{Profile}: Students can view their personal details.
+		\item \textbf{Tickets}: Students can manage their own tickets.
+			\begin{itemize}
+				\item \textbf{My ticket}: Student can view all of their tickets.
+				\item \textbf{Create a ticket}: Student can create (raise) a new support ticket in the system.
+				\item \textbf{Rate tickets}: Student can rate completed support tickets.
+			\end{itemize}
+		\item \textbf{Messages}: Students can send text messages to the staff who handles the support ticket.
+		\item \textbf{News feed}: Students can view all available (pending, in progress) public support tickets in the system.
+		\item \textbf{Notification}: Students can view system notifications
+		\item \textbf{Announcement}: Students can view system announcements
+		\item \textbf{Settings}: 
+			\begin{itemize}
+				\item \textbf{Edit profile}: Students can modify their personal details.
+				\item \textbf{Change password}: Students can change their accounts' password.
+			\end{itemize}
+		\item \textbf{Feedback}: Students can send their feedback to the system.
+		\item \textbf{Logout}: Students can log out of the system.
+	\end{enumerate}
+	
 	\subsubsection{Business Logic}
 	
 

@@ -8,7 +8,7 @@
 \usepackage[super]{nth}
 \usepackage{longtable}
 \usepackage{listings} % For code snippets 
-\usepackage{tikz}
+\usepackage{tikz} % create the cover page and for the box around word
 \usetikzlibrary{calc}
 
 \usepackage[inkscapearea=page]{svg}	% import svg images
@@ -83,6 +83,11 @@
 
 % Disable hypcap for specific captions
 \captionsetup[figure]{hypcap=false}
+
+% =================DRAW BOX AROUND WORD=======================
+% https://tex.stackexchange.com/questions/458864/how-to-add-a-small-rounded-rectangle-around-a-word-inline
+
+\newcommand{\autour}[1]{\tikz[baseline=(X.base)]\node [draw=red,fill=gray!40,semithick,rectangle,inner sep=2pt, rounded corners=3pt] (X) {#1};}
 
 % =================DECLARE ACRONYMS=======================
 
