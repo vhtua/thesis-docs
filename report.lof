@@ -22,42 +22,44 @@
 \contentsline {figure}{\numberline {20}{\ignorespaces Profile UI in Mobile device}}{70}{figure.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Web UI Live Customization}}{71}{figure.21}%
 \contentsline {figure}{\numberline {22}{\ignorespaces Web UI pages structure of Student role}}{73}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Web UI Main Components}}{75}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces JWT Authentication/Authorization Workflow}}{85}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces reCAPTCHA in Change Password form}}{88}{figure.25}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Landing Page}}{89}{figure.26}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Sign in Form}}{90}{figure.27}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Failed Sign in attempt}}{90}{figure.28}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Reset Password Form}}{91}{figure.29}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Reset password successfully}}{91}{figure.30}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Reset password failed}}{91}{figure.31}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Reset password email instructions}}{92}{figure.32}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Student's Home Page}}{93}{figure.33}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Student's Profile Page}}{93}{figure.34}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Student's Tickets List Page}}{94}{figure.35}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Student's Create Tickets Page}}{95}{figure.36}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Student's Rate Tickets Page}}{96}{figure.37}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Submit a ticket rating}}{96}{figure.38}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Student's Message Page}}{97}{figure.39}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Student's Newsfeed}}{98}{figure.40}%
-\contentsline {figure}{\numberline {41}{\ignorespaces Student's Notification Page}}{99}{figure.41}%
-\contentsline {figure}{\numberline {42}{\ignorespaces Student's Announcement Page}}{100}{figure.42}%
-\contentsline {figure}{\numberline {43}{\ignorespaces Student's Edit Profile Page}}{101}{figure.43}%
-\contentsline {figure}{\numberline {44}{\ignorespaces Student's Change Password Page}}{102}{figure.44}%
-\contentsline {figure}{\numberline {45}{\ignorespaces Student's Feedback Page}}{103}{figure.45}%
-\contentsline {figure}{\numberline {46}{\ignorespaces Staff's Available Tickets Page}}{104}{figure.46}%
-\contentsline {figure}{\numberline {47}{\ignorespaces Handle a ticket}}{105}{figure.47}%
-\contentsline {figure}{\numberline {48}{\ignorespaces Successfully add a ticket to ticket handling list}}{105}{figure.48}%
-\contentsline {figure}{\numberline {49}{\ignorespaces Staff's Tickets Handling List}}{106}{figure.49}%
-\contentsline {figure}{\numberline {50}{\ignorespaces Mark a ticket as done}}{106}{figure.50}%
-\contentsline {figure}{\numberline {51}{\ignorespaces Cancel a ticket}}{107}{figure.51}%
-\contentsline {figure}{\numberline {52}{\ignorespaces Staff's Tickets History Page}}{108}{figure.52}%
-\contentsline {figure}{\numberline {53}{\ignorespaces Staff's Message Page}}{109}{figure.53}%
-\contentsline {figure}{\numberline {54}{\ignorespaces Create a Notification Modal}}{110}{figure.54}%
-\contentsline {figure}{\numberline {55}{\ignorespaces Create an Announcement Modal}}{111}{figure.55}%
-\contentsline {figure}{\numberline {56}{\ignorespaces Admin's Ticket Management Page}}{112}{figure.56}%
-\contentsline {figure}{\numberline {57}{\ignorespaces Admin's User Management Page}}{113}{figure.57}%
-\contentsline {figure}{\numberline {58}{\ignorespaces Admin's Dormitory Management Page}}{114}{figure.58}%
-\contentsline {figure}{\numberline {59}{\ignorespaces Admin's Logs Management Page}}{115}{figure.59}%
-\contentsline {figure}{\numberline {60}{\ignorespaces Admin's Feedback Management Page}}{116}{figure.60}%
-\contentsline {figure}{\numberline {61}{\ignorespaces Admin's Report Page}}{116}{figure.61}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Web UI pages structure of Staff role}}{75}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Web UI pages structure of Administrator role}}{77}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Web UI Main Components}}{78}{figure.25}%
+\contentsline {figure}{\numberline {26}{\ignorespaces JWT Authentication/Authorization Workflow}}{89}{figure.26}%
+\contentsline {figure}{\numberline {27}{\ignorespaces reCAPTCHA in Change Password form}}{92}{figure.27}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Landing Page}}{93}{figure.28}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Sign in Form}}{94}{figure.29}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Failed Sign in attempt}}{94}{figure.30}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Reset Password Form}}{95}{figure.31}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Reset password successfully}}{95}{figure.32}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Reset password failed}}{95}{figure.33}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Reset password email instructions}}{96}{figure.34}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Student's Home Page}}{97}{figure.35}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Student's Profile Page}}{97}{figure.36}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Student's Tickets List Page}}{98}{figure.37}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Student's Create Tickets Page}}{99}{figure.38}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Student's Rate Tickets Page}}{100}{figure.39}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Submit a ticket rating}}{100}{figure.40}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Student's Message Page}}{101}{figure.41}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Student's Newsfeed}}{102}{figure.42}%
+\contentsline {figure}{\numberline {43}{\ignorespaces Student's Notification Page}}{103}{figure.43}%
+\contentsline {figure}{\numberline {44}{\ignorespaces Student's Announcement Page}}{104}{figure.44}%
+\contentsline {figure}{\numberline {45}{\ignorespaces Student's Edit Profile Page}}{105}{figure.45}%
+\contentsline {figure}{\numberline {46}{\ignorespaces Student's Change Password Page}}{106}{figure.46}%
+\contentsline {figure}{\numberline {47}{\ignorespaces Student's Feedback Page}}{107}{figure.47}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Staff's Available Tickets Page}}{108}{figure.48}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Handle a ticket}}{109}{figure.49}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Successfully add a ticket to ticket handling list}}{109}{figure.50}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Staff's Tickets Handling List}}{110}{figure.51}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Mark a ticket as done}}{110}{figure.52}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Cancel a ticket}}{111}{figure.53}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Staff's Tickets History Page}}{112}{figure.54}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Staff's Message Page}}{113}{figure.55}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Create a Notification Modal}}{114}{figure.56}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Create an Announcement Modal}}{115}{figure.57}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Admin's Ticket Management Page}}{116}{figure.58}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Admin's User Management Page}}{117}{figure.59}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Admin's Dormitory Management Page}}{118}{figure.60}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Admin's Logs Management Page}}{119}{figure.61}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Admin's Feedback Management Page}}{120}{figure.62}%
+\contentsline {figure}{\numberline {63}{\ignorespaces Admin's Report Page}}{120}{figure.63}%

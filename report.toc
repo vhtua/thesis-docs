@@ -72,47 +72,51 @@
 \contentsline {subsection}{\numberline {4.1}Frontend Implementation}{72}{subsection.4.1}%
 \contentsline {subsubsection}{\numberline {4.1.1}Source code structure}{72}{subsubsection.4.1.1}%
 \contentsline {subsubsection}{\numberline {4.1.2}UI pages structure}{72}{subsubsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.3}Business Logic}{75}{subsubsection.4.1.3}%
-\contentsline {subsubsection}{\numberline {4.1.4}UI Main Components}{75}{subsubsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.5}Responsive Design Implementation}{78}{subsubsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.2}Backend Implementation}{80}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Source code structure}{80}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Setting up ExpressJs Server}{80}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Database Integration}{81}{subsubsection.4.2.3}%
-\contentsline {subsubsection}{\numberline {4.2.4}Middleware}{82}{subsubsection.4.2.4}%
-\contentsline {subsubsection}{\numberline {4.2.5}Real-time messages}{83}{subsubsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.3}Security Measures}{85}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}JWT Authentication/Authorization}{85}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}Password Hashing}{87}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Google reCAPTCHA}{88}{subsubsection.4.3.3}%
-\contentsline {section}{\numberline {5}User Manual}{89}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Sign in}{89}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Forgot password}{90}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Student's functions}{92}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}View Profile}{93}{subsubsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}View Tickets}{94}{subsubsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.3}Create Tickets}{94}{subsubsection.5.3.3}%
-\contentsline {subsubsection}{\numberline {5.3.4}Rate Tickets}{95}{subsubsection.5.3.4}%
-\contentsline {subsubsection}{\numberline {5.3.5}Message}{97}{subsubsection.5.3.5}%
-\contentsline {subsubsection}{\numberline {5.3.6}Newsfeed}{98}{subsubsection.5.3.6}%
-\contentsline {subsubsection}{\numberline {5.3.7}Notification}{99}{subsubsection.5.3.7}%
-\contentsline {subsubsection}{\numberline {5.3.8}Announcement}{100}{subsubsection.5.3.8}%
-\contentsline {subsubsection}{\numberline {5.3.9}Settings}{101}{subsubsection.5.3.9}%
-\contentsline {subsubsection}{\numberline {5.3.10}Feedback}{102}{subsubsection.5.3.10}%
-\contentsline {subsection}{\numberline {5.4}Staff's functions}{103}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Available Tickets}{103}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Tickets Handling}{105}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Tickets History}{107}{subsubsection.5.4.3}%
-\contentsline {subsubsection}{\numberline {5.4.4}Message}{108}{subsubsection.5.4.4}%
-\contentsline {subsubsection}{\numberline {5.4.5}Notification}{109}{subsubsection.5.4.5}%
-\contentsline {subsubsection}{\numberline {5.4.6}Announcement}{110}{subsubsection.5.4.6}%
-\contentsline {subsection}{\numberline {5.5}Admin's functions}{111}{subsection.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.1}Tickets Management}{111}{subsubsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.2}Users Management}{112}{subsubsection.5.5.2}%
-\contentsline {subsubsection}{\numberline {5.5.3}Dormitory Management}{113}{subsubsection.5.5.3}%
-\contentsline {subsubsection}{\numberline {5.5.4}Logs Management}{114}{subsubsection.5.5.4}%
-\contentsline {subsubsection}{\numberline {5.5.5}Feedback Management}{115}{subsubsection.5.5.5}%
-\contentsline {subsubsection}{\numberline {5.5.6}Report}{116}{subsubsection.5.5.6}%
-\contentsline {section}{\numberline {6}Conclusion and Future Work}{118}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Conclusion}{118}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Future Work}{119}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}UI Main Components}{78}{subsubsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.4}Responsive Design Implementation}{81}{subsubsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.5}Routing}{83}{subsubsection.4.1.5}%
+\contentsline {subsubsection}{\numberline {4.1.6}API Interaction}{83}{subsubsection.4.1.6}%
+\contentsline {subsubsection}{\numberline {4.1.7}Authentication and Authorization}{83}{subsubsection.4.1.7}%
+\contentsline {subsubsection}{\numberline {4.1.8}Component Interaction and UI Updates}{83}{subsubsection.4.1.8}%
+\contentsline {subsubsection}{\numberline {4.1.9}Real-time Messages Updates}{83}{subsubsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.2}Backend Implementation}{84}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Source code structure}{84}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Setting up ExpressJs Server}{84}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Database Integration}{85}{subsubsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.4}Middleware}{86}{subsubsection.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.2.5}Real-time messages}{87}{subsubsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.3}Security Measures}{89}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}JWT Authentication/Authorization}{89}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Password Hashing}{91}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Google reCAPTCHA}{92}{subsubsection.4.3.3}%
+\contentsline {section}{\numberline {5}User Manual}{93}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Sign in}{93}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Forgot password}{94}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Student's functions}{96}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}View Profile}{97}{subsubsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}View Tickets}{98}{subsubsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3}Create Tickets}{98}{subsubsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.4}Rate Tickets}{99}{subsubsection.5.3.4}%
+\contentsline {subsubsection}{\numberline {5.3.5}Message}{101}{subsubsection.5.3.5}%
+\contentsline {subsubsection}{\numberline {5.3.6}Newsfeed}{102}{subsubsection.5.3.6}%
+\contentsline {subsubsection}{\numberline {5.3.7}Notification}{103}{subsubsection.5.3.7}%
+\contentsline {subsubsection}{\numberline {5.3.8}Announcement}{104}{subsubsection.5.3.8}%
+\contentsline {subsubsection}{\numberline {5.3.9}Settings}{105}{subsubsection.5.3.9}%
+\contentsline {subsubsection}{\numberline {5.3.10}Feedback}{106}{subsubsection.5.3.10}%
+\contentsline {subsection}{\numberline {5.4}Staff's functions}{107}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}Available Tickets}{107}{subsubsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.2}Tickets Handling}{109}{subsubsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.3}Tickets History}{111}{subsubsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.4}Message}{112}{subsubsection.5.4.4}%
+\contentsline {subsubsection}{\numberline {5.4.5}Notification}{113}{subsubsection.5.4.5}%
+\contentsline {subsubsection}{\numberline {5.4.6}Announcement}{114}{subsubsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.5}Admin's functions}{115}{subsection.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.1}Tickets Management}{115}{subsubsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.2}Users Management}{116}{subsubsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.3}Dormitory Management}{117}{subsubsection.5.5.3}%
+\contentsline {subsubsection}{\numberline {5.5.4}Logs Management}{118}{subsubsection.5.5.4}%
+\contentsline {subsubsection}{\numberline {5.5.5}Feedback Management}{119}{subsubsection.5.5.5}%
+\contentsline {subsubsection}{\numberline {5.5.6}Report}{120}{subsubsection.5.5.6}%
+\contentsline {section}{\numberline {6}Conclusion and Future Work}{122}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Conclusion}{122}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Future Work}{123}{subsection.6.2}%

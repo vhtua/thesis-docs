@@ -51,11 +51,13 @@
 		\label{fig:fe-ui-page-std}
 	\end{figure}
 	
+	Web pages structure of Student role:
+	
 	\begin{enumerate}
 		\item \textbf{Landing page}: Students can view the web application overview.
 		\item \textbf{Login page}: Students can then enter their credential to access the services.
 		\item \textbf{Reset password page}: Students can enter their email to receive the reset password.
-		\item \textbf{Homepage}: Students can view the welcome card, guidance, and general personal details
+		\item \textbf{Homepage}: Students can view the welcome card, guidance, and general personal details.
 		\item \textbf{Profile}: Students can view their personal details.
 		\item \textbf{Tickets}: Students can manage their own tickets.
 			\begin{itemize}
@@ -65,9 +67,9 @@
 			\end{itemize}
 		\item \textbf{Messages}: Students can send text messages to the staff who handles the support ticket.
 		\item \textbf{News feed}: Students can view all available (pending, in progress) public support tickets in the system.
-		\item \textbf{Notification}: Students can view system notifications
-		\item \textbf{Announcement}: Students can view system announcements
-		\item \textbf{Settings}: 
+		\item \textbf{Notification}: Students can view system notifications.
+		\item \textbf{Announcement}: Students can view system announcements.
+		\item \textbf{Settings}: Students can configure their personal details and preferences.
 			\begin{itemize}
 				\item \textbf{Edit profile}: Students can modify their personal details.
 				\item \textbf{Change password}: Students can change their accounts' password.
@@ -76,7 +78,55 @@
 		\item \textbf{Logout}: Students can log out of the system.
 	\end{enumerate}
 	
-	\subsubsection{Business Logic}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{graphics/fe/ui-pages-staff.pdf}
+		\caption{Web UI pages structure of Staff role}
+		\label{fig:fe-ui-page-staff}
+	\end{figure}
+	
+	Web pages structure of Staff (Dormitory staff, Student affairs) role:
+	
+	\begin{enumerate}
+		\item \textbf{Landing page}: Staff can view the web application overview.
+		\item \textbf{Login page}: Staff can then enter their credential to access the services.
+		\item \textbf{Reset password page}: Staff can enter their email to receive the reset password.
+		\item \textbf{Homepage}: Staff can view the welcome card, guidance, and general personal details.
+		\item \textbf{Profile}: Staff can view their personal details.
+		\item \textbf{Tickets}: Staff can manage support tickets.
+		\begin{itemize}
+			\item \textbf{Available tickets}: Staff can view all available (pending) tickets of the systems.
+			\item \textbf{Tickets handling}: Staff can handle (mark as done or cancel) tickets.
+			\item \textbf{History}: Staff can view the tickets handling history.
+		\end{itemize}
+		\item \textbf{Messages}: Staff can send text messages to the student who raises the support ticket.
+		\item \textbf{News feed}: Staff can view all available (pending, in progress) public support tickets in the system.
+		\item \textbf{Notification}: Staff can view system notifications.
+			\begin{itemize}
+				\item \textbf{Create a notification}: Staff can create a notification.
+			\end{itemize}
+		\item \textbf{Announcement}: Staff can view system announcements
+			\begin{itemize}
+				\item \textbf{Create an announcement}: Staff can create an announcement.
+			\end{itemize}
+		\item \textbf{Settings}: Staff can configure their personal details and preferences.
+		\begin{itemize}
+			\item \textbf{Edit profile}: Staff can modify their personal details.
+			\item \textbf{Change password}: Staff can change their accounts' password.
+		\end{itemize}
+		\item \textbf{Feedback}: Staff can send their feedback to the system.
+		\item \textbf{Logout}: Staff can log out of the system.
+	\end{enumerate}
+	
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.85\linewidth]{graphics/fe/ui-pages-admin.pdf}
+		\caption{Web UI pages structure of Administrator role}
+		\label{fig:fe-ui-page-admin}
+	\end{figure}
 	
 
 	\subsubsection{UI Main Components}
@@ -257,7 +307,22 @@ import { Grid } from '@mui/material';
 
 
 	\end{enumerate}
-	
+
+
+\subsubsection{Routing}
+
+
+\subsubsection{API Interaction}
+
+
+
+\subsubsection{Authentication and Authorization}
+
+
+\subsubsection{Component Interaction and UI Updates}
+
+
+\subsubsection{Real-time Messages Updates}
 	
 \newpage
 \subsection{Backend Implementation}
